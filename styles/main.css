@@ -157,6 +157,7 @@ section ul, table ul {
 
 footer {
     background-color: black;
+    text-align: center;
     color: whitesmoke;
     padding: 2%;
 }
