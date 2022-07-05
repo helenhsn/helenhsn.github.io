@@ -31,6 +31,7 @@ header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    text-transform: capitalize;
     height: 8%;
     color: wheat;
 }
