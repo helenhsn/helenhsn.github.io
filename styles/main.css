@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding-top: 1%;
+    padding: 4% 10% 4%;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width:100%;
+    height:100%;
+    text-align: center;
+    border-radius: 11px;
+    background-color: white;
+}
+
+header {
+    background-position: center;
+    text-align: center;
+}
+
+.navbar {
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 8%;
+    text-transform: uppercase;
+    font-style: bold;
+    color: wheat;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 0.5em 0;
+    color: white;
+}
+
+.navbar a::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.2em;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 300ms;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+    background-color: aqua;
+}
+
+.name {
+    align-self: center;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    flex:auto;
+    text-align: right;
+}
+
+nav ul li {
+    align-self: center;
+    display:inline-block;
+    margin-left: 2%;
+    margin-right: 4%;
+}
+
+section {
+    background-color: wheat;
+    padding: 3% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section div {
+    background-color: whitesmoke;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.aboutme-img , .example {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme-img {
+    align-items: center;
+}
+
+.aboutme-img img {
+    border-radius:  50%;
+}
+
+.example {
+    flex-direction: column;
+}
+
+.example img {
+    margin: 0.5%;
+}
+
+.content {
+    padding-left: 2% ;
+    padding-right: 2% ;
+
+}
+
+.skills {
+    display: flex;
+}
+
+section div p {
+    text-align: justify;
+}
+
+section ul, table ul {
+    text-align: left;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    margin-left: 0;
+}
+
+.title-column {
+    font-size: larger;
+    font-weight: bolder;
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-left: 0;
+}
+
+.less-known {
+    color: grey;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5%;
+}
+
+footer a {
+    color: aqua;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+table td {
+    background-color: blueviolet;
+    width: 100vw;
+    padding: 1%;
+    vertical-align: top;
+}
+
+table ul {
+    margin:0%;
+    list-style-type: none;
+}
+
+table ul li {
+    margin-top: 1%;
+}
+table th {
+    padding:1%
+}
+table h1 {
+    text-align: left;
+}
+table h3, .formation {
+    margin-top:0;
+    font-size: large;
+}
+
+.date {
+    border-right: solid 2px #f00;
+    width: 30%;
+}
+
+.diploma {
+    font-style: italic;
+}
