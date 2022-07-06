@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding-top: 1%;
-    padding: 4% 10% 4%;
+    padding: 8% 10% 8%;
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url(../images/background.jpg);
     background-position: center;
     background-size: cover;
@@ -13,9 +13,12 @@ body {
 .container {
     width:100%;
     height:100%;
+    border: ridge;
+    border-width: 1mm;
+    border-color: rgb(14, 4, 4);
     text-align: center;
-    border-radius: 11px;
-    background-color: rgb(84, 223, 233);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -33,7 +36,7 @@ header {
     justify-content: space-around;
     text-transform: uppercase;
     height: 8%;
-    color: wheat;
+    color: rgb(255, 255, 255);
 }
 
 .navbar a {
@@ -62,6 +65,9 @@ header {
     background-color: aqua;
 }
 
+h1 {
+    color: rgb(0, 0, 0);
+}
 .name {
     align-self: center;
     margin-left: 2%;
@@ -85,7 +91,6 @@ nav ul li {
 }
 
 section {
-    background-color: wheat;
     padding: 3% ;
     display: flex;
     flex-direction: row;
@@ -122,7 +127,10 @@ section div {
 .content {
     padding-left: 2% ;
     padding-right: 2% ;
+}
 
+.content h1 {
+    color:black;
 }
 
 .skills {
@@ -159,7 +167,7 @@ section ul, table ul {
 footer {
     background-color: black;
     text-align: center;
-    color: whitesmoke;
+    color: white;
     padding: 2%;
 }
 
@@ -173,7 +181,7 @@ footer a:hover {
 }
 
 table td {
-    background-color: blueviolet;
+    background-color: whitesmoke;
     width: 100vw;
     padding: 1%;
     vertical-align: top;
@@ -199,10 +207,16 @@ table h3, .formation {
 }
 
 .date {
-    border-right: solid 2px #f00;
+    border-right: solid 2px aqua;
     width: 30%;
 }
 
 .diploma {
     font-style: italic;
+}
+
+.information, .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
