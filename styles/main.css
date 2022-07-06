@@ -36,7 +36,7 @@ header {
     justify-content: space-around;
     text-transform: uppercase;
     height: 8%;
-    color: rgb(255, 255, 255);
+    color: rgb(173, 216, 230);
 }
 
 .navbar a {
@@ -62,20 +62,16 @@ header {
 .navbar a:hover::after {
     transform: scaleX(1);
     transform-origin: center;
-    background-color: aqua;
+    background-color: rgb(173, 216, 230);
 }
 
 h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(0,0,139);
 }
 .name {
     align-self: center;
     margin-left: 2%;
     cursor: pointer;
-}
-
-.name:hover {
-    color: rgb(255, 255, 255);
 }
 
 nav {
@@ -98,7 +94,6 @@ section {
 }
 
 section div {
-    background-color: whitesmoke;
     margin-left: 1%;
     margin-right: 1%;
 }
@@ -130,7 +125,7 @@ section div {
 }
 
 .content h1 {
-    color:black;
+    color:rgb(0,0,139);
 }
 
 .skills {
@@ -172,7 +167,7 @@ footer {
 }
 
 footer a {
-    color: aqua;
+    color: rgb(173, 216, 230);
     text-decoration: none;
 }
 
@@ -181,7 +176,6 @@ footer a:hover {
 }
 
 table td {
-    background-color: whitesmoke;
     width: 100vw;
     padding: 1%;
     vertical-align: top;
@@ -194,21 +188,20 @@ table ul {
 }
 
 table ul li {
-    margin-top: 1%;
+    margin-top: 2%;
 }
 table th {
     padding:1%
 }
 table h1 {
-    text-align: left;
+    text-align: center;
 }
 table h3, .formation {
     margin-top:0;
 }
 
 .date {
-    border-right: solid 2px aqua;
-    width: 30%;
+    width: 50%;
 }
 
 .diploma {
