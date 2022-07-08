@@ -30,15 +30,15 @@ header {
     justify-content: space-around;
     text-transform: uppercase;
     height: 8vh;
-    color: rgb(192, 21, 164);
+    color:rgb(255, 255, 255);
 }
 
 .navbar a {
     text-decoration: none;
     display: block;
     position: relative;
+    padding: 0.4em 0;
     color: white;
-    color:rgb(69, 168, 38);
 }
 
 .navbar a::after {
@@ -67,7 +67,6 @@ header {
     align-self: center;
     padding: 0.5em 0;
     margin-left: 2%;
-    background-color: yellow;
 }
 
 nav {
@@ -75,15 +74,10 @@ nav {
     text-align: right;
 }
 
-nav ul {
-    background-color: green;
-}
-
 nav ul li {
     display:inline-block;
     padding: 0.5em 0;
     margin-right: 2%;
-    background-color: rgb(226, 223, 43);
 }
 
 h1 {
@@ -93,9 +87,6 @@ h1 {
 
 footer {
     width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     background-color: black;
     text-align: center;
     color: white;
@@ -138,7 +129,6 @@ section div {
 
 .example {
     flex-direction: column;
-    background-color: blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,6 +224,7 @@ table h3, .formation {
         position: absolute;
         top: 5vh;
         right: 0;
+        background-color: rgb(173, 216, 230);
     }
 
     nav ul li {
@@ -243,9 +234,23 @@ table h3, .formation {
         margin-right: 10px;
     }
 
+    .navbar a::after {
+        width:0%;
+    }
+
+    .navbar a:hover{
+        color: black;
+    }
+
     .contents {
         position:relative;
         top: 20vh;
+    }
+
+    footer {
+        position: absolute;
+        bottom:0;
+        left: 0;
     }
 
     .aboutme, .project {
