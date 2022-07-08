@@ -1,17 +1,20 @@
+
 body {
     margin: 0;
     width:100%;
-    height: 100vh;
+    min-height: 100vh;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
+    height: 100vh;
     text-align: center;
     background-color: rgb(255, 255, 255);
 }
 
 .contents {
     padding: 5% 10%;
+    margin-top: 8vh;
 }
 
 header {
@@ -21,21 +24,21 @@ header {
 
 .navbar {
     background-color: black;
+    width: 100%;
     align-items: center;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-around;
     text-transform: uppercase;
-    height: 8%;
-    color: rgb(173, 216, 230);
+    height: 8vh;
+    color: rgb(192, 21, 164);
 }
 
 .navbar a {
     text-decoration: none;
     display: block;
     position: relative;
-    padding: 0.5em 0;
     color: white;
+    color:rgb(69, 168, 38);
 }
 
 .navbar a::after {
@@ -56,25 +59,36 @@ header {
     background-color: rgb(173, 216, 230);
 }
 
-h1 {
-    color: rgb(0,0,139);
+.menu-logo {
+    display:none;
 }
+
 .name {
     align-self: center;
+    padding: 0.5em 0;
     margin-left: 2%;
-    cursor: pointer;
+    background-color: yellow;
 }
 
 nav {
-    flex:auto;
+    flex:1;
     text-align: right;
 }
 
+nav ul {
+    background-color: green;
+}
+
 nav ul li {
-    align-self: center;
     display:inline-block;
-    margin-left: 2%;
-    margin-right: 4%;
+    padding: 0.5em 0;
+    margin-right: 2%;
+    background-color: blueviolet;
+}
+
+h1 {
+    color: rgb(0,0,139);
+    font-size: 2rem;
 }
 
 footer {
@@ -120,6 +134,11 @@ section div {
 
 .example {
     flex-direction: column;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
 }
 
 .example img {
@@ -129,10 +148,6 @@ section div {
 .content {
     padding-left: 2% ;
     padding-right: 2% ;
-}
-
-.content h1 {
-    color:rgb(0,0,139);
 }
 
 .skills {
@@ -203,3 +218,37 @@ table h3, .formation {
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width:700px) {
+    .menu-logo {
+        width: 20px;
+        display:block;
+        margin-right: 10px;
+    }
+
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 6vh;
+        right: 0;
+    }
+
+    nav ul li {
+        display:block;
+        position: relative;
+        right: 0;
+        margin-right: 10px;
+    }
+
+    .contents {
+        position:absolute;
+        top: 20vh;
+    }
+
+    .aboutme, .project {
+        display:block;
+    }
+
+}
+
+
