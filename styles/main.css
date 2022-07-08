@@ -92,6 +92,9 @@ h1 {
 }
 
 footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
     background-color: black;
     text-align: center;
     color: white;
