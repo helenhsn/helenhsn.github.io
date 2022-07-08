@@ -237,6 +237,14 @@ table h3, .formation {
         border-bottom-color: rgb(126, 126, 126);
     }
 
+    .name a::after {
+        width:0;
+    }
+
+    .name a:hover {
+        color:rgb(173, 216, 230);
+    }
+
     .contents {
         position:relative;
         top: 20vh;
