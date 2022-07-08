@@ -219,7 +219,7 @@ table h3, .formation {
     align-items: center;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1200px) {
     .menu-logo {
         width: 20px;
         display:block;
