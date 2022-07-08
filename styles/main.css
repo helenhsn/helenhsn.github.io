@@ -219,13 +219,15 @@ table h3, .formation {
     align-items: center;
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:100px) {
     .menu-logo {
         width: 20px;
         display:block;
         margin-right: 10px;
     }
-
+    .navbar {
+        width:100vw;
+    }
     nav ul {
         width: 100%;
         position: absolute;
