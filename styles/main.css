@@ -243,7 +243,7 @@ table h3, .formation {
     }
 
     .contents {
-        position:absolute;
+        position:relative;
         top: 20vh;
     }
 
