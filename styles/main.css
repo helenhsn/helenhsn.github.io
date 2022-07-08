@@ -95,6 +95,7 @@ footer {
     width: 100%;
     position: absolute;
     left: 0;
+    bottom: 0;
     background-color: black;
     text-align: center;
     color: white;
@@ -227,9 +228,6 @@ table h3, .formation {
         width: 20px;
         display:block;
         margin-right: 10px;
-    }
-    .navbar {
-        width:100vw;
     }
     nav ul {
         width: 100%;
