@@ -233,6 +233,7 @@ table h3, .formation {
     }
 
     .navbar {
+        width: 100vw;
         border-bottom-style: solid;
         border-bottom-width: 2px;
         border-bottom-color: rgb(126, 126, 126);
@@ -244,11 +245,6 @@ table h3, .formation {
 
     .name a:hover {
         color:rgb(173, 216, 230);
-    }
-
-    .contents {
-        position:relative;
-        top: 20vh;
     }
 
     footer {
