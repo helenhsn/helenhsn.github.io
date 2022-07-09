@@ -16,7 +16,7 @@
                         <li> Contact </li>
                     </ul>
                 </nav>
-                <img src="images/menulogo.png" class="menu-logo" onclick="triggermenu()">
+                <img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()">
             </div>
             <div class="contents">
                 <section>
@@ -33,19 +33,6 @@
             </div>
             <footer> Want to learn more ? Don't hesitate to <a href="contact.html">contact me</a> ! </footer>
         </div>
-        <script> 
-            var menu = document.getElementById("menu");
-
-            menu.style.maxHeight = "Opx";
-
-            function triggermenu() {
-                if (menu.style.maxHeight == "0px") {   
-                    menu.style.maxHeight = "150px";
-                }
-                else {
-                    menu.style.maxHeight = "0px";
-                }
-            }
-        </script>
+        <script src="js/script.js"> </script>
     </body>
 </html>
