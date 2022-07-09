@@ -218,15 +218,6 @@ table h3, .formation {
 }
 
 @media screen and (max-width:1200px) {
-
-    body {
-        width:100vw;
-        min-width: 100vw;
-        max-width: 100vw;
-        overflow-x: hidden;
-        overflow-y: auto;
-
-    }
     .menu-logo {
         width: 20px;
         display:block;
