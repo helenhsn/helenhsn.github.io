@@ -78,6 +78,19 @@
                 </table>
             </div>
         </div>
-        <script src="js/script.js"> </script>
+        <script> 
+            var menu = document.getElementById("menu");
+
+            menu.style.maxHeight = "Opx";
+
+            function triggermenu() {
+                if (menu.style.maxHeight == "0px") {   
+                    menu.style.maxHeight = "150px";
+                }
+                else {
+                    menu.style.maxHeight = "0px";
+                }
+            }
+        </script>
     </body>
 </html>

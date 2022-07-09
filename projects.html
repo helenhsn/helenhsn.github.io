@@ -16,7 +16,7 @@
                         <li><a href="contact.html"> Contact </a></li>
                     </ul>
                 </nav>
-                <img src="images/menulogo.png" class="menu-logo" onclick="triggermenu()">
+                <img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()">
             </div>
             <div class="contents">
                 <h1> School projects </h1>
@@ -34,7 +34,7 @@
                             <p> gnagna </p>
                         </div>
                     </div>
-                    <div class="example"> <img src="images/montecarlo.gif" width="300px" height="300px"> </div>
+                    <div class="example"> <img src="images/montecarlo.gif"> </div>
                 </section>
                 <section class="project"> 
                     <div class="content">
@@ -59,8 +59,8 @@
                         </div>
                     </div>
                     <div class="example">
-                        <img src="images/minesweeper.gif" height="265px">
-                        <img src="images/widgets.gif" height="313px">
+                        <img src="images/minesweeper.gif">
+                        <img src="images/widgets.gif">
                     </div>
 
                 </section>
@@ -81,6 +81,19 @@
                 </section>
             </div>
         </div>
-        <script src="js/script.js"> </script>
+        <script> 
+            var menu = document.getElementById("menu");
+
+            menu.style.maxHeight = "Opx";
+
+            function togglemenu() {
+                if (menu.style.maxHeight == "0px") {   
+                    menu.style.maxHeight = "32vh";
+                }
+                else {
+                    menu.style.maxHeight = "0px";
+                }
+            }
+        </script>
     </body>
 </html>

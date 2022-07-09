@@ -137,6 +137,7 @@ section div {
 
 .example img {
     margin: 0.5%;
+    max-width:30rem;
 }
 
 .content {
@@ -258,6 +259,11 @@ table h3, .formation {
 
     .aboutme, .project {
         display:block;
+    }
+
+    #menu {
+        overflow: hidden;
+        transition: 0.5s;
     }
 
 }
