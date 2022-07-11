@@ -4,7 +4,7 @@ menu.style.maxHeight = "O%";
 
 function togglemenu() {
     if (menu.style.maxHeight == "0%") {   
-        menu.style.maxHeight = "40%";
+        menu.style.maxHeight = "50%";
     }
     else {
         menu.style.maxHeight = "0%";
