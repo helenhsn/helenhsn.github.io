@@ -48,7 +48,7 @@ header {
     font-size: larger;
     height: 4rem;
     color:rgb(255, 255, 255);
-    border-bottom: 0.2rem rgb(158, 158, 158) solid;
+    border-bottom: 0.2rem #ffe5b4 solid;
 }
 
 .navbar a {
