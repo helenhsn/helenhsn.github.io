@@ -1,12 +1,12 @@
 var menu = document.getElementById("menu");
 
-menu.style.maxHeight = "Opx";
+menu.style.maxHeight = "O%";
 
 function togglemenu() {
-    if (menu.style.maxHeight == "0px") {   
-        menu.style.maxHeight = "50vh";
+    if (menu.style.maxHeight == "0%") {   
+        menu.style.maxHeight = "40%";
     }
     else {
-        menu.style.maxHeight = "0px";
+        menu.style.maxHeight = "0%";
     }
 }
