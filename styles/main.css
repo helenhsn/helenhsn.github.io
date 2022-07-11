@@ -245,7 +245,8 @@ h1 {
 }
 
 .projects img {
-    max-width: 22rem;
+    max-width: 20rem;
+    overflow-x: hidden;
     margin:0 2%;
 }
 
