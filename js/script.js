@@ -1,6 +1,6 @@
 var menu = document.getElementById("menu");
 
-menu.style.maxHeight = "O%";
+menu.style.maxHeight = "0%";
 
 function togglemenu() {
     if (menu.style.maxHeight == "0%") {   
