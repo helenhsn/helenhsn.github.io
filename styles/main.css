@@ -295,9 +295,11 @@ h1 {
         top: 8vh;
         left: 0;
         right: 0;
-        padding: 0.4em 0;
         padding-left: 2%;
         background-color: rgb(0, 0, 0);
+    }
+    nav ul li {
+        padding: 0.4em 0;
     }
     .aboutme, .projects section {
         display:block;
