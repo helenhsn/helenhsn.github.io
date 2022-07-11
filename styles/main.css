@@ -144,7 +144,7 @@ h1 {
 .aboutme-content h1 {
     text-align: center;
 }
-.aboutme-img , .example {
+.aboutme-img{
     display: flex;
     justify-content: center;
 }
@@ -157,7 +157,7 @@ h1 {
     border-radius:  50%;
 }
 
-/*EDUCATION*/
+/*EDUCATION, EXPERIENCE, PROJECTS*/
 .education section, .experience section, .projects section {
     flex-direction: column;
     padding: 0 2%;
@@ -176,6 +176,12 @@ h1 {
     margin: 0;
 }
 
+
+.education li, .experience li, .projects li {
+    text-align: justify;
+    margin: 0.5rem 0rem;
+}
+
 .title {
     text-align: left;
     text-transform: uppercase;
@@ -189,31 +195,46 @@ h1 {
     color: #1f4690;
 }
 
+
 .diploma {
     font-family: 'Merriweather-Italic';
 }
 
 
-
 /*PROJECTS*/
-.example {
-    flex-direction: column;
+
+.projects section {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects ul {
+    margin: 1rem 0rem ;
+    text-align: justify;
+}
+
+.projects .timeline {
+    color:#e8aa42;
+}
+
+.content-projects {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 5% 0;
 }
 
-.example img {
-    margin: 0.5%;
-    max-width:30rem;
+.projects img {
+    max-width: 20rem;
+    margin:0 2%;
 }
 
-.content-project {
-    padding-left: 2% ;
-    padding-right: 2% ;
+.example {
+    display:flex;
+    justify-content: center;
 }
 
+
+
+/*CONTACT*/
 .information, .logo {
     display: flex;
     justify-content: center;
@@ -242,8 +263,17 @@ h1 {
         background-color: rgb(0, 0, 0);
     }
 
-    .aboutme, .project {
+    .aboutme, .projects section {
         display:block;
+    }
+
+    .example {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .example img {
+        margin: 1% 0;
     }
 
     #menu {
