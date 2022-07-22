@@ -115,9 +115,6 @@ section div {
     margin-right: 1%;
 }
 
-section div p {
-    text-align: justify;
-}
 
 h1 {
     font-family: 'Merriweather';
@@ -170,11 +167,16 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 1%;
     padding: 0;
 }
 
+.contact-list img {
+    min-width: 2rem;
+}
+
 /*EDUCATION, EXPERIENCE, PROJECTS*/
-.education section, .experience section, .projects section {
+.events section, .projects section {
     flex-direction: column;
     padding: 0 2%;
     align-items: flex-start;
@@ -182,28 +184,28 @@ h1 {
     text-align: left;
 }
 
-.education p, .experience p, .projects p {
+.events p {
     margin: 0.5rem 0rem;
 }
 
-.education ul, .experience ul, .projects ul {
+.events ul, .projects ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 
-.education li, .experience li, .projects li {
+.events li, .projects li {
     text-align: justify;
     margin: 0.5rem 0rem;
 }
 
-.education, .experience, .projects {
+.events, .projects {
     border-top: 0.1rem ridge #e8aa42;
 }
 
 .title {
-    padding-top: 0.5em;
+    padding-top: 0.5rem;
     text-transform: uppercase;
     color:#231955;
     font-family: 'Merriweather-Bold';
@@ -228,20 +230,19 @@ h1 {
     flex-direction: row;
 }
 
-.projects ul {
-    margin: 1rem 0rem ;
-    text-align: justify;
+.projects div {
+    margin:0;
+    padding:0;
+    padding-top: 0.5em;
+}
+
+.projects .title {
+    padding-top: 0;
 }
 
 .projects .timeline {
     color:#e8aa42;
 }
-
-.content-projects {
-    display: flex;
-    justify-content: center;
-}
-
 .projects img {
     max-width: 20rem;
     overflow-x: hidden;
@@ -252,7 +253,6 @@ h1 {
     display:flex;
     justify-content: center;
 }
-
 
 
 /*CONTACT*/
