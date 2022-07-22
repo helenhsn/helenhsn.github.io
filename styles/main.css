@@ -180,6 +180,7 @@ h1 {
     padding: 0 2%;
     align-items: flex-start;
     background-color: #eeeeee;
+    text-align: left;
 }
 
 .education p, .experience p, .projects p {
@@ -188,7 +189,6 @@ h1 {
 
 .education ul, .experience ul, .projects ul {
     list-style-type: none;
-    text-align: left;
     padding: 0;
     margin: 0;
 }
@@ -205,7 +205,6 @@ h1 {
 
 .title {
     padding-top: 0.5em;
-    text-align: left;
     text-transform: uppercase;
     color:#231955;
     font-family: 'Merriweather-Bold';
