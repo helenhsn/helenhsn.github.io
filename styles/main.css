@@ -30,6 +30,7 @@ body {
 
 .contents {
     padding: 2% 10%;
+    border-bottom:0.2rem #d6d6d6 solid ;
 }
 
 header {
@@ -47,8 +48,8 @@ header {
     font-family: 'Merriweather';
     font-size: larger;
     height: 4rem;
-    color:rgb(255, 255, 255);
-    border-bottom: 0.2rem #ffe5b4 solid;
+    color:#ffe5b4;
+    border-bottom: 0.2rem #d6d6d6 solid;
 }
 
 .navbar a {
@@ -75,7 +76,7 @@ header {
     top: 1.4em;
     transform: scaleX(1);
     transform-origin: center;
-    background-color: #e8aa42;
+    background-color: #ffe5b4;
 }
 
 .menu-logo {
@@ -98,9 +99,7 @@ nav ul li {
     margin: 0.4em 0;
     margin-right: 4%;
 }
-.element {
-    background-color: aqua;
-}
+
 .contents div {
     padding:3% 0;
 }
