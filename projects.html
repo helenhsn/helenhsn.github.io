@@ -5,34 +5,36 @@
         <link href="styles/main.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body onload="translate('en', 'lang-tag')">
         <div class="container">
             <div class="navbar">
                 <div class="name"><a href="index.html">  Hélène Hassan  </a></div>
                 <nav>
                     <ul id="menu">
                         <li><a href="education.html"> Education </a></li>
-                        <li><a href="experience.html"> Experience </a></li>
-                        <li> Projects </li>
+                        <li><a href="experience.html" lang-tag="experience"> Experience </a></li>
+                        <li lang-tag="projects"> Projects </li>
                         <li> <a href="/CV.pdf"> CV </a></li>
                     </ul>
                 </nav>
+                <a href="javascript:void(0);"><img src="images/french_flag.png" class="language-logo" id="frTranslator"  onclick="translate('fr', 'lang-tag')"></a>
+                <a href="javascript:void(0);"><img src="images/british_flag.png" class="language-logo" id="enTranslator" onclick="translate('en', 'lang-tag')"></a>
                 <img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()">
             </div>
             <div class="contents">
                 <div class="projects">
-                    <h1> School projects </h1>
+                    <h1 lang-tag="school-projects"> School projects </h1>
                     <section> 
                         <div>
-                            <p class="title"> Modelisation of Monte Carlo's method in python </p>
-                            <p class="timeline"> December 2021 (1 month, solo work) </p>
+                            <p class="title" lang-tag="project1"> Modelisation of Monte Carlo's method in python </p>
+                            <p class="timeline" lang-tag="project-timeline1"> December 2021 (1 month, solo work) </p>
                             <p class="description">
                                 <ul>
-                                    <li> Computation of pi's approximation using Monte Carlo's method. </li>
-                                    <li> Generation of an animated image (GIF) showing the simulation, using
+                                    <li lang-tag="project-description1-1"> Computation of pi's approximation using Monte Carlo's method. </li>
+                                    <li lang-tag="project-description1-2"> Generation of an animated image (GIF) showing the simulation, using
                                         .ppm images format (each pixel is given an RGB code). The writing of each approximation is done with a
                                         7-segment display for each digit. </li>
-                                    <li> This project helped me work on optimization using various data structures (dictionnary, iterators, tables, etc). </li>
+                                    <li lang-tag="project-description1-3"> This project coded from scratch helped me work on optimization using various data structures (dictionnary, iterators, tables, etc). </li>
                                 </ul>
                             </p>
                         </div>
@@ -41,16 +43,16 @@
 
                     <section>
                         <div>
-                            <p class="title"> Library for graphical interfaces in C </p>
-                            <p class="timeline"> May 2022 (3 weeks, teamwork) </p>
+                            <p class="title" lang-tag="project2"> Library for graphical interfaces in C </p>
+                            <p class="timeline" lang-tag="project-timeline2"> May 2022 (3 weeks, teamwork) </p>
                             <p class="description">
 
                                 <ul>
-                                    <li> Library coded entirely in C, similar to tkinter in python. Can be used to build simple games or applications. </li>
-                                    <li> Uses the concept of widgets (buttons, frames, toplevels) and geometry managers to place elements on the screen. The Library
+                                    <li lang-tag="project-description2-1"> Library coded entirely in C, similar to tkinter in python. Can be used to build simple games or applications. </li>
+                                    <li lang-tag="project-description2-2"> Uses the concept of widgets (buttons, frames, toplevels) and geometry managers to place elements on the screen. The Library
                                         handles the addition of new types of widgets or geometry managers by the user.
                                     </li>
-                                    <li> This project enabled me to manipulate many aspects of programmation such as event programming or  polymorphism in typedef structures (used for object-oriented programming).
+                                    <li lang-tag="project-description2-3"> This project enabled me to manipulate many aspects of programmation such as event programming or  polymorphism in typedef structures (used for object-oriented programming).
                                         It really helped me enhance my level in C as a huge part of the project consisted in debugging, 
                                         finding memory errors and leaks and optimizing the code to gain fluidity when moving the top levels, etc...
                                     </li>
@@ -65,24 +67,26 @@
                 </div>
 
                 <div class="projects">
-                    <h1> Personnal projects </h1>
+                    <h1 lang-tag="personal-projects"> Personal projects </h1>
                     <section> 
                         <div>
-                            <p class="title"> 2D Platformer game with pygame (python) </p>
-                            <p class="timeline"> Summer 2022 </p>
+                            <p class="title" lang-tag="project3"> This website !</p>
+                            <p class="timeline" lang-tag="project-timeline3"> Since June 2022 </p>
                             <p class="description">
 
                                 <ul>
-                                    <li> Description in coming... </li>
+                                    <li lang-tag="project-description3-1"> Small website built from scratch to present my CV, my projects until now.</li>
+                                    <li lang-tag="project-description3-2"> First step into the web programming world. I learned the very basics of HTML, CSS and a little bit of Javascript (essentially for the menu, the translations between French and English). </li>
+                                    <li lang-tag="project-description3-3"> This project is in constant amelioration as I'm learning by myself when I find time. I hope you enjoy it !</li>
                                 </ul>
                             </p>
                         </div>
-                        <div class="example"> <img src="images/profilepic.jpg"> </div>
                     </section>
                 </div>
 
             </div>
         </div>
         <script src="js/script.js"> </script>
+        <script src="js/translate.js"></script>
     </body>
 </html>

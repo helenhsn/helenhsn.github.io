@@ -59,7 +59,7 @@ header {
     color: white;
 }
 
-.navbar a::after {
+nav a::after, .name a::after {
     content: '';
     width: 100%;
     position: absolute;
@@ -72,7 +72,7 @@ header {
     transition: 0.3s;
 }
 
-.navbar a:hover::after {
+nav a:hover::after, .name a:hover::after {
     top: 1.4em;
     transform: scaleX(1);
     transform-origin: center;
@@ -81,6 +81,11 @@ header {
 
 .menu-logo {
     display:none;
+}
+
+.language-logo {
+    width: 32px;
+    margin-right: 20px;
 }
 
 .name {
@@ -94,7 +99,7 @@ nav {
     text-align: right;
 }
 
-nav ul li {
+nav ul li{
     display:inline-block;
     margin: 0.4em 0;
     margin-right: 4%;
@@ -264,7 +269,7 @@ h1 {
 
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1000px) {
     .menu-logo {
         width: 20px;
         display:block;

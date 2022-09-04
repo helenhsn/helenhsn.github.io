@@ -10,3 +10,4 @@ function togglemenu() {
         menu.style.maxHeight = "0%";
     }
 }
+

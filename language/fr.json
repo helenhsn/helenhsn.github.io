@@ -1,0 +1,93 @@
+{
+    "experience" : "Expérience",
+    "projects" : "Projets",
+
+    "aboutme" : "A propos de moi",
+    "aboutme-ph1" : "Je suis étudiante en deuxième année d'école d'ingénieurs à l'ENSIMAG (École Nationale Supérieure d'Informatique et de Mathématiques Appliquées de Grenoble). Mes cours sont principalement liés à l'ingénierie logicielle, la sécurité.",
+    "aboutme-ph2" : "Lorsque je ne suis pas en cours, j'aime travailler sur des projets personnels qui challengent mon intellect. Surtout lorsqu'il s'agit de projets impliquant une partie artistique ou mathématique je deviens davantage curieuse, j'ai toujours envie d'en apprendre plus, même dans des domaines qui me sont complètement inconnus.",
+    "aboutme-ph3" : "Dernièrement je me suis penchée sur la programmation web en construisant ce site et en l'améliorant au fur et à mesure, puis j'ai également programmé un raycasting en C",
+    "aboutme-ph4" : "Enfin, lorsque je ne programme pas, vous me trouverez probablement sur un mur d'escalade, en train de jouer de la clarinette, de la guitare ou à des jeux vidéos.",
+    "contact" : "Envie d'en apprendre plus ? N'hésitez pas à me contacter !",
+
+    "schooling" : "Scolarité",
+
+    "timeline1" : "Depuis septembre 2021",
+    "diploma1" : "Diplôme d'ingénieurs en informatique et mathématiques appliquées",
+    "description1-1" : "Ecole d'ingénieurs en 3 ans spécialisée en informatique et mathématiques appliquées.",
+    "description1-2" : "Spécialité : TODO !!!!!!!!!!!!!!!!!!!!!!!!!",
+
+    "title2" : "La Prépa des INP (National Polytechnic Institute), Grenoble",
+    "timeline2" : "Septembre 2019 - Juin 2021",
+    "diploma2" : "Classement : major de promotion (formation non diplomante)",
+    "description2" : "Classe préparatoire aux écoles d'ingénieurs en 2 ans avec des cours intensifs en mathématiques, informatique, physique et chimie.",
+
+    "timeline3" : "Septembre 2016 - Juin 2019",
+    "diploma3" : "Baccalauréat, félicitations du jury(19,18/20)",
+    "description3-1" : "",
+    "description3-2" : "Cours principalement reliés aux sciences (mathématiques, physique, chimie, biologie).",
+    "description3-3" : "Projet de seconde année (TPE) sur l'étude et l'amélioration du vol des avions en papier.",
+
+    "other-education" : "Autres types d'éducation",
+
+    "title4" : "Apprentissage de la guitare en autodidacte",
+    "timeline4" : "Depuis 2018",
+    "description4-1" : "Apprentissage via des tutoriels, vidéos sur youtube et revues sur internet.",
+    "description4-2" : "Pas de reproduction sur scène à ce jour...",
+
+    "title5" : "Conservatoire à Rayonnement Communal (CRC) de Meylan",
+    "diploma5" : "Brevet musical de deuxième cycle (sur trois) en clarinette",
+    "description5-1" : "Cours de pratique musicale en clarinette et cours de solfège.",
+    "description5-2" : "J'ai eu l'opportunité de rejoindre en 2015 un orchestre nommé Bo.Per.Cui qui m'a permis de participer à de nombreux concerts (en France et en Allemagne). ",
+
+    "pro-experiences" : "Expériences professionnelles",
+
+    "job1" : "Vendeuse à IKEA Grenoble",
+    "job-timeline1" : "18 juillet 2022 - 8 août 2022 (3 semaines)",
+    "job-description1-1" : "Première expérience professionnelle dans une multinationale." ,
+    "job-description1-2" : "Mon travail principal était de répondre aux demandes et questionnements des clients.",
+    "job-description1-3" : "Je devais aussi m'occuper du restockage des rayons et de leur maintenance (arrosage des plantes, rangement des étagères...).",
+    "job-description1-4" : "Ce travail m'a vraiment permis de gagner en confiance car je devais prendre des initiatives toute seule devant les clients et je devais surtout m'exprimer correctement. Ce job m'a appris à être responsable au travail, à bien me comporter au sein d'une entreprise avec un règlement strict ainsi qu'avec mes collègues et les clients.",
+
+    "job2" : "Tuteur à la Prépa des INP",
+    "job-timeline2" : "Novembre 2021 - Mars 2022 (4 mois)",
+    "job-description2-1" : "Dispense de cours en mathématiques, physique et chimie pour deux étudiants de première année en difficulté.",
+    "job-description2-2" : "Chaque cours était divisé en plusieurs moments-clés. Les élèves pouvaient tout d'abord poser des questions sur des difficultés qu'ils avaient dans certaines matières ou dans leur organisation pour travailler. Cela permettait de définir ce qu'on allait travailler aux séances suivantes. Ensuite, nous passions le reste du cours à reviser le cours et faire de nouveaux exercices que j'avais créés pour eux.",
+
+    "job3" : "Stage ouvrier à LDLC, Saint-Martin-d'Hères",
+    "job-timeline3" : "Mai 2021 - Juin 2021 (6 semaines)",
+    "job-description3-1" : "",
+    "job-description3-2" : "Installation d'OS, montage de PC.",
+    "job-description3-3" : "Prise en charge des clients en boutique (encaissement, commandes en ligne, click&collect). Restockage de l'entrepôt, rangement des rayons...",
+    "job-description3-4" : "Mise à jour de certaines parties de l'inventaire.",
+
+    "other-experiences" : "Autres expériences",
+    "job4" : "Conseillère municipale des jeunes de Meylan",
+    "job-timeline4" : "2010-2012 (2 ans)",
+    "job-description4-1" : "Mandat de 2 ans en commission intergénérationnelle. Participation à des séminaires, rencontres avec le député de l'Isère et la maire de Meylan.",
+    "job-description4-2" : "Organisation d'évènements pour les personnes âgées des EHPAD (concerts, rencontres, installation de potagers...)",
+    "job-description4-3" : "Visite de l'Assemblée Nationale et du Sénat à Paris.",
+
+
+
+    "school-projects" : "Projets en école",
+
+    "project1" : "Modélisation de la méthode de Monte Carlo en python",
+    "project-timeline1" : "Décembre 2021 (1 mois, travail personnel)",
+    "project-description1-1" : "Calcul d'une approximation de Pi en utilisant la méthode de Monte Carlo en fonction de paramètres rentrés en ligne de commande.",
+    "project-description1-2" : "Génération d'une image animée (GIF) représentant l'évolution de l'approximation de Pi à l'aide d'images au format .ppm (chaque pixel détient un code RGB). Chaque approximation calculée est affichée avec un afficheur 7-segment qui modifie la couleur des pixels en noir.",
+    "project-description1-3" : "Ce projet codé à partir de rien m'a aidé à travailler sur l'optimisation d'un programme et à utiliser des structures de données adaptées (dictionnaires, itérateurs, etc).",
+
+    "project2" : "Librairie pour interfaces graphiques en C",
+    "project-timeline2" : "Mai 2022 (3 semaines, en équipe de 3)",
+    "project-description2-1" : "Librairie codée entièrement en C, similaire à tkinter en python. Cette dernière peut être utilisée pour construire des jeux simples ou des petites applications.",
+    "project-description2-2" : "Utilise le concept de widgets (buttons, frames, toplevels) et de gestionnaire de géometrie pour placer les éléments sur l'écran. Cette librairie gère également l'ajout de nouveaux widgets et de nouveaux gestionnaires de géométrie (gridder, par exemple) par l'utilisateur.",
+    "project-description2-3" : "Ce projet m'a permis de manipuler de nombreux aspects comme la programmation évènementielle, l'utilisation de polymorphismes en C dans les structures, etc. Cela m'a aussi permis d'améliorer mon niveau en C car une grosse partie de mon travail consistait à débugger, trouver des leaks et erreurs mémoires, les corriger, optimiser mon code pour gagner en fluidité et en rapidité...",
+
+
+    "personal-projects" : "Projets personnels",
+    "project3" : "Ce site web !",
+    "project-timeline3" : "Depuis juin 2022",
+    "project-description3-1" : "Petit site web construit à partir de rien pour présenter mon CV et mes projets.",
+    "project-description3-2" : "Représente mon premier pas dans le monde de la programmation web. J'ai pu apprendre les bases de l'HTML, du CSS et un petit peu de Javascript pour animer mon menu et effectuer les traductions de l'anglais au français (et inversement).",
+    "project-description3-3" : "Ce projet est en constante amélioration car j'apprends au fur et à mesure lorsque je trouve du temps. J'espère que vous l'appréciez !"
+}
