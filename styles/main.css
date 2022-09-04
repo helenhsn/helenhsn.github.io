@@ -59,7 +59,7 @@ header {
     color: white;
 }
 
-nav a::after, .name a::after {
+nav li a::after, .name a::after {
     content: '';
     width: 100%;
     position: absolute;
@@ -72,7 +72,7 @@ nav a::after, .name a::after {
     transition: 0.3s;
 }
 
-nav a:hover::after, .name a:hover::after {
+nav li a:hover::after, .name a:hover::after {
     top: 1.4em;
     transform: scaleX(1);
     transform-origin: center;
@@ -99,7 +99,7 @@ nav {
     text-align: right;
 }
 
-nav ul li{
+nav ul li {
     display:inline-block;
     margin: 0.4em 0;
     margin-right: 4%;
@@ -253,6 +253,7 @@ h1 {
     max-width: 20rem;
     overflow-x: hidden;
     margin:0 2%;
+    margin-left: 1rem;
 }
 
 .example {
