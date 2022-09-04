@@ -38,14 +38,6 @@ function translate(lang, tagAttr){
     var translate = new Translate();
     translate.init(tagAttr, lang);
     translate.process();
-    if(lang == 'en'){
-      $("#enTranslator").css('color', '#f4623a');
-      $("#frTranslator").css('color', '#212529');
-    } 
-    if(lang == 'fr'){
-      $("#frTranslator").css('color', '#f4623a');
-      $("#enTranslator").css('color', '#212529');
-    }
 }
 
 $(document).ready(function(){
