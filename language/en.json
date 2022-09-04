@@ -53,14 +53,14 @@
 
     "job2" : "Mentoring at la Prépa des INP",
     "job-timeline2" : "November 2021 - Mars 2022 (4 months)",
-    "job-description2-1" : "Dispense of courses related to mathematics, physics and chemistry to two first-year students.",
+    "job-description2-1" : "Dispense of courses related to mathematics, physics and chemistry to two first-year students in difficulties in these classes.",
     "job-description2-2" : "Each course was divided in several key moments. At the beginning, the students could ask questions about particular difficulties in their classes or in their work organisation. It allowed me to prepare the next classes. After that, the rest of the class was about revisions of the current lesson and exercises that I had prepared before then.",
 
     "job3" : "Internship at LDLC, Saint-Martin-d'Hères",
     "job-timeline3" : "May 2021 - June 2021 (6 weeks) ",
     "job-description3-1" : "Worker internship required for the end of my preparatory classes.",
-    "job-description3-2" : "Computer set-ups (installation of Windows OS, assembly of the different elements of the computer's architecture).",
-    "job-description3-3" : "Handling of clients in the shop (cashing, online orders, click and collect...). Handling of the restocking (packages recetion, placement in the shops...).",
+    "job-description3-2" : "Computer set-ups (installation of Windows OS, assembly of the different components of the computer's architecture).",
+    "job-description3-3" : "Handling of clients in the shop (cashing, online orders, click and collect...). Restocking (packages recetion, placement in the shop...).",
     "job-description3-4" : "Update of certains parts of the company's inventory.",
 
     "other-experiences" : "Other types of experience",
@@ -76,7 +76,7 @@
 
     "project1" : "Modelisation of Monte Carlo's method in python",
     "project-timeline1" : "December 2021 (1 month, solo work)",
-    "project-description1-1" : "Computation of pi's approximation using Monte Carlo's method using the given parameters in the command line.",
+    "project-description1-1" : "Computation of pi's approximation using Monte Carlo's method with the given parameters in the command line.",
     "project-description1-2" : "Generation of an animated image (GIF) showing the evolution of pi's approximation, using .ppm images format (each pixel is given an RGB code). The writing of each approximation is done with a 7-segment display for each digit that changes the pixel in black.",
     "project-description1-3" : "This project built from scratch helped me work on python and on optimization using various data structures (dictionnary, iterators, tables, etc).",
 
