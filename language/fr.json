@@ -14,7 +14,7 @@
     "timeline1" : "Depuis septembre 2021",
     "diploma1" : "Diplôme d'ingénieurs en informatique et mathématiques appliquées",
     "description1-1" : "Ecole d'ingénieurs en 3 ans spécialisée en informatique et mathématiques appliquées.",
-    "description1-2" : "Spécialité : TODO !!!!!!!!!!!!!!!!!!!!!!!!!",
+    "description1-2" : "Spécialité : modélisation 3D, la simulation, l'imagerie ainsi que la sécurité informatique.",
 
     "title2" : "La Prépa des INP (National Polytechnic Institute), Grenoble",
     "timeline2" : "Septembre 2019 - Juin 2021",
@@ -69,7 +69,7 @@
 
 
 
-    "school-projects" : "Projets en école",
+    "school-projects" : "Projets scolaires",
 
     "project1" : "Modélisation de la méthode de Monte Carlo en python",
     "project-timeline1" : "Décembre 2021 (1 mois, travail personnel)",

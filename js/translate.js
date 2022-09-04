@@ -7,6 +7,7 @@ function Translate() {
 	//translatation
 	this.process = function(){
 		_self = this;
+		console.log("process fct");
 		var xrhFile = new XMLHttpRequest();
 		//load content data 
 		xrhFile.open("GET", "/language/" + this.lang + ".json", false);
@@ -34,19 +35,12 @@ function Translate() {
 }
 
 //function called when clicking on FR or UK flags
-function translate(lang, tagAttr){
-    var translate = new Translate();
-    translate.init(tagAttr, lang);
-    translate.process();
+function translate_fct(lang, tagAttr){
+
+	console.log("translate");
+    var translator = new Translate();
+    translator.init(tagAttr, lang);
+    translator.process();
+
 }
 
-$(document).ready(function(){
-  //HTML element (English) with attribute lang-tag
-  $("#enTranslator").click(function(){
-    translate('en', 'lang-tag');
-  });
-  //HTML element (French) with attribute lang-tag
-  $("#frTranslator").click(function(){
-    translate('fr', 'lang-tag');
-  });
-});
