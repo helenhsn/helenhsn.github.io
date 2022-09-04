@@ -190,6 +190,12 @@ h1 {
     text-align: left;
 }
 
+.perso-projects-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .events p {
     margin: 0.5rem 0rem;
 }
@@ -253,6 +259,7 @@ h1 {
 .projects img {
     max-width: 20rem;
     overflow-x: hidden;
+    border-radius: 0.5rem;
     margin:0 2%;
     margin-left: 1rem;
 }
