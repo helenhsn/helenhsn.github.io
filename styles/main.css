@@ -99,7 +99,7 @@ nav {
     text-align: right;
 }
 
-nav ul li {
+nav ul li{
     display:inline-block;
     margin: 0.4em 0;
     margin-right: 4%;
@@ -185,6 +185,7 @@ h1 {
     flex-direction: column;
     padding: 0 2%;
     align-items: flex-start;
+    border-radius: 0.5em;
     background-color: #eeeeee;
     text-align: left;
 }
