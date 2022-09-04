@@ -12,66 +12,68 @@
                 <nav>
                     <ul id="menu">
                         <li><a href="education.html"> Education </a></li>
-                        <li> Experience </li>
-                        <li><a href="projects.html"> Projects </a></li>
+                        <li lang-tag="experience"> Experience </li>
+                        <li ><a href="projects.html" lang-tag="projects"> Projects </a></li>
                         <li> <a href="/CV.pdf"> CV </a></li>
                     </ul>
                 </nav>
+                <a href="javascript:void(0);"><img src="images/french_flag.png" class="language-logo" id="frTranslator"  onclick="translate('fr', 'lang-tag')"></a>
+                <a href="javascript:void(0);"><img src="images/british_flag.png" class="language-logo" id="enTranslator" onclick="translate('en', 'lang-tag')"></a>
                 <img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()">
             </div>
             <div class="contents">
                 <div class="events">
-                    <h1> Professional experiences </h1>
+                    <h1 lang-tag="pro-experiences"> Professional experiences </h1>
                     <section>
-                        <p class="title"> Seller at IKEA Grenoble </p>
-                        <p class="timeline"> Since July 2022 </p>
+                        <p class="title" lang-tag="job1"> Seller at IKEA Grenoble </p>
+                        <p class="timeline" lang-tag="job-timeline1"> 18 July 2022 - 8 August 2022 (</p>
                         <p class="description"> 
                             <ul>
-                                <li> First real professionnal experience in a multinational corporation. </li>
-                                <li> My first job was to handling all the clients' resquests (it was my priority). </li>
-                                <li> Then, I had to handle the restocking and the maintenance of the shelves and sections.</li>
-                                <li> This job really helped me gain in confidence in front of people as I had to take initiatives in front of the clients,
+                                <li lang-tag="job-description1-1"> First real professionnal experience in a multinational corporation. </li>
+                                <li lang-tag="job-description1-2"> My main job was to handling all the clients' resquests. </li>
+                                <li lang-tag="job-description1-3"> I also had to handle the restocking and the maintenance of the shelves and sections.</li>
+                                <li lang-tag="job-description1-4"> This job really helped me gain in confidence in front of people as I had to take initiatives in front of the clients,
                                     express myself correctly. It taught me how to be reponsible at work and how to behave well in a corporation, as much with my colleagues as with the clients.
                                 </li>
                             </ul>
                         </p>
                     </section>
                     <section>
-                        <p class="title"> Mentoring at la Prépa des INP </p>
-                        <p class="timeline">   November 2021 - Mars 2022 (4 months) </p>
+                        <p class="title" lang-tag="job2"> Mentoring at la Prépa des INP </p>
+                        <p class="timeline" lang-tag="job-timeline2">   November 2021 - Mars 2022 (4 months) </p>
                         <p class="description">
                             <ul>
-                                <li> Dispense of courses related to mathematics, physics and chemistry to two first-year students.  </li>
-                                <li> Each course was divided in several parts : questions about particular difficulties in the previous class,
+                                <li lang-tag="job-description1-1"> Dispense of courses related to mathematics, physics and chemistry to two first-year students.  </li>
+                                <li lang-tag="job-description1-2"> Each course was divided in several parts : questions about particular difficulties in the previous class,
                                     revisions of the current lesson and exercises.</li>
                             </ul>
                         </p>
                     </section>
                     <section>
-                        <p class="title"> Internship at LDLC in Saint-Martin-d'Hères </p>
-                        <p class="timeline">   May 2021 - June 2021 (6 weeks) </p>
+                        <p class="title" lang-tag="job3" > Internship at LDLC in Saint-Martin-d'Hères </p>
+                        <p class="timeline" lang-tag="job-timeline3">   May 2021 - June 2021 (6 weeks) </p>
                         <p class="description">
                             <ul>
-                                    <li> Worker internship required for the end of my preparatory classses. </li>
-                                    <li> Computer set-ups (installation of Windows OS, assembly of the different elements of the computer's architecture).
+                                    <li lang-tag="job-description3-1"> Worker internship required for the end of my preparatory classses. </li>
+                                    <li lang-tag="job-description3-2"> Computer set-ups (installation of Windows OS, assembly of the different elements of the computer's architecture). </li>
                                     
-                                    <li> Handling of clients in the shop (cashing, online orders, click and collect...). Handling of the restocking (packages recetion, placement in the shops...). </li>
+                                    <li lang-tag="job-description3-3"> Handling of clients in the shop (cashing, online orders, click and collect...). Handling of the restocking (packages recetion, placement in the shops...). </li>
                                     
-                                    <li> Update of certains parts of the company's inventory.</li>
+                                    <li lang-tag="job-description3-4"> Update of certains parts of the company's inventory.</li>
                             </ul>
                         </p>
                     </section>
                 </div>
                 <div class="events">
-                    <h1> Other types of experience </h1>
+                    <h1 lang-tag="other-experiences"> Other types of experience </h1>
                     <section>
-                        <p class="title"> Young town councillor in Meylan, France </p>
-                        <p class="timeline">   2010 - 2012 (2 years) </p>
+                        <p class="title" lang-tag="job4"> Young town councillor in Meylan, France </p>
+                        <p class="timeline" lang-tag="job-timeline4">   2010 - 2012 (2 years) </p>
                         <p class="description"> 
                             <ul>
-                                <li> Two-year mandate in the intergenerational committee.</li>
-                                <li> Organization of events (concerts, meetings) in nursing homes. </li>
-                                <li> Tour of the national assembly and the Sénat. </li>
+                                <li lang-tag="job-description4-1"> Two-year mandate in the intergenerational committee.</li>
+                                <li lang-tag="job-description4-2"> Organization of events (concerts, meetings) in nursing homes. </li>
+                                <li lang-tag="job-description4-3"> Tour of the national assembly and the Sénat in Paris. </li>
                             </ul>
                         </p>
                     </section>
@@ -79,5 +81,6 @@
             </div>
         </div>
         <script src="js/script.js"> </script>
+        <script src="js/translate.js"></script>
     </body>
 </html>

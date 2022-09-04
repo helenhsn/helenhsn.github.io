@@ -5,40 +5,42 @@
         <link href="styles/main.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body onload="translate('fr','lang-tag')">
         <div class="container">
             <div class="navbar">
                 <div class="name"> Hélène Hassan </div>
                 <nav>
                     <ul id="menu">
                         <li><a href="education.html"> Education </a></li>
-                        <li><a href="experience.html"> Experience </a></li>
-                        <li><a href="projects.html"> Projects </a></li>
+                        <li><a href="experience.html" lang-tag="experience"> Experience </a></li>
+                        <li><a href="projects.html" lang-tag="projects"> Projects </a></li>
                         <li> <a href="/CV.pdf"> CV </a></li>
                     </ul>
                 </nav>
+                <a href="javascript:void(0);"><img src="images/french_flag.png" class="language-logo" id="frTranslator"  onclick="translate('fr', 'lang-tag')"></a>
+                <a href="javascript:void(0);"><img src="images/british_flag.png" class="language-logo" id="enTranslator" onclick="translate('en', 'lang-tag')"></a>
                 <img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()">
             </div>
             <div class="contents">
                 <section class="aboutme">
                     <div class="aboutme-img"> <img src="images/profilepic.jpg"width="250px" height="250px"> </div>
                     <div class="aboutme-content"> 
-                        <h1> About me </h1>
+                        <h1 lang-tag="aboutme"> About me </h1>
                         <section>
                             <ul>
-                                <li> I'm a second year student scolarized at ENSIMAG, an Engineering school based in Grenoble, France. 
+                                <li lang-tag="aboutme-ph1"> I'm a second year student scolarized at ENSIMAG, an Engineering school based in Grenoble, France. 
                                     My courses are mainly related to software engineering, computer security and architecture of complex systems.
                                 </li>
-                                <li>
+                                <li lang-tag="aboutme-ph2">
                                     When I'm not in school, I enjoy working on projects that challenge my intellect. Especially when it comes to art, 
                                     computer sciences or mathematics, I'm very curious and eager to learn new things, even new fields that are completely unfamiliar to me.
                                 </li>
-                                <li>
+                                <li lang-tag="aboutme-ph3">
                                     Lately I've been obsessing with web development, but I also really enjoy spending time on cybersecurity challenges, 
                                     or on art related projects such as pixel art games...
                                 </li>
-                                <li>
-                                    When I'm not programming, you'll probably find me climbing on walls or rocks, playing clarinet, guitar or video games.
+                                <li lang-tag="aboutme-ph4">
+                                    Finally, when I'm not programming, you'll probably find me climbing on walls or rocks, playing clarinet, guitar or video games.
                                 </li>
                             </ul>
 
@@ -69,5 +71,6 @@
             </div>
         </div>
         <script src="js/script.js"> </script>
+        <script src="js/translate.js"></script>
     </body>
 </html>

@@ -1,0 +1,96 @@
+{
+    "experience" : "Experience",
+    "projects" : "Projects",
+    "aboutme" : "About me",
+    "aboutme-ph1" : "I'm a second year student scolarized at ENSIMAG, an Engineering school based in Grenoble, France. My courses are mainly related to software engineering, computer security and architecture of complex systems.",
+    "aboutme-ph2" : "When I'm not in school, I enjoy working on projects that challenge my intellect. Especially when it comes to art, computer sciences or mathematics, I'm very curious and eager to learn new things, even new fields that are completely unfamiliar to me.",
+    "aboutme-ph3" : "Lately I've been working on web development, but I also really enjoy spending time on cybersecurity challenges, or on art related projects such as pixel art games...",
+    "aboutme-ph4" : "Finally, when I'm not programming, you'll probably find me climbing on walls or rocks, playing clarinet, guitar or video games.",
+    "contact" : "Want to get in touch ? Don't hesitate to contact me !",
+
+
+
+    "schooling" : "Schooling",
+
+    "timeline1" : "Since September 2021",
+    "diploma1" : "Engineering degree in computer sciences",
+    "description1-1" : "Three-years engineering school in computer sciences and applied mathematics based in Grenoble.",
+    "description1-2" : "Specialty : TODO !!!!!!!!!!!!!!!!!!!!!!!!!",
+
+    "title2" : "La Prépa des INP (National Polytechnic Institute), Grenoble",
+    "timeline2" : "September 2019 - June 2021",
+    "diploma2" : "Ranking : head of the year but no diploma delivered",
+    "description2" : "Preparatory classes : two-year undergraduate intensive courses mainly related to mathematics, physics and chemistry.",
+
+    "timeline3" : "September 2016 - June 2019",
+    "diploma3" : "Baccalauréat (A levels) , highest honours (19,18/20)",
+    "description3-1" : "Secondary school.",
+    "description3-2" : "Courses mainly related to sciences (mathematics, physics, chemistry and biology).",
+    "description3-3" : "Second-year project on how to improve the flight of paper planes.",
+
+    "other-education" : "Other types of education",
+
+    "title4" : "Self-teaching of the guitar",
+    "timeline4" : "Since 2018",
+    "description4-1" : " Learning of the guitar by following courses on youtube.",
+    "description4-2" : "No performance on stage to this day...",
+
+    "title5" : "Meylan's Academy of music",
+    "diploma5" : "Certificate in music studies (instrument : clarinet)",
+    "description5-1" : "Practices in clarinet, courses in music theory.",
+    "description5-2" : "Around 2015 I joined an orchestra called Bo.Per.Cui which gave me many opportunities to perform on stage (in France and Germany).",
+
+
+
+    "pro-experiences" : "Professional experiences",
+
+    "job1" : "Seller at IKEA Grenoble",
+    "job-timeline1" : "18 July 2022 - 8 August 2022 (3 weeks)",
+    "job-description1-1" : "First real professionnal experience in a multinational corporation." ,
+    "job-description1-2" : "My main job was to handling all the clients' resquests.",
+    "job-description1-3" : "Then, I had to handle the restocking and the maintenance of the sections (plants' watering, shelves' tidying...).",
+    "job-description1-4" : "This job really helped me gain in confidence in front of people as I had to take initiatives by myself in front of the clients, express myself correctly. It taught me how to be reponsible at work and how to behave well in a corporation, as much with my colleagues as with the clients.",
+
+    "job2" : "Mentoring at la Prépa des INP",
+    "job-timeline2" : "November 2021 - Mars 2022 (4 months)",
+    "job-description2-1" : "Dispense of courses related to mathematics, physics and chemistry to two first-year students.",
+    "job-description2-2" : "Each course was divided in several key moments. At the beginning, the students could ask questions about particular difficulties in their classes or in their work organisation. It allowed me to prepare the next classes. After that, the rest of the class was about revisions of the current lesson and exercises that I had prepared before then.",
+
+    "job3" : "Internship at LDLC, Saint-Martin-d'Hères",
+    "job-timeline3" : "May 2021 - June 2021 (6 weeks) ",
+    "job-description3-1" : "Worker internship required for the end of my preparatory classses.",
+    "job-description3-2" : "Computer set-ups (installation of Windows OS, assembly of the different elements of the computer's architecture).",
+    "job-description3-3" : "Handling of clients in the shop (cashing, online orders, click and collect...). Handling of the restocking (packages recetion, placement in the shops...).",
+    "job-description3-4" : "Update of certains parts of the company's inventory.",
+
+    "other-experiences" : "Other types of experience",
+    "job4" : "Young town councillor in Meylan, France",
+    "job-timeline4" : "2010 - 2012 (2 years)",
+    "job-description4-1" : "Two-year mandate in the intergenerational committee. Participation in seminars, meetings with Isère's deputy and Meylan's mayor.",
+    "job-description4-2" : "Organization of events (concerts, meetings, installation of vegetable garden) in nursing homes for the elderly.",
+    "job-description4-3" : "Tour of the national assembly and the Sénat in Paris.",
+
+
+
+    "school-projects" : "School projects",
+
+    "project1" : "Modelisation of Monte Carlo's method in python",
+    "project-timeline1" : "December 2021 (1 month, solo work)",
+    "project-description1-1" : "Computation of pi's approximation using Monte Carlo's method using the given parameters in the command line.",
+    "project-description1-2" : "Generation of an animated image (GIF) showing the evolution of pi's approximation, using .ppm images format (each pixel is given an RGB code). The writing of each approximation is done with a 7-segment display for each digit that changes the pixel in black.",
+    "project-description1-3" : "This project built from scratch helped me work on python and on optimization using various data structures (dictionnary, iterators, tables, etc).",
+
+    "project2" : "Library for graphical interfaces in C",
+    "project-timeline2" : "May 2022 (3 weeks, in team of 3 students)",
+    "project-description2-1" : "Library coded entirely in C, similar to tkinter in python. Can be used to build simple games or applications.",
+    "project-description2-2" : "Uses the concept of widgets (buttons, frames, toplevels) and geometry managers to place elements on the screen. The library handles the addition of new types of widgets or geometry managers by the user.",
+    "project-description2-3" : "This project enabled me to manipulate many aspects of programmation such as event programming or polymorphism in C structures (used for object-oriented programming). It really helped me enhance my level in C as a huge part of the project consisted in debugging, finding memory errors and leaks and optimizing the code to gain fluidity when moving the top levels, etc...",
+
+
+    "personal-projects" : "Personal projects",
+    "project3" : "This website !",
+    "project-timeline3" : "Since June 2022",
+    "project-description3-1" : "Small website built from scratch to present my CV and my projects.",
+    "project-description3-2" : "Symbolizes my first step into the web programming world. I learned the very basics of HTML, CSS and a little bit of Javascript (essentially for the menu, the translations between French and English).",
+    "project-description3-3" : "This project is in constant amelioration as I'm learning by myself when I find time. I hope you enjoy it !"
+}
