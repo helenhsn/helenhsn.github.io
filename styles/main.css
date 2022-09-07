@@ -41,7 +41,6 @@ header {
 
 .navbar {
     background-color: #232630;
-    border-bottom: 0.1rem #eceff4 solid;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 24px;
     width: 100%;
     align-items: center;
@@ -88,8 +87,9 @@ nav li a:hover::after, .name a:hover::after {
 
 .language-logo {
     width: 24px;
-    margin-right: 20px;
+    margin-right: 1rem;
     margin-top: 4px;
+    margin-left: 0;
 }
 
 .name {
@@ -240,6 +240,57 @@ h1 {
 }
 
 
+.CV_button img {
+    margin-right: 0.5rem;
+}
+.CV_button {
+    padding: 1rem;
+    position:fixed;
+    bottom: 3%;
+    right: 2%;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: linear-gradient(#5e81ac, #b1d2f3);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: #6092c4 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #eceff4;
+    display: flex;
+    font-family: 'Merriweather';
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    padding: 0.1rem;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .CV_button:active,
+  .CV_button:hover {
+    outline: 0;
+  }
+  
+  .CV_button span {
+    background-color: #4c566a;
+    padding: 16px 24px;
+    border-radius: 6px;
+    text-align: center;
+    transition: 300ms;
+  }
+
+  .CV_button:hover span {
+    background: none;
+  }
+
+
+
+    
+
 /*PROJECTS*/
 
 .projects section {
@@ -277,6 +328,15 @@ h1 {
 /* CV */
 #CV_menu {
     display: none;
+    flex-direction: column;
+    width:2rem;
+    align-items: center;
+    padding: 0;
+    background-color: #1f4690;
+}
+#CV_menu li {
+    list-style-type: none;
+    margin:0;
 }
 
 /*CONTACT*/
@@ -309,6 +369,7 @@ h1 {
     }
     .navbar {
         max-width: 100%;
+        border-bottom: 0.1rem #eceff4 solid;
     }
     nav ul {
         max-width: 100%;
@@ -320,9 +381,8 @@ h1 {
         left: 0;
         right: 0;
         padding-left: 2%;
-        background-color: #434c5e;
+        background-color: #232630;
         z-index: 1;
-        border-bottom: 0.1rem #2e3440 solid;
         box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 24px;
     }
     nav ul li {
@@ -360,6 +420,14 @@ h1 {
         overflow: hidden;
         transition: 0.6s;
     }
+
+    .CV_button strong{
+        display: none;
+    }
+    .CV_button img {
+        margin: 0;
+    }
+    .CV_button {}
 
 }
 
