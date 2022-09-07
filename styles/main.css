@@ -280,6 +280,15 @@ h1 {
     align-items: center;
 }
 
+/* OTHER ANIMATIONS */
+.events section, .projects section, .contact-list {
+    transition: transform 500ms;
+    will-change: transform;
+}
+
+.events section:hover, .projects section:hover, .contact-list section:hover {
+    transform: translateX(-5px) translateY(-5px);
+}
 
 
 @media screen and (max-width:1000px) {
