@@ -317,7 +317,10 @@ h1 {
         align-items: center;
         padding: 0;
     }
-
+    
+    .events section, .projects section {
+        padding: 0 3%;
+    }
     .example {
         flex-direction: column;
         align-items: center;
