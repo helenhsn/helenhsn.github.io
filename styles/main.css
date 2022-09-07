@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     color:#2e3440;
-    background-color: #ffffff;
+    background-color: #eceff4;
 }
 
 .container {
@@ -40,7 +40,9 @@ header {
 }
 
 .navbar {
-    background-color: #2e3440;
+    background-color: #232630;
+    border-bottom: 0.1rem #eceff4 solid;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 24px;
     width: 100%;
     align-items: center;
     display: flex;
@@ -49,7 +51,7 @@ header {
     font-family: 'Merriweather';
     font-size: 1.4rem;
     height: 4.5rem;
-    color:#ffe5b4;
+    color:#a8ecd7;
 }
 
 .navbar a {
@@ -77,7 +79,7 @@ nav li a:hover::after, .name a:hover::after {
     top: 1.4em;
     transform: scaleX(1);
     transform-origin: center;
-    background-color: #ffe5b4;
+    background-color: #a8ecd7;
 }
 
 .menu-logo {
@@ -108,7 +110,7 @@ nav ul li{
 }
 
 .contents div {
-    padding:3% 0;
+    padding: 3% 0;
 }
 section {
     margin: 5% 0%;
@@ -131,8 +133,8 @@ h1 {
 /*INDEX*/
 
 .aboutme {
-    border-top: 0.1rem ridge #e8aa42 ;
-    border-bottom: 0.1rem ridge #e8aa42;
+    border-top: 0.1rem ridge #8FBCBB ;
+    border-bottom: 0.1rem ridge #8FBCBB;
 }
 
 .aboutme-content h1 {
@@ -169,7 +171,6 @@ h1 {
 }
 
 .contact-list {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 0.5rem;
     display:flex;
     flex-direction: row;
@@ -189,8 +190,9 @@ h1 {
     padding: 0.5% 1.5%;
     align-items: flex-start;
     border-radius: 0.5em;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-align: left;
+    transition: transform 500ms;
+    will-change: transform;
 }
 
 .perso-projects-title {
@@ -216,7 +218,7 @@ h1 {
 }
 
 .events, .projects {
-    border-top: 0.1rem ridge #e8aa42;
+    border-top: 0.1rem ridge #8FBCBB;
 }
 
 .title {
@@ -257,7 +259,7 @@ h1 {
 }
 
 .projects .timeline {
-    color:#e8aa42;
+    color:#1f4690;
 }
 .projects img {
     max-width: 20rem;
@@ -272,6 +274,10 @@ h1 {
     justify-content: center;
 }
 
+/* CV */
+#CV_menu {
+    display: none;
+}
 
 /*CONTACT*/
 .information, .logo {
@@ -280,13 +286,14 @@ h1 {
     align-items: center;
 }
 
-/* OTHER ANIMATIONS */
+
 .events section, .projects section, .contact-list {
-    transition: transform 500ms;
-    will-change: transform;
+    background-color:#D8DEE9;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 24px;
 }
 
-.events section:hover, .projects section:hover, .contact-list section:hover {
+/* OTHER ANIMATIONS */
+.events section:hover, .projects section:hover {
     transform: translateX(-5px) translateY(-5px);
 }
 
@@ -297,9 +304,11 @@ h1 {
         display:block;
         margin-right: 10px;
     }
+    .contents {
+        padding: 3%;
+    }
     .navbar {
         max-width: 100%;
-        border-bottom: 0.1rem #eceff4 solid;
     }
     nav ul {
         max-width: 100%;
@@ -311,16 +320,20 @@ h1 {
         left: 0;
         right: 0;
         padding-left: 2%;
-        background-color: #2e3440;
+        background-color: #434c5e;
+        z-index: 1;
+        border-bottom: 0.1rem #2e3440 solid;
+        box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 24px;
     }
     nav ul li {
         padding: 0.4em 0;
     }
+
     .aboutme, .projects section {
         display:block;
     }
     .contact-list {
-        background-color: #eeeeee;
+        background-color: #D8DEE9;
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -330,6 +343,9 @@ h1 {
     
     .events section, .projects section {
         padding: 0 3%;
+    }
+    .events section:hover, .projects section:hover {
+        transform: translateX(0) translateY(0);
     }
     .example {
         flex-direction: column;

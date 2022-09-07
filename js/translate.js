@@ -7,7 +7,6 @@ function Translate() {
 	//translatation
 	this.process = function(){
 		_self = this;
-		console.log("process fct");
 		var xrhFile = new XMLHttpRequest();
 		//load content data 
 		xrhFile.open("GET", "/language/" + this.lang + ".json", false);
@@ -36,8 +35,6 @@ function Translate() {
 
 //function called when clicking on FR or UK flags
 function translate_fct(lang, tagAttr){
-
-	console.log("translate");
     var translator = new Translate();
     translator.init(tagAttr, lang);
     translator.process();
