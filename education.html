@@ -14,7 +14,6 @@
                         <li> Education </li>
                         <li><a href="experience.html" lang-tag="experience"> Experience </a></li>
                         <li><a href="projects.html" lang-tag="projects"> Projects </a></li>
-                        <li> <a href="/CV.pdf"> CV </a></li>
                     </ul>
                 </nav>
                 <a href="javascript:void(0);"><img src="images/french_flag.png" class="language-logo" id="frTranslator"  onclick="translate_fct('fr', 'lang-tag')"></a>
@@ -83,11 +82,13 @@
                 </div>
             </div>
         </div>
-        <button class="CV_button" role="button"><span class="text"> <img src="images/download.png" width="16px"> <strong>RESUME</strong></span></button>
-        <ul id="CV_menu"> 
-            <li> <a href="javascript:void(0);"> FR </a></li>
-            <li> <a href="javascript:void(0);"> EN </a></li>
-        </ul>
+        <div class="CV">
+            <div><button class="CV_button" role="button" onclick="toggleCV()"><span class="text"> <img src="images/download.png" width="16px"> <strong>CV </strong></span></button></div>
+            <div id="CV_menu">
+                <div id="FR"><a href="javascript:void(0);"> FR </a></div>
+                <div id="EN"><a href="javascript:void(0);"> EN </a></div>
+            </div>
+        </div>
         <script src="js/script.js"> </script>
         <script src="js/translate.js"></script>
     </body>
