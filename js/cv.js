@@ -26,8 +26,7 @@ function toggleCV() {
         CV_menu.style.maxHeight = "50rem";
         changevar(FR.style, initial_values);
         changevar(EN.style, initial_values);
-        if (mediaQuery.matches) {
-
+        if (mediaQuery.matches) { //mobile version
             CV_button.style.backgroundColor = 'var(--cv-color-click)';
         }
     }
@@ -35,7 +34,7 @@ function toggleCV() {
         CV_menu.style.maxHeight = "0rem";
         changevar(FR.style, null_array);
         changevar(EN.style, null_array);
-        if (mediaQuery.matches) {
+        if (mediaQuery.matches) { //mobile version
             CV_button.style.backgroundColor = 'var(--light-color)';
         }
     }

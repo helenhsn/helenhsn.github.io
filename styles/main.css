@@ -147,6 +147,7 @@ h1 {
 /*INDEX*/
 
 .aboutme {
+    margin-top: 0;
     border-top: 0.1rem ridge var(--border-section-color) ;
     border-bottom: 0.1rem ridge var(--border-section-color);
 }
