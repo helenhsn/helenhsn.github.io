@@ -41,7 +41,7 @@ body {
 }
 
 .contents {
-    padding: 2% 15%;
+    padding: 2% 25%;
 
 }
 
@@ -85,6 +85,7 @@ nav li a::after, .name a::after {
     transform-origin: center;
     transition: 0.3s;
 }
+
 
 
 nav li a:hover::after, .name a:hover::after {
@@ -412,7 +413,7 @@ h1 {
 
 .events section, .projects section, .contact-list {
     background-color:var(--bg-section-color);
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 24px;
+    box-shadow: 2px 3px 1px 1px #ecdfdf;
 }
 
 /* OTHER ANIMATIONS */
@@ -454,13 +455,13 @@ h1 {
     }
 
     nav li a, .name a {
-        background: linear-gradient(to right, #884741, var(--light-color) 50%, #e5e9f0 50%);
+        background: linear-gradient(to right, #b12316, var(--light-color) 50%, #e5e9f0 50%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 200% 100%;
         background-position: 100%;
-        transition: background-position 500ms ease-in;
+        transition: background-position 300ms ease-in;
 
     }
     nav li a::after, .name a::after,
