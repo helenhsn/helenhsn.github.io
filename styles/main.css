@@ -498,20 +498,20 @@ h1 {
         transition: 0.6s;
     }
 
-    .CV_button {
+    #CV_button {
         width: 4rem;
     }
 
-    .CV_button strong{
+    #CV_button strong{
         display: none;
     }
-    .CV_button img {
+    #CV_button img {
         margin: 0;
     }
-    .CV_button:after {
+    #CV_button:after {
         width: 4rem;
       }
-    .CV_button:active:after {
+    #CV_button:active:after {
         width: 4rem;
     }
 
