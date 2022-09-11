@@ -23,6 +23,7 @@ function toggleCV() {
         CV_menu.style.maxHeight = "50rem";
         changevar(FR.style, initial_values);
         changevar(EN.style, initial_values);
+        CV_button.style.backgroundColor = "white";
         
     }
     else {
