@@ -511,6 +511,9 @@ h1 {
     #CV_button:after {
         width: 4rem;
       }
+    #CV_button:active {
+        background-color: #4c566a;
+    }
     #CV_button:active:after {
         width: 4rem;
     }
