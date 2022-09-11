@@ -5,7 +5,7 @@
         <link href="styles/main.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body onload="translate_fct('en','lang-tag')">
+    <body onload="init_lang('lang-tag')">
         <div class="container">
             <div class="navbar">
                 <div class="name"><a href="index.html">  Hélène Hassan  </a></div>
@@ -16,8 +16,8 @@
                         <li lang-tag="projects"> Projects </li>
                     </ul>
                 </nav>
-                <a href="javascript:void(0);"><img src="images/french_flag.png" class="language-logo" id="frTranslator"  onclick="translate_fct('fr', 'lang-tag')"></a>
-                <a href="javascript:void(0);"><img src="images/british_flag.png" class="language-logo" id="enTranslator" onclick="translate_fct('en', 'lang-tag')"></a>
+                <a href="javascript:void(0);"><img src="images/french_flag.png" class="language-logo" id="frTranslator"  onclick="change_lang('fr', 'lang-tag')"></a>
+                <a href="javascript:void(0);"><img src="images/british_flag.png" class="language-logo" id="enTranslator" onclick="change_lang('en', 'lang-tag')"></a>
                 <a href="javascript:void(0);"><img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()"></a>
             </div>
             <div class="contents">

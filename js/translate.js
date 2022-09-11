@@ -41,3 +41,22 @@ function translate_fct(lang, tagAttr){
 
 }
 
+var default_lang = 'en';
+
+function init_lang(tagAttr) {
+	let selected_lang = sessionStorage.getItem('lang');
+	if (!selected_lang) {
+		selected_lang = default_lang;
+		sessionStorage.setItem('lang', selected_lang);
+	}
+	translate_fct(selected_lang, tagAttr)
+}
+
+function change_lang(lang, tagAttr) {
+	let selected_lang = sessionStorage.getItem('lang');
+	if (lang != selected_lang) {
+		selected_lang = lang;
+		sessionStorage.setItem('lang', selected_lang);
+		translate_fct(selected_lang, tagAttr);
+	}
+}
