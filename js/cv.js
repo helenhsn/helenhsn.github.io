@@ -19,17 +19,24 @@ function changevar(style, let) {
     style.margin = let[2];
 }
 
+const mediaQuery = window.matchMedia('(max-width:1000px');
+
 function toggleCV() {
     if (CV_menu.style.maxHeight == "0rem") {
         CV_menu.style.maxHeight = "50rem";
         changevar(FR.style, initial_values);
         changevar(EN.style, initial_values);
-        CV_button.style.backgroundColor = 'red';
+        if (mediaQuery.matches) {
+
+            CV_button.style.backgroundColor = 'var(--cv-color-click)';
+        }
     }
     else {
         CV_menu.style.maxHeight = "0rem";
         changevar(FR.style, null_array);
         changevar(EN.style, null_array);
-        CV_button.style.backgroundColor = 'black';
+        if (mediaQuery.matches) {
+            CV_button.style.backgroundColor = 'var(--light-color)';
+        }
     }
 }
