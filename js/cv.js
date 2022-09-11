@@ -6,7 +6,6 @@ var EN = document.getElementById("EN");
 CV_menu.style.maxHeight = "0rem";
 
 let old_values = [FR.style.height, FR.style.padding, FR.style.margin];
-
 let null_array = ["0", "0", "0"];
 
 changevar(FR.style, null_array);
