@@ -1,5 +1,6 @@
+
 var CV_menu = document.getElementById("CV_menu");
-var CV_button = document.getElementById("CV_button");
+var CV_button = document.getElementById("CV");
 var FR = document.getElementById("FR");
 var EN = document.getElementById("EN");
 
@@ -23,14 +24,12 @@ function toggleCV() {
         CV_menu.style.maxHeight = "50rem";
         changevar(FR.style, initial_values);
         changevar(EN.style, initial_values);
-        CV_button.style.backgroundColor = "white";
-        
+        CV_button.style.backgroundColor = 'red';
     }
     else {
         CV_menu.style.maxHeight = "0rem";
         changevar(FR.style, null_array);
         changevar(EN.style, null_array);
-        CV_button.style.backgroundColor = "black"; //mobile version
-
+        CV_button.style.backgroundColor = 'black';
     }
 }
