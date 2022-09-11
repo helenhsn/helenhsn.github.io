@@ -5,7 +5,8 @@ var EN = document.getElementById("EN");
 
 CV_menu.style.maxHeight = "0rem";
 
-let old_values = [FR.style.height, FR.style.padding, FR.style.margin];
+let initial_values = [FR.style.height, FR.style.padding, FR.style.margin];
+var initial_color = CV_button.style.backgroundColor;
 let null_array = ["0", "0", "0"];
 
 changevar(FR.style, null_array);
@@ -20,14 +21,15 @@ function changevar(style, let) {
 function toggleCV() {
     if (CV_menu.style.maxHeight == "0rem") {
         CV_menu.style.maxHeight = "50rem";
-        changevar(FR.style, old_values);
-        changevar(EN.style, old_values);
+        changevar(FR.style, initial_values);
+        changevar(EN.style, initial_values);
         
     }
     else {
         CV_menu.style.maxHeight = "0rem";
         changevar(FR.style, null_array);
         changevar(EN.style, null_array);
+        CV_button.style.backgroundColor = "#eeeee";
 
     }
 }
