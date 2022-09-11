@@ -282,10 +282,10 @@ h1 {
   transition-duration: 0.3s;
 }
 
-.CV_button img {
+#CV_button img {
     margin-right: 0;
 }
-.CV_button {
+#CV_button {
     align-items: center;
     text-transform: uppercase;
     text-align: center;
@@ -309,7 +309,7 @@ h1 {
   }
 
   
-  .CV_button span {
+  #CV_button span {
     background-color: #7bdad2;
     padding: 0.8rem;
     width: 5rem;
@@ -319,10 +319,10 @@ h1 {
   }
 
 
-  .CV_button:hover span {
+  #CV_button:hover span {
     background: none;
   }
-  .CV_button:after {
+  #CV_button:after {
     content: "";
     position: fixed;
     bottom: 3%;
@@ -334,7 +334,7 @@ h1 {
     transition: all 0.3s;
     box-shadow: 0 3px 10px 10px #5e81ac;
   }
-.CV_button:active:after {
+#CV_button:active:after {
     box-shadow: 0 0 0 0 rgb(255, 255, 255);
     position: fixed;
     bottom: 3%;
@@ -347,7 +347,7 @@ h1 {
     transition: 0s;
 }
 
-.CV_button:active {
+#CV_button:active {
     top: 1px;
   }
 
