@@ -210,6 +210,7 @@ h1 {
     will-change: transform;
 }
 
+
 .perso-projects-title {
     display: flex;
     flex-direction: row;
@@ -374,7 +375,8 @@ h1 {
 
 .projects section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects div {
@@ -423,6 +425,16 @@ h1 {
     transform: translateX(-5px) translateY(-5px);
 }
 
+@media screen and (max-width:1300px) {
+    .example {
+        flex-direction: column;
+        align-items: center;
+    }
+    .example img {
+        margin: 1% 0;
+        max-width: 18rem;
+    }
+}
 
 @media screen and (max-width:1000px) {
     .menu-logo {
@@ -496,14 +508,6 @@ h1 {
     }
     .events section:hover, .projects section:hover {
         transform: translateX(0) translateY(0);
-    }
-    .example {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .example img {
-        margin: 1% 0;
     }
 
     #menu {
