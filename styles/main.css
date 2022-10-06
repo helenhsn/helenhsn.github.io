@@ -527,12 +527,6 @@ h1 {
     .example img {
         max-width: 20rem;
     }
-    .raycaster{
-        transition: none;
-    }
-    .raycaster:hover{
-        transform:none;
-    }
 
     #menu {
         overflow: hidden;
