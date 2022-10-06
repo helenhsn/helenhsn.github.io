@@ -89,5 +89,13 @@
     "project-timeline3" : "Depuis juin 2022",
     "project-description3-1" : "Petit site web construit à partir de rien pour présenter mon CV et mes projets.",
     "project-description3-2" : "Représente mon premier pas dans le monde de la programmation web. J'ai pu apprendre les bases de l'HTML, du CSS et un petit peu de Javascript pour animer mon menu et effectuer les traductions de l'anglais au français (et inversement).",
-    "project-description3-3" : "Ce projet est en constante amélioration car j'apprends au fur et à mesure lorsque je trouve du temps. J'espère que vous l'appréciez !"
+    "project-description3-3" : "Ce projet est en constante amélioration car j'apprends au fur et à mesure lorsque je trouve du temps. J'espère que vous l'appréciez !",
+
+    "project4":"Raycaster en C (avec la librairie SDL2)",
+    "project-timeline4":" Août 2022 - Septembre 2022",
+    "project-description4-1":"Interface graphique construite à partir de rien permettant à l'utilisateur de projeter de la lumière (rayons) sur des objets de type lignes ou courbes.",
+    "project-description4-2":"L'utilisateur peut dessiner des courbes en plaçant des points sur l'écran. Chaque fragment de courbe correspond à une courbe de Bézier cubique qui sera rattachée à la prochaine courbe dessinée à l'aide d'un raccordement C². Ainsi, la courbe totale représentée par tous les fragments correspond à une spline. Il est possible de dessiner plusieurs splines en cliquant sur un autre bouton du panel et en revenant sur le bouton 'Curves'.",
+    "project-description4-3":"Il est également possible de modifier l'allure de chaque courbe de Bézier en déplaçant le point blanc sur l'écran (voir exemple ci-dessous).",
+    "project-description4-4":"Le nombre de rayons projetés peut monter jusqu'à 3000 lorsqu'on utilise que des segments et jusqu'à 250-300 lorsqu'on ajoute des courbes de Bézier.",
+    "project-description4-5":"Ce projet m'a permis d'appliquer directement mon savoir en modélisation géométrique. Il m'a permis également de revoir certains aspects de la programmation (programmation évènementielle, optimisation, etc.)."
 }

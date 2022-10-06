@@ -5,7 +5,7 @@
         <link href="styles/main.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body onload="init_lang('lang-tag')">
+    <body onload="init_project_page()">
         <div class="container">
             <div class="navbar">
                 <div class="name"><a href="index.html">  Hélène Hassan  </a></div>
@@ -37,7 +37,7 @@
                                 </ul>
                             </p>
                         </div>
-                        <div class="example"> <img src="images/montecarlo.gif"></div>
+                        <div class="example"> <img class="img" src="images/montecarlo.gif"></div>
                     </section>
 
                     <section>
@@ -58,15 +58,14 @@
                                 </ul>
                             </p>
                             <div class="example">
-                                <img src="images/minesweeper.gif">
-                                <img src="images/widgets.gif">
+                                <img class="img" src="images/minesweeper.gif">
+                                <img class="img" src="images/widgets.gif">
                             </div>
                         </div>
                     </section>
                 </div>
-                
                 <div class="projects">
-                    <div class="perso-projects-title"> <h1 lang-tag="personal-projects"> Personal projects</h1> <img src="images/run.gif" width="40px" height="40px"> </div>
+                    <div class="perso-projects-title"> <h1 lang-tag="personal-projects"> Personal projects</h1></div>
                     <section> 
                         <div>
                             <p class="title" lang-tag="project3"> This website !</p>
@@ -81,11 +80,34 @@
                             </p>
                         </div>
                     </section>
+                    <section>
+                        <div>
+                            <p class="title" lang-tag="project4"> Raycaster in C (using the SDL2 library)</p>
+                            <p class="timeline" lang-tag="project-timeline4"> August 2022 - September 2022 </p>
+                            <p class="description">
+
+                                <ul>
+                                    <li lang-tag="project-description4-1"> Small graphical interface built from scratch allowing the user to cast light (rays) on edges and curves.</li>
+                                    <li lang-tag="project-description4-2"> The user can draw curves by placing points on the screen. Each fragment drawn correspond to a Bézier curve which is connecter to the following curve with a C² junction. Therefore, the global curve (made of all the fragments) drown actually represents a spline.</li>
+                                    <li lang-tag="project-description4-3"> The user can also move the curve as he wants by sliding the white points (see examples below).</li>
+                                    <li lang-tag="project-description4-4"> The number of rays displayed in the screen can be set up to 3000 using only edges, and up to 250 using Bézier curves.</li>
+                                    <li lang-tag="project-description4-5"> This project allowed me to apply directly my mathematical knowledge (regarding geometry modeling) to a concrete project. It allowed me to work again on evenemential programming, optimization and other aspects of programming.</li>
+                                </ul>
+                            </p>
+                            <div class="example">
+                                <img class="raycaster" src="images/raycasting1.gif" width="300px">
+                                <img class="raycaster" src="images/raycasting2.gif"width="300px">
+                                <img class="raycaster" src="images/raycasting3.gif"width="300px">
+                            </div>
+                        </div>
+                    </section> 
+
                 </div>
 
             </div>
         </div>
         <script src="js/menu.js"> </script>
         <script src="js/translate.js"></script>
+        <script src="js/zoom.js"></script>
     </body>
 </html>

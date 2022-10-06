@@ -394,11 +394,22 @@ h1 {
     color:var(--timeline-color);
 }
 .projects img {
-    max-width: 20rem;
+    max-width: 10rem;
     overflow-x: hidden;
-    border-radius: 0.5rem;
+    border-radius: 0.1rem;
     margin:0 2%;
     margin-left: 1rem;
+    transition: transform 800ms;
+}
+.img:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5) translateY(-20%);
+}
+.raycaster:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(1.5);
+    transform: scale(3.5) translateY(-50%);
 }
 
 .example {
@@ -516,6 +527,13 @@ h1 {
     .example img {
         max-width: 20rem;
     }
+    .raycaster{
+        transition: none;
+    }
+    .raycaster:hover{
+        transform:none;
+    }
+
     #menu {
         overflow: hidden;
         transition: 0.6s;
@@ -540,4 +558,3 @@ h1 {
     }
 
 }
-
