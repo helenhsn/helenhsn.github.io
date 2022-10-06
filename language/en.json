@@ -92,5 +92,13 @@
     "project-timeline3" : "Since June 2022",
     "project-description3-1" : "Small website built from scratch to present my CV and my projects.",
     "project-description3-2" : "Symbolizes my first step into the web programming world. I learned the very basics of HTML, CSS and a little bit of Javascript (essentially for the menu, the translations between French and English).",
-    "project-description3-3" : "This project is in constant amelioration as I'm learning by myself when I find time. I hope you enjoy it !"
+    "project-description3-3" : "This project is in constant amelioration as I'm learning by myself when I find time. I hope you enjoy it !",
+
+    "project4":"Raycaster in C (using the SDL2 library)",
+    "project-timeline4":" August 2022 - September 2022",
+    "project-description4-1":"Graphical interface built from scratch allowing the user to cast light (rays) on edges and curves.",
+    "project-description4-2":"The user can draw curves by placing points on the screen. Each fragment of curve drawn correspond to a cubic Bézier curve which is connecter to the following curve with a C² junction. Therefore, the global curve (made of all the fragments) drown actually represents a spline. It is possible to draw several splines on the screen by switching to another button of the panel and going back to the 'Curves' button.",
+    "project-description4-3":"It is also possible to move the curve and change its appearance by sliding the white point (see examples below).",
+    "project-description4-4":"The number of rays displayed in the screen can be set up to 3000 using only edges, and up to 250 using Bézier curves.",
+    "project-description4-5":"This project allowed me to apply directly my mathematical knowledge (regarding geometry modeling) to a concrete project. It allowed me to work again on evenemential programming, optimization and other aspects of programming."
 }
