@@ -404,7 +404,7 @@ h1 {
 .img:hover {
     -ms-transform: scale(2);
     -webkit-transform: scale(1.5);
-    transform: scale(1.5) translateY(-20%);
+    transform: scale(2.5) translateY(-20%);
 }
 .raycaster:hover {
     -ms-transform: scale(2);
