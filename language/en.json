@@ -2,31 +2,32 @@
     "experience" : "Experience",
     "projects" : "Projects",
     "aboutme" : "About me",
-    "aboutme-ph1" : "I'm a second year student scolarized at ENSIMAG, an Engineering school based in Grenoble, France. My courses are mainly related to 3D modelisation, simulation, rendering and computer security.",
+    "aboutme-ph1" : "I'm a second year student scolarized at ENSIMAG, an Engineering school based in Grenoble, France. My courses are mainly related to 3D modelisation, simulation and vision graphics.",
     "aboutme-ph2" : "When I'm not in school, I enjoy working on projects that challenge my intellect. Especially when it comes to art, computer sciences or mathematics, I'm very curious and eager to learn new things, even new fields that are completely unfamiliar to me.",
-    "aboutme-ph3" : "Lately I've been working on web development with the building of this website and I've also managed to create a raycaster in C. As of now, I'm currently studying C++ so that I can learn to use Unreal Engine.",
+    "aboutme-ph3" : "Lately I've been working on web development with the building of this website and I've also managed to create a raycaster in C. As of now, I'm currently GLSL (on my own) so that I can create my own shaders. After that, I will learn C++ (mandatory course) so that I can learn to use Unreal Engine. My knowledge in GLSL will also allow me to create and incorporate shaders into my own projects using OpenGL with C++.",
     "aboutme-ph4" : "Finally, when I'm not programming, you'll probably find me climbing on walls or rocks, playing clarinet, guitar or video games.",
     "contact" : "Want to get in touch ? Don't hesitate to contact me !",
 
 
 
     "schooling" : "Schooling",
-
+    "location1":"Graduate School of Engineering in Applied mathematics and Computer Science, Grenoble, France",
     "timeline1" : "Since September 2021",
     "diploma1" : "Engineering degree in computer sciences",
     "description1-1" : "Three-years engineering school in computer sciences and applied mathematics based in Grenoble.",
-    "description1-2" : "Specialty : 3D modelisation, simulation, rendering and computer security.",
+    "description1-2" : "Specialty : 3D modelisation, simulation, rendering and vision graphics.",
 
-    "title2" : "La Prépa des INP (National Polytechnic Institute), Grenoble",
+    "diploma2" : "Pre-engineering preparation in maths, physics, computer science for the entrance to French “Grandes Ecoles\" ",
     "timeline2" : "September 2019 - June 2021",
-    "diploma2" : "Ranking : head of the year but no diploma delivered",
+    "location2":"Grenoble, France",
+    "ranking" : "Ranking : head of the year (1st place over ~400 students)",
     "description2" : "Preparatory classes : two-year undergraduate intensive courses mainly related to mathematics, physics and chemistry.",
 
+    "location3":"High School in Grenoble, France",
     "timeline3" : "September 2016 - June 2019",
-    "diploma3" : "Baccalauréat (A levels) , highest honours (19,18/20)",
-    "description3-1" : "Secondary school.",
-    "description3-2" : "Courses mainly related to sciences (mathematics, physics, chemistry and biology).",
-    "description3-3" : "Second-year project on how to improve the flight of paper planes.",
+    "diploma3" : "French High School Diploma (Baccalauréat) awarded with highest honours (19,18/20)",
+    "description3-1" : "Courses mainly related to sciences (mathematics, physics, chemistry and biology).",
+    "description3-2" : "Second-year project on how to improve the flight of paper planes.",
 
     "other-education" : "Other types of education",
 
@@ -35,7 +36,8 @@
     "description4-1" : " Learning of the guitar by following courses on youtube.",
     "description4-2" : "No performance on stage to this day...",
 
-    "title5" : "Meylan's Academy of music",
+    "location5" : "Meylan's Academy of music",
+    "timeline5" : "2007-2017",
     "diploma5" : "Certificate in music studies (instrument : clarinet)",
     "description5-1" : "Practices in clarinet, courses in music theory.",
     "description5-2" : "Around 2015 I joined an orchestra called Bo.Per.Cui which gave me many opportunities to perform on stage (in France and Germany).",
@@ -44,35 +46,40 @@
 
     "pro-experiences" : "Professional experiences",
 
-    "job1" : "Seller at IKEA Grenoble",
+    "job1" : "Seller",
     "job-timeline1" : "18 July 2022 - 8 August 2022 (3 weeks)",
+    "job-location1":"IKEA, Grenoble, France",
     "job-description1-1" : "First real professionnal experience in a multinational corporation." ,
     "job-description1-2" : "My main job was to handling all the clients' resquests.",
     "job-description1-3" : "Then, I had to handle the restocking and the maintenance of the sections (plants' watering, shelves' tidying...).",
     "job-description1-4" : "This job really helped me gain in confidence in front of people as I had to take initiatives by myself in front of the clients, express myself correctly. It taught me how to be reponsible at work and how to behave well in a corporation, as much with my colleagues as with the clients.",
 
-    "job2" : "Mentoring at la Prépa des INP",
+    "job2" : "Students' Mentor",
     "job-timeline2" : "November 2021 - Mars 2022 (4 months)",
+    "job-location2" : "La Prépa des INP, Saint-Martin-d'Hères, France",
     "job-description2-1" : "Dispense of courses related to mathematics, physics and chemistry to two first-year students of la Prépa in difficulties in these classes.",
     "job-description2-2" : "Each course was divided in several key moments. At the beginning, the students could ask questions about particular difficulties in their classes or in their work organisation. It allowed me to prepare the content of the next classes. After that, the rest of the class was about revisions of the current lesson and exercises that I had prepared before then.",
 
-    "job3" : "Internship at LDLC, Saint-Martin-d'Hères",
+    "job3" : "Internship",
     "job-timeline3" : "May 2021 - June 2021 (6 weeks) ",
+    "job-location3" : "LDLC, Saint-Martin-d'Hères, France", 
     "job-description3-1" : "Worker internship required for the end of my preparatory classes.",
     "job-description3-2" : "Computer set-ups (installation of Windows OS, assembly of the different components of the computer's architecture).",
     "job-description3-3" : "Handling of clients in the shop (cashing, online orders, click and collect...). Restocking (packages recetion, placement in the shop...).",
     "job-description3-4" : "Update of certains parts of the company's inventory.",
 
-    "job5" : "Engineer assistant at the Grenoble Informatics Laboratory (LIG)",
+    "job5" : "Engineer assistant",
     "job-timeline5":"22 September 2022 - 31 December 2022 (3 months)",
+    "job-location5" : "Grenoble Informatics Laboratory (LIG), France", 
     "job-description5-1":"Research study of scientific literature on the transposition of nudges from a domain to another, especially to the numerical domain.",
     "job-description5-2":"This job taught me the ability to find relevant information (articles, papers) quickly using various resources (ACM, Sci-lab, Research Gate, etc.).",
     "job-description5-3":"I also had the opportunity to learn how to write a file in Markdown and how to use Obsidian.",
 
 
     "other-experiences" : "Other types of experience",
-    "job4" : "Young town councillor in Meylan, France",
+    "job4" : "Young town councillor",
     "job-timeline4" : "2010 - 2012 (2 years)",
+    "job-location4" : "Meylan's town hall, France",
     "job-description4-1" : "Two-year mandate in the intergenerational committee. Participation in seminars, meetings with Isère's deputy and Meylan's mayor.",
     "job-description4-2" : "Organization of events (concerts, meetings, installation of vegetable gardens) in nursing homes for the elderly.",
     "job-description4-3" : "Tour of the national assembly and the Sénat in Paris.",
