@@ -401,16 +401,11 @@ h1 {
     margin-left: 1rem;
     transition: transform 800ms;
 }
-.img:hover {
-    -ms-transform: scale(2);
-    -webkit-transform: scale(1.5);
-    transform: scale(2.5) translateY(-20%);
+.img:hover, .raycaster:hover{
+    transform: scale(1.02);
+    cursor: zoom-in;
 }
-.raycaster:hover {
-    -ms-transform: scale(2);
-    -webkit-transform: scale(1.5);
-    transform: scale(3.5) translateY(-50%);
-}
+
 
 .example {
     display:flex;
@@ -526,9 +521,6 @@ h1 {
     }
     .example img {
         max-width: 20rem;
-    }
-    .img:hover, .raycaster:hover{
-        transform:none;
     }
 
     #menu {
