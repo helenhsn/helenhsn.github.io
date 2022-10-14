@@ -209,6 +209,10 @@ h1 {
     will-change: transform;
 }
 
+.events section:hover, .projects section:hover {
+    transform: translateX(-5px) translateY(-5px);
+}
+
 
 .perso-projects-title {
     display: flex;
