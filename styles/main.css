@@ -201,10 +201,9 @@ h1 {
 
 /*EDUCATION, EXPERIENCE, PROJECTS*/
 .events section, .projects section {
-    flex-direction: column;
-    padding: 0.5% 1.5%;
-    align-items: flex-start;
+    display: block;
     border-radius: 0.5em;
+    padding: 0 1rem;
     text-align: left;
     transition: transform 500ms;
     will-change: transform;
@@ -218,27 +217,41 @@ h1 {
 }
 
 .events p {
-    margin: 0.5rem 0rem;
+    margin: 1rem 0rem;
 }
 
 .events ul, .projects ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 0 0.5rem 0;
     margin: 0;
 }
 
 
 .events li, .projects li {
     text-align: justify;
-    margin: 0.5rem 0rem;
+    margin: 1rem 0rem;
 }
 
 .events, .projects {
     border-top: 0.1rem ridge var(--border-section-color);
 }
+.events div {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+    padding: 0.5rem 0;
+}
+
+.events div p, .events div img {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.events div p {
+    margin-left: 0.5rem;
+}
 
 .title {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     text-transform: uppercase;
     color:var(--title-section-color);
     font-family: 'Merriweather-Bold';
@@ -251,7 +264,7 @@ h1 {
 }
 
 
-.diploma {
+.location {
     font-family: 'Merriweather-Italic';
 }
 
@@ -382,8 +395,11 @@ h1 {
 .projects div {
     margin:0;
     padding:0;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+}
+
+.projects ul {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .projects .title {
@@ -397,8 +413,7 @@ h1 {
     max-width: 10rem;
     overflow-x: hidden;
     border-radius: 0.1rem;
-    margin:0 2%;
-    margin-left: 1rem;
+    margin: 0 0.5rem 1rem 1rem;
     transition: transform 800ms;
 }
 .img:hover, .raycaster:hover{
@@ -426,20 +441,6 @@ h1 {
     box-shadow: 2px 3px 1px 1px #ecdfdf;
 }
 
-/* OTHER ANIMATIONS */
-.events section:hover, .projects section:hover {
-    transform: translateX(-5px) translateY(-5px);
-}
-
-@media screen and (max-width:1300px) {
-    .example {
-        justify-content: space-evenly;
-    }
-    .example img {
-        margin: 1%;
-        max-width: 50%;
-    }
-}
 
 @media screen and (max-width:1000px) {
     .menu-logo {
@@ -515,13 +516,6 @@ h1 {
         transform: translateX(0) translateY(0);
     }
     
-    .example {
-        flex-direction: column;
-        align-items: center;
-    }
-    .example img {
-        max-width: 20rem;
-    }
 
     #menu {
         overflow: hidden;
