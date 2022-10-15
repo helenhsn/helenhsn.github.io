@@ -13,8 +13,8 @@ $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
         bgSize = 'contain';
     } else {
         console.log(this.width, this.height);
-        let new_width = this.width*2.5;
-        let new_height = this.height*2.5;
+        let new_width = this.width*3;
+        let new_height = this.height*3;
         bgSize = new_width.toString() + 'px ' + new_height.toString() + 'px ' ;
     }
     console.log(bgSize);

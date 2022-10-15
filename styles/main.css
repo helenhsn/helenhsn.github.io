@@ -420,6 +420,10 @@ h1 {
     margin: 0 0.5rem 1rem 1rem;
     transition: transform 800ms;
 }
+
+#raycaster {
+    max-width: 14rem;
+}
 .img:hover, .raycaster:hover{
     transform: scale(1.02);
     cursor: zoom-in;
