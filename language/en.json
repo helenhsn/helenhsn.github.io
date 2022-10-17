@@ -4,7 +4,7 @@
     "aboutme" : "About me",
     "aboutme-ph1" : "I'm a second year student scolarized at ENSIMAG, an Engineering school based in Grenoble, France. My courses are mainly related to 3D modelisation, simulation and vision graphics.",
     "aboutme-ph2" : "When I'm not in school, I enjoy working on projects that challenge my intellect. Especially when it comes to art, computer sciences or mathematics, I'm very curious and eager to learn new things, even new fields that are completely unfamiliar to me.",
-    "aboutme-ph3" : "Lately I've been working on web development with the building of this website and I've also managed to create a raycaster in C. As of now, I'm currently GLSL on my own so that I can create my own shaders. After that, I will learn C++ (mandatory course) so that I can learn to use Unreal Engine. My knowledge in GLSL will also allow me to create and incorporate shaders into my own projects using OpenGL with C++.",
+    "aboutme-ph3" : "Lately I've been working on web development with the building of this website and I've also managed to create a raycaster in C. As of now, I'm currently learning GLSL on my own so that I can create my own shaders. After that, I will learn C++ (mandatory course) so that I can learn to use Unreal Engine. My knowledge in GLSL will also allow me to create and incorporate shaders into my own projects using OpenGL with C++.",
     "aboutme-ph4" : "Finally, when I'm not programming, you'll probably find me climbing on walls or rocks, playing clarinet, guitar or video games.",
     "contact" : "Want to get in touch ? Don't hesitate to contact me !",
 

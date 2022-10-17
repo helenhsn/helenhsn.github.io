@@ -186,7 +186,6 @@ h1 {
 }
 
 .contact-list {
-    border-radius: 0.5rem;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -202,7 +201,6 @@ h1 {
 /*EDUCATION, EXPERIENCE, PROJECTS*/
 .events section, .projects section {
     display: block;
-    border-radius: 0.5em;
     padding: 0 1rem;
     text-align: left;
     transition: transform 500ms;
@@ -446,7 +444,7 @@ h1 {
 
 .events section, .projects section, .contact-list {
     background-color:var(--bg-section-color);
-    box-shadow: 2px 3px 1px 1px #ecdfdf;
+    box-shadow: 2px 3px 1px 1px #ecdfdf91;
 }
 
 
