@@ -444,7 +444,7 @@ h1 {
 
 .events section, .projects section, .contact-list {
     background-color:var(--bg-section-color);
-    box-shadow: 2px 3px 1px 1px #ecdfdf91;
+    box-shadow: 2px 3px 1px 1px #ecdfdf;
 }
 
 
