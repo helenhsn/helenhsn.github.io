@@ -144,7 +144,8 @@ h1 {
     text-align: left;
     text-transform: uppercase;
 }
-/*INDEX*/
+
+/* ----------- INDEX ------------------- */
 
 .aboutme {
     margin-top: 0;
@@ -198,13 +199,18 @@ h1 {
     min-width: 2rem;
 }
 
-/*EDUCATION, EXPERIENCE, PROJECTS*/
+/* ----------------- EDUCATION, EXPERIENCE, PROJECTS ------------- */
 .events section, .projects section {
     display: block;
     padding: 0 1rem;
     text-align: left;
     transition: transform 500ms;
     will-change: transform;
+}
+
+.events section, .projects section, .contact-list {
+    background-color:var(--bg-section-color);
+    box-shadow: 2px 3px 1px 1px #ecdfdf;
 }
 
 .events section:hover, .projects section:hover {
@@ -270,7 +276,7 @@ h1 {
     font-family: 'Merriweather-Italic';
 }
 
-/* CV */
+/*-------------- CV TRANSITION -------------- */
 .CV {
     position: fixed;
     bottom: 3%;
@@ -386,7 +392,7 @@ h1 {
 
     
 
-/*PROJECTS*/
+/* ------------ PROJECTS ---------------- */
 
 .projects section {
     display: flex;
@@ -434,21 +440,28 @@ h1 {
 }
 
 
-/*CONTACT*/
+/*------------ CONTACT -------------*/
 .information, .logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* ----------- OTHER TYPES OF SCREENS ------------- */
 
-.events section, .projects section, .contact-list {
-    background-color:var(--bg-section-color);
-    box-shadow: 2px 3px 1px 1px #ecdfdf;
+@media screen and (max-width:1600px) {
+    .aboutme, .projects section {
+        display:block;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .contents {
+        padding: 10%;
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:780px) {
     .menu-logo {
         width: 20px;
         display:block;
@@ -501,11 +514,6 @@ h1 {
         background-position: 0 100%;
     }
 
-
-
-    .aboutme, .projects section {
-        display:block;
-    }
     .contact-list {
         background-color: var(--bg-section-color);
         display:flex;
