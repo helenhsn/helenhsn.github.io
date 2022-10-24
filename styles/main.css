@@ -453,11 +453,16 @@ h1 {
     .aboutme, .projects section {
         display:block;
     }
+    .projects section {
+        padding: 0.5rem 1rem;
+    }
 }
 
 @media screen and (max-width:1000px) {
     .contents {
         padding: 10%;
+    }
+    
 }
 
 
@@ -525,9 +530,6 @@ h1 {
     
     .events section {
         padding: 0rem 1rem;
-    }
-    .projects section {
-        padding: 0.5rem 1rem;
     }
     .events section:hover, .projects section:hover {
         transform: translateX(0) translateY(0);
