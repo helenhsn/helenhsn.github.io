@@ -24,7 +24,7 @@
                 <section class="aboutme">
                     <div class="aboutme-img"> <img src="images/profilepic.jpg"width="250px" height="250px"> </div>
                     <div class="aboutme-content"> 
-                        <h1 lang-tag="aboutme"> About me </h1>
+                        <h1 lang-tag="aboutme"> </h1>
                         <section>
                             <ul>
                                 <li lang-tag="aboutme-ph1"> </li>
@@ -39,26 +39,34 @@
                 <section class="contacts">
                     <h1 lang-tag="contact"> </h1>
                     <div class="contact-list">
-                        <div>
+                        <div class="contact-content">
                             <div class="logo"> <img src="./images/phonecall.png" width="32px"> </div>
-                            <div class="information"> +33650782197 </div>
+                            <div class="information"> +33 6 50 78 21 97 </div>
                         </div>
-                        <div> 
+                        <div class="contact-content"> 
                             <div class="logo"> <img src="./images/email.png" width="32px"> </div>
                             <div class="information"> helenehhassan@gmail.com </div>
                         </div>
-                        <div>
+                        <div class="contact-content">
                             <div class="logo"> <a href="https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-hassan-2934171a8/?originalSubdomain=fr"> <img src="images/linkedin.png" width="32px"> </a> </div>
-                            <div class="information"> click!</div>
+                            <div class="information"> click! </div>
                         </div>
-                        <div>
+                        <div class="contact-content">
                             <div class="logo"> <a href="https://github.com/helenhsn"> <img src="images/github.png" width="32px"> </a> </div>
-                            <div class="information"> click!</div>
+                            <div class="information"> click! </div>
                         </div>
                     </div>
                 </section>
             </div>
         </div>
+        <div class="CV">
+            <div><button id="CV_button" role="button" onclick="toggleCV()"><span id="CV"> <img src="images/download.png" width="16px"> <strong>CV </strong></span></button></div>
+            <div id="CV_menu">
+                <div id="FR"><a href="CV_Helene_Hassan_FR.pdf"> FR </a></div>
+                <div id="EN"><a href="CV_Helene_Hassan_EN.pdf"> EN </a></div>
+            </div>
+        </div>
+        <script src="js/cv.js"></script>
         <script src="js/menu.js"> </script>
         <script src="js/translate.js"></script>
     </body>

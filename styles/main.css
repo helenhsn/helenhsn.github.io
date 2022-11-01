@@ -42,7 +42,8 @@ body {
 
 .contents {
     padding: 2% 25%;
-
+    position: relative;
+    top: 4.5rem;
 }
 
 header {
@@ -57,6 +58,8 @@ a {
     background-color: var(--basic-color);
     box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 24px;
     width: 100%;
+    position: fixed;
+    z-index: 99;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -190,12 +193,18 @@ h1 {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
     margin-top: 1%;
     padding: 0;
 }
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    white-space: nowrap;
+}
 
 .contact-list img {
+    top:0%;
     min-width: 2rem;
 }
 
@@ -204,8 +213,6 @@ h1 {
     display: block;
     padding: 0 1rem;
     text-align: left;
-    transition: transform 500ms;
-    will-change: transform;
 }
 
 .events section, .projects section, .contact-list {
@@ -213,9 +220,6 @@ h1 {
     box-shadow: 2px 3px 1px 1px #ecdfdf;
 }
 
-.events section:hover, .projects section:hover {
-    transform: translateX(-5px) translateY(-5px);
-}
 
 
 .perso-projects-title {
@@ -347,7 +351,7 @@ h1 {
 #CV_button span {
     background-color: var(--light-color);
     padding: 0.8rem;
-    width: 5rem;
+    width: 10rem;
     border-radius: 8px;
     text-align: center;
     transition: 300ms;
@@ -367,10 +371,10 @@ h1 {
     height: 3rem;
     opacity: 0;
     transition: all 0.3s;
-    box-shadow: 0 3px 10px 20px #8b6565;
+    box-shadow: 0 3px 8px 15px #8b6565;
   }
 #CV_button:active:after {
-    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
     position: fixed;
     bottom: 3%;
     right: 2%;
@@ -382,12 +386,9 @@ h1 {
     transition: 0s;
 }
 
-#CV_button:active {
-    top: 1px;
-  }
 
 #CV_menu {
-    transition:3s;
+    transition:1s;
 }
 
     
@@ -539,24 +540,6 @@ h1 {
     #menu {
         overflow: hidden;
         transition: 0.6s;
-    }
-
-    #CV_button {
-        width: 4rem;
-    }
-
-    #CV_button strong{
-        display: none;
-    }
-    #CV_button img {
-        margin: 0;
-    }
-    #CV_button:after {
-        width: 4rem;
-      }
-
-    #CV_button:active:after {
-        width: 4rem;
     }
 
 }
