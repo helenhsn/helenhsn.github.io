@@ -12,12 +12,11 @@ $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
     if (window.matchMedia("(max-width:700px").matches) {
         bgSize = 'contain';
     } else {
-        console.log(this.width, this.height);
         let new_width = this.width*3;
         let new_height = this.height*3;
         bgSize = new_width.toString() + 'px ' + new_height.toString() + 'px ' ;
     }
-    console.log(bgSize);
+
     modal = $('<div>').css({
         background: 'RGBA(0,0,0,0.5) url(' + src + ') no-repeat center',
         backgroundSize: bgSize,
@@ -29,13 +28,6 @@ $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
         left: '0',
         cursor: 'zoom-out'
     }).click(function() {
-        console.log("allo");
         removeModal();
     }).appendTo('.contents');
-    //handling ESC
-    $('.contents').on('keyup.modal-close', function(e) {
-    if (e.key === 'Escape') {
-        removeModal();
-    }
-    });
 });
