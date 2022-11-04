@@ -40,7 +40,7 @@
     "timeline5" : "2007-2017",
     "diploma5" : "Brevet musical de deuxième cycle (sur trois) en clarinette.",
     "description5-1" : "Cours de pratique musicale en clarinette et cours de solfège.",
-    "description5-2" : "J'ai eu l'opportunité de rejoindre en 2015 un orchestre nommé Bo.Per.Cui qui m'a permis de participer à de nombreux concerts (en France et en Allemagne). ",
+    "description5-2" : "J'ai eu l'opportunité de rejoindre un orchestre nommé Bo.Per.Cui en 2015 qui m'a permis de participer à de nombreux concerts (en France et en Allemagne). Ce fut une expérience enrichissante car j'ai pu rencontrer de nouvelles personnes et découvrir une autre culture (allemande).",
 
     "pro-experiences" : "Expériences professionnelles",
 
@@ -95,7 +95,7 @@
     "project-timeline2" : "Mai 2022 (3 semaines, en équipe de 3)",
     "project-description2-1" : "Librairie codée entièrement en C, similaire à tkinter en python. Cette dernière peut être utilisée pour construire des jeux simples ou des petites applications.",
     "project-description2-2" : "Utilise le concept de widgets (buttons, frames, toplevels) et de gestionnaire de géometrie pour placer les éléments sur l'écran. Cette librairie gère également l'ajout de nouveaux widgets et de nouveaux gestionnaires de géométrie (gridder, par exemple) par l'utilisateur.",
-    "project-description2-3" : "Ce projet m'a permis de manipuler de nombreux aspects comme la programmation évènementielle, l'utilisation de polymorphismes en C dans les structures, etc. Cela m'a aussi permis d'améliorer mon niveau en C car une grosse partie de mon travail consistait à débugger, trouver des leaks et erreurs mémoires, les corriger, optimiser mon code pour gagner en fluidité et en rapidité...",
+    "project-description2-3" : "Ce projet m'a permis de manipuler de nombreux aspects comme la programmation évènementielle, l'utilisation de polymorphismes en C dans les structures, etc. Cela m'a aussi permis d'améliorer mon niveau en C car une grosse partie de mon travail consistait à débugger, trouver des leaks et erreurs mémoires, les corriger, optimiser mon code pour gagner en fluidité et en rapidité.",
 
 
     "personal-projects" : "Projets personnels",
