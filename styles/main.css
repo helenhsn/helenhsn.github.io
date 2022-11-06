@@ -395,7 +395,7 @@ h1 {
 
 /* ------------ PROJECTS ---------------- */
 
-.projects section {
+.projects section, .drawings {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,17 +418,15 @@ h1 {
 .projects .timeline {
     color:var(--timeline-color);
 }
-.projects img {
-    max-width: 10rem;
+.img {
+    max-width: 15rem;
     overflow-x: hidden;
+    max-height: 20rem;
     border-radius: 0.1rem;
-    margin: 0 0.5rem 1rem 1rem;
+    margin: 1rem 0.5rem 1rem 1rem;
     transition: transform 800ms;
 }
 
-#raycaster {
-    max-width: 14rem;
-}
 .img:hover, .raycaster:hover{
     transform: scale(1.02);
     cursor: zoom-in;
@@ -535,7 +533,6 @@ h1 {
     .events section:hover, .projects section:hover {
         transform: translateX(0) translateY(0);
     }
-    
 
     #menu {
         overflow: hidden;

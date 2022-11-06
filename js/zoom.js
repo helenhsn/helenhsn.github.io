@@ -1,25 +1,28 @@
+
 $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
     var src = $(this).attr('src');
     var modal;
     var bgSize = '';
-    console.log(this.width);
-
+    var newMaxWidth = this.width;
+    var newMaxHeight = this.height;
+    console.log(newMaxWidth);
+    console.log(newMaxHeight);
+    
     function removeModal() {
-        console.log("allo2");
         modal.remove();
         $('.contents').off('keyup.modal-close');
     }
+    let newWidth;
+    let factor = 2;
     if (window.matchMedia("(max-width:700px").matches) {
-        bgSize = 'contain';
-    } else {
-        let new_width = this.width*3;
-        let new_height = this.height*3;
-        bgSize = new_width.toString() + 'px ' + new_height.toString() + 'px ' ;
+        factor = 1.5;
     }
+    newWidth = Math.min(window.innerWidth, window.innerHeight)/factor;
+    bgSize = newWidth.toString() + 'px ' + ' auto' ;
 
     modal = $('<div>').css({
         background: 'RGBA(0,0,0,0.5) url(' + src + ') no-repeat center',
-        backgroundSize: bgSize,
+        "background-size":bgSize,
         width: '100%',
         height: '100vh',
         position: 'fixed',
@@ -27,7 +30,8 @@ $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
         top: '0',
         left: '0',
         cursor: 'zoom-out'
-    }).click(function() {
+    }
+    ).click(function() {
         removeModal();
     }).appendTo('.contents');
 });

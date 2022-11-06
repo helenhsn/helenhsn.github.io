@@ -42,7 +42,11 @@
     "description5-1" : "Practices in clarinet, courses in music theory.",
     "description5-2" : "Around 2015 I joined an orchestra called Bo.Per.Cui which gave me many opportunities to perform on stage (in France and Germany). It was a really fun experience as I got to meet new wonderful people and to discover a different culture (German culture). ",
 
-
+    "title6":"Drawing",
+    "timeline6":"Since I could hold a pencil!",
+    "description6-1":"Here are some of the drawings I've made in the last years. I only use pencils with different graphite according to the level of precision that I need (shadow, facial features...).",
+    "description6-2":"I've learned to draw by myself when I was little mostly by repoducing pictures that I had taken or by trying to draw objects in my room. As long as I remember, I've always liked the idea of repoducing reality in its tiniest details. So, as you can see in the examples below, my style is pretty realistic.",
+    "description6-3":"As I grew up, I started to inventing characters and draw them (some of the faces below are probably unconsciously a mix of the people I see in my everyday life).",
 
     "pro-experiences" : "Professional experiences",
 
@@ -54,7 +58,7 @@
     "job-description1-3" : "Then, I had to handle the restocking and the maintenance of the sections (plants' watering, shelves' tidying...).",
     "job-description1-4" : "This job really helped me gain in confidence in front of people as I had to take initiatives by myself in front of the clients, express myself correctly. It taught me how to be reponsible at work and how to behave well in a corporation, as much with my colleagues as with the clients.",
 
-    "job2" : "Students' Mentor",
+    "job2" : "Tutor",
     "job-timeline2" : "November 2021 - Mars 2022 (4 months)",
     "job-location2" : "La Prépa des INP, Saint-Martin-d'Hères, France",
     "job-description2-1" : "Dispense of courses related to mathematics, physics and chemistry to two first-year students of la Prépa in difficulties in these classes.",
@@ -71,8 +75,8 @@
     "job5" : "Engineer assistant",
     "job-timeline5":"22 September 2022 - 31 December 2022 (3 months)",
     "job-location5" : "Grenoble Informatics Laboratory (LIG), France", 
-    "job-description5-1":"Research study of scientific literature on the transposition of nudges from a domain to another, especially to the numerical domain.",
-    "job-description5-2":"This job taught me the ability to find relevant information (articles, papers) quickly using various resources (ACM, Sci-lab, Research Gate, etc.).",
+    "job-description5-1":"Research study consisting of making a state-of-the-art of nudges in the digital domain which aim for reducing the environmental impact related to ICT (Information and Communication Technology).",
+    "job-description5-2":"This job taught me the ability to find quickly relevant information in the scientific literature (articles, papers) using various resources (ACM, Sci-lab, Research Gate, etc.).",
     "job-description5-3":"I also had the opportunity to learn how to write a file in Markdown and how to use Obsidian.",
 
 
