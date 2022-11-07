@@ -91,13 +91,13 @@
 
     "school-projects" : "Projets scolaires",
 
-    "project1" : "Modélisation de la méthode de Monte Carlo en python",
+    "project1" : "Modélisation de la méthode de Monte Carlo",
     "project-timeline1" : "Décembre 2021 (1 mois, travail personnel)",
     "project-description1-1" : "Calcul d'une approximation de Pi en utilisant la méthode de Monte Carlo en fonction de paramètres rentrés en ligne de commande.",
     "project-description1-2" : "Génération d'une image animée (GIF) représentant l'évolution de l'approximation de Pi à l'aide d'images au format .ppm (chaque pixel détient un code RGB). Chaque approximation calculée est affichée avec un afficheur 7-segment qui modifie la couleur des pixels en noir.",
     "project-description1-3" : "Ce projet codé à partir de rien m'a aidé à travailler sur l'optimisation d'un programme et à utiliser des structures de données adaptées (dictionnaires, itérateurs, etc).",
 
-    "project2" : "Librairie pour interfaces graphiques en C",
+    "project2" : "Librairie pour interfaces graphiques",
     "project-timeline2" : "Mai 2022 (3 semaines, en équipe de 3)",
     "project-description2-1" : "Librairie codée entièrement en C, similaire à tkinter en python. Cette dernière peut être utilisée pour construire des jeux simples ou des petites applications.",
     "project-description2-2" : "Utilise le concept de widgets (buttons, frames, toplevels) et de gestionnaire de géometrie pour placer les éléments sur l'écran. Cette librairie gère également l'ajout de nouveaux widgets et de nouveaux gestionnaires de géométrie (gridder, par exemple) par l'utilisateur.",
@@ -111,7 +111,7 @@
     "project-description3-2" : "Représente mon premier pas dans le monde de la programmation web. J'ai pu apprendre les bases de l'HTML, du CSS et un petit peu de Javascript pour animer mon menu et effectuer les traductions de l'anglais au français (et inversement).",
     "project-description3-3" : "Ce projet est en constante amélioration car j'apprends au fur et à mesure lorsque je trouve du temps. J'espère que vous l'appréciez !",
 
-    "project4":"Raycaster en C (avec la librairie SDL2)",
+    "project4":"Raycaster (avec la librairie SDL2)",
     "project-timeline4":" Août 2022 - Septembre 2022",
     "project-description4-1":"Interface graphique construite à partir de rien permettant à l'utilisateur de projeter de la lumière (rayons) sur des objets de type lignes ou courbes.",
     "project-description4-2":"L'utilisateur peut dessiner des courbes en plaçant des points sur l'écran. Chaque fragment de courbe correspond à une courbe de Bézier cubique qui sera rattachée à la prochaine courbe dessinée à l'aide d'un raccordement C². Ainsi, la courbe totale représentée par tous les fragments correspond à une spline. Il est possible de dessiner plusieurs splines en cliquant sur un autre bouton du panel et en revenant sur le bouton 'Curves'.",

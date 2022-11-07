@@ -15,13 +15,12 @@
 :root {
     --body-color:#ffffff;
     --basic-color: #232630;
-    --navbar-items:#93b4dd;
     --light-color: #f3a48c;
-    --title-section-color:#552d29;
+    --title-section-color:#18285f;
     --timeline-color:#f3a48c;
     --border-section-color:#f3a48c;
     --bg-section-color: #f7f5f4;
-    --cv-color-click:#552d29;
+    --cv-color-click:#232630;
 }
 
 body {
@@ -152,6 +151,7 @@ h1 {
 
 .aboutme {
     margin-top: 0;
+    padding-top: 1rem;
     border-top: 0.1rem ridge var(--border-section-color) ;
     border-bottom: 0.1rem ridge var(--border-section-color);
 }
@@ -167,7 +167,13 @@ h1 {
 }
 
 .aboutme-content li {
-    margin: 1rem 0;
+    margin: 2rem 0rem 0 0;
+}
+#first {
+    margin-top: 0;
+}
+#last {
+    margin-bottom: 0;
 }
 
 .aboutme-img{
@@ -272,12 +278,24 @@ h1 {
     font-family: 'Merriweather-Bold';
     font-size: larger;
 }
-
-.timeline {
+.timeline-prog {
+    display: flex;
+    flex-direction: column;
     font-family: 'Merriweather-Bold';
     color: var(--timeline-color);
+    justify-content: space-between;
+
 }
 
+.timeline-prog p {
+    padding: 0;
+    margin: 0.2rem 0 ;
+}
+
+.timeline {
+    color: var(--timeline-color);
+    font-family: 'Merriweather-Bold';
+}
 
 .location {
     font-family: 'Merriweather-Italic';
