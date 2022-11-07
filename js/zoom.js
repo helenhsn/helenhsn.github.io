@@ -14,8 +14,8 @@ $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
     }
     let newWidth;
     let factor = 2;
-    if (window.matchMedia("(max-width:700px").matches) {
-        factor = 1.5;
+    if (window.matchMedia("(max-width:700px").matches || this.id=='raycaster') {
+        factor = 1.10;
     }
     newWidth = Math.min(window.innerWidth, window.innerHeight)/factor;
     bgSize = newWidth.toString() + 'px ' + ' auto' ;
