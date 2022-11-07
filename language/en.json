@@ -93,13 +93,13 @@
 
     "school-projects" : "School projects",
 
-    "project1" : "Modelisation of Monte Carlo's method in python",
+    "project1" : "Modelisation of Monte Carlo's method",
     "project-timeline1" : "December 2021 (1 month, solo work)",
     "project-description1-1" : "Computation of pi's approximation using Monte Carlo's method with the given parameters in the command line.",
     "project-description1-2" : "Generation of an animated image (GIF) showing the evolution of pi's approximation, using .ppm images format (each pixel is given an RGB code). The writing of each approximation is done with a 7-segment display for each digit that changes the pixel in black.",
     "project-description1-3" : "This project built from scratch helped me work on python and on optimization using various data structures (dictionnary, iterators, tables, etc).",
 
-    "project2" : "Library for graphical interfaces in C",
+    "project2" : "Library for graphical interfaces",
     "project-timeline2" : "May 2022 (3 weeks, in team of 3 students)",
     "project-description2-1" : "Library coded entirely in C, similar to tkinter in python. Can be used to build simple games or applications.",
     "project-description2-2" : "Uses the concept of widgets (buttons, frames, toplevels) and geometry managers to place elements on the screen. The library handles the addition of new types of widgets or geometry managers by the user.",
@@ -113,7 +113,7 @@
     "project-description3-2" : "Symbolizes my first step into the web programming world. I learned the very basics of HTML, CSS and a little bit of Javascript (essentially for the menu, the translations between French and English).",
     "project-description3-3" : "This project is in constant amelioration as I'm learning by myself when I find time. I hope you enjoy it!",
 
-    "project4":"Raycaster in C (using the SDL2 library)",
+    "project4":"Raycaster (using the SDL2 library)",
     "project-timeline4":" August 2022 - September 2022",
     "project-description4-1":"Graphical interface built from scratch allowing the user to cast light (rays) on edges and curves.",
     "project-description4-2":"The user can draw curves by placing points on the screen. Each fragment of curve drawn correspond to a cubic Bézier curve which is connected to the following curve with a C² junction. Therefore, the global curve (made of all the fragments) drown actually represents a spline. It is possible to draw several splines on the screen by switching to another button of the panel and going back to the 'Curves' button.",
