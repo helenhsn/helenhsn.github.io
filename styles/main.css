@@ -16,7 +16,7 @@
     --body-color:#ffffff;
     --basic-color: #232630;
     --light-color: #f3a48c;
-    --title-section-color:#18285f;
+    --title-section-color:#232630;
     --timeline-color:#f3a48c;
     --border-section-color:#f3a48c;
     --bg-section-color: #f7f5f4;
@@ -223,6 +223,7 @@ h1 {
 
 .events section, .projects section, .contact-list {
     background-color:var(--bg-section-color);
+    border-radius: 5px;
     box-shadow: 2px 3px 1px 1px #ecdfdf;
 }
 
