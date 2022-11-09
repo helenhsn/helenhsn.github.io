@@ -6,7 +6,7 @@
     "aboutme-ph1" : "Je suis étudiante en deuxième année d'école d'ingénieurs à l'ENSIMAG (École Nationale Supérieure d'Informatique et de Mathématiques Appliquées de Grenoble). Mes cours sont principalement liés à la modélisation 3D, la simulation ainsi que le rendu d'objets en temps réel.",
     "aboutme-ph2" : "Lorsque je ne suis pas en cours, j'aime travailler sur des projets personnels qui challengent mon intellect. Surtout lorsqu'il s'agit de projets impliquant une partie artistique ou mathématique je deviens davantage curieuse, j'ai toujours envie d'en apprendre plus, même dans des domaines qui me sont complètement inconnus.",
     "aboutme-ph3" : "Dernièrement je me suis penchée sur la programmation web en créant ce site et en l'améliorant au fur et à mesure, puis j'ai entrepris la création d'un raycaster en C. À l'heure actuelle, j'apprends le GLSL par moi-même afin de pouvoir créer mes propres shaders. J'apprends également le Rust et à utiliser OpenGL car j'ai pour objectif de créer un jeu multi-joueurs en 3D à partir de rien (y compris le moteur de jeu) avec deux amis à partir de février 2023, dans le cadre d'un projet de cours proposé par nous. Ma connaissance du GLSL combinée avec OpenGL me permettra de créer des shaders que je pourrai incorporer dans le jeu.",
-    "aboutme-ph4" : "Enfin, lorsque je ne programme pas, vous me trouverez probablement sur un mur d'escalade avec mes amis (il y a de vraiment bon spots de grimpe autour de Grenoble !). Mon goût pour la 3D vient aussi de mes activités artistiques (musique et dessin principalement). N'hésitez pas à visiter la section Éducation si cela vous intéresse !",
+    "aboutme-ph4" : "Enfin, lorsque je ne programme pas, vous me trouverez probablement sur un mur d'escalade avec mes amis (il y a de vraiment bon spots de grimpe autour de Grenoble !). J'ai également beaucoup d'appétence pour le dessin et la musique ainsi que les jeux vidéos (je joue principalement à Terraria, j'adore ce jeu !). N'hésitez pas à visiter la section Éducation si cela vous intéresse !",
     "contact" : "Envie d'en apprendre plus ? N'hésitez pas à me contacter !",
 
     "schooling" : "Scolarité",
@@ -40,12 +40,12 @@
     "timeline5" : "2007-2017",
     "diploma5" : "Brevet musical de deuxième cycle (sur trois) en clarinette.",
     "description5-1" : "Cours de pratique musicale en clarinette et cours de solfège.",
-    "description5-2" : "J'ai eu l'opportunité de rejoindre un orchestre nommé Bo.Per.Cui en 2015 qui m'a permis de participer à de nombreux concerts (en France et en Allemagne). Ce fut une expérience enrichissante car j'ai pu rencontrer de nouvelles personnes et découvrir une autre culture (allemande).",
+    "description5-2" : "J'ai eu l'opportunité de rejoindre un orchestre nommé Bo.Per.Cui en 2015 qui m'a permis de participer à de nombreux concerts (en France et en Allemagne). Ce fut une expérience enrichissante car j'ai pu rencontrer de nouvelles personnes et découvrir une autre culture.",
 
     "title6":"Dessin",
     "timeline6":"Depuis que je sais tenir un crayon !",
     "description6-1":"Voici quelques dessins réalisés ces dernières années. Je n'utilise que des crayons avec des mines différentes en fonction du niveau de détails dont j'ai besoin (ombres, traits du visage...).",
-    "description6-2":"J'ai appris à dessiner par moi-même lorsque j'étais petite principalement en essayant de recopier des images que j'avais prises auparavant ou en essayant de dessiner des objets dans ma chambre. Aussi loin que je me souviens, j'ai toujours apprécié l'idée de reproduire la réalité dans ses plus fins détails. Comme vous pouvez le voir dans les examples, mon style est donc plutôt réaliste.",
+    "description6-2":"J'ai appris à dessiner par moi-même lorsque j'étais petite principalement en essayant de recopier des images que j'avais prises auparavant ou en essayant de dessiner des objets dans ma chambre. Aussi loin que je me souviens, j'ai toujours apprécié l'idée de reproduire la réalité dans ses plus fins détails.",
     "description6-3":"En grandissant, j'ai commencé à inventer des personnages et à les dessiner (certains d'entre eux correspondent probablement inconsciemment à un mix de personnes que j'ai pu croiser dans ma journée...).",
 
     "pro-experiences" : "Expériences professionnelles",
@@ -117,5 +117,9 @@
     "project-description4-2":"L'utilisateur peut dessiner des courbes en plaçant des points sur l'écran. Chaque fragment de courbe correspond à une courbe de Bézier cubique qui sera rattachée à la prochaine courbe dessinée à l'aide d'un raccordement C². Ainsi, la courbe totale représentée par tous les fragments correspond à une spline. Il est possible de dessiner plusieurs splines en cliquant sur un autre bouton du panel et en revenant sur le bouton 'Curves'.",
     "project-description4-3":"Il est également possible de modifier l'allure de chaque courbe de Bézier en déplaçant le point blanc sur l'écran (voir exemple ci-dessous).",
     "project-description4-4":"Le nombre de rayons projetés peut monter jusqu'à 3000 lorsqu'on utilise que des segments et jusqu'à 250-300 lorsqu'on ajoute des courbes de Bézier.",
-    "project-description4-5":"Ce projet m'a permis d'appliquer directement mon savoir en modélisation géométrique. Il m'a permis également de revoir certains aspects de la programmation (programmation évènementielle, optimisation, etc.)."
+    "project-description4-5":"Ce projet m'a permis d'appliquer directement mon savoir en modélisation géométrique. Il m'a permis également de revoir certains aspects de la programmation (programmation évènementielle, optimisation, etc.).",
+
+    "project5":"Mon premier shader",
+    "project-timeline5":"Fin octobre 2022 - Maintenant",
+    "project-description5-1":"Description en cours..."
 }

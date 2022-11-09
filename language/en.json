@@ -5,7 +5,7 @@
     "aboutme-ph1" : "I'm a second year student scolarized at ENSIMAG, an Engineering school based in Grenoble, France. My courses are mainly related to 3D modelisation, simulation and vision graphics.",
     "aboutme-ph2" : "When I'm not in school, I enjoy working on projects that challenge my intellect. Especially when it comes to art, computer sciences or mathematics, I'm very curious and eager to learn new things, even new fields that are completely unfamiliar to me.",
     "aboutme-ph3" : "Lately I've worked a little bit on web development with the building of this website and I've also managed to create a raycaster in C. As of now, I'm currently learning GLSL on my own so that I can create my own shaders. I'm also learning Rust and OpenGL as I'm planning to create a 3D multiplayer game totally from scratch (including the game engine) with two friends starting in February 2023 (school project chosen by us). My experience in GLSL combined with OpenGL will allow me to create and incorporate my own shaders into the game.",
-    "aboutme-ph4": "When I'm not programming, you'll probably find me climbing on walls or rocks with my friends (there are pretty good climbing spots here in Grenoble!). My taste for 3d modelisation also comes from my artistic hobbies (clarinet, guitar, drawings). Don't hesitate to check the Education section if you're interested!",
+    "aboutme-ph4": "When I'm not programming, you'll probably find me climbing on walls or rocks with my friends (there are pretty good climbing spots here in Grenoble!). I also have a deep interest in drawing and music as well as video games (I mostly play Terraria, I love this game!). Don't hesitate to check the Education section if you're interested!",
     "contact" : "Want to get in touch? Don't hesitate to contact me!",
 
 
@@ -40,12 +40,12 @@
     "timeline5" : "2007-2017",
     "diploma5" : "Certificate in music studies (instrument : clarinet)",
     "description5-1" : "Practices in clarinet, courses in music theory.",
-    "description5-2" : "Around 2015 I joined an orchestra called Bo.Per.Cui which gave me many opportunities to perform on stage (in France and Germany). It was a really fun experience as I got to meet new wonderful people and to discover a different culture (German culture). ",
+    "description5-2" : "Around 2015 I joined an orchestra called Bo.Per.Cui which gave me many opportunities to perform on stage (in France and Germany). It was a really fun experience as I got to meet new wonderful people and to discover a different culture. ",
 
     "title6":"Drawing",
     "timeline6":"Since I could hold a pencil!",
     "description6-1":"Here are some of the drawings I've made in the last years. I only use pencils with different graphite according to the level of precision that I need (shadow, facial features...).",
-    "description6-2":"I've learned to draw by myself when I was little mostly by repoducing pictures that I had taken or by trying to draw objects in my room. As long as I remember, I've always liked the idea of repoducing reality in its tiniest details. So, as you can see in the examples below, my style is pretty realistic.",
+    "description6-2":"I've learned to draw by myself when I was little mostly by repoducing pictures that I had taken or by trying to draw objects in my room. As long as I remember, I've always liked the idea of repoducing reality in its tiniest details.",
     "description6-3":"As I grew up, I started inventing characters and draw them (some of the faces below are probably unconsciously a mix of the people I see in my everyday life).",
 
     "pro-experiences" : "Professional experiences",
@@ -119,5 +119,9 @@
     "project-description4-2":"The user can draw curves by placing points on the screen. Each fragment of curve drawn correspond to a cubic Bézier curve which is connected to the following curve with a C² junction. Therefore, the global curve (made of all the fragments) drown actually represents a spline. It is possible to draw several splines on the screen by switching to another button of the panel and going back to the 'Curves' button.",
     "project-description4-3":"It is also possible to move the curve and change its appearance by sliding the white point (see examples below).",
     "project-description4-4":"The number of rays displayed in the screen can be set up to 3000 using only edges, and up to 250 using Bézier curves.",
-    "project-description4-5":"This project allowed me to apply directly my mathematical knowledge (regarding geometry modeling) to a concrete project. It also enabled me to work again on evenemential programming, optimization and other aspects of programming."
+    "project-description4-5":"This project allowed me to apply directly my mathematical knowledge (regarding geometry modeling) to a concrete project. It also enabled me to work again on evenemential programming, optimization and other aspects of programming.",
+
+    "project5":"My first shader",
+    "project-timeline5":"End of October 2022 - Now",
+    "project-description5-1":"Description incoming..."
 }
