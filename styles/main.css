@@ -343,11 +343,11 @@ h1 {
   transition-duration: 0.3s;
 }
 
-#CV_button img {
+#button img {
     margin-right: 0;
 }
 
-#CV_button {
+#button {
     align-items: center;
     text-transform: uppercase;
     text-align: center;
@@ -370,7 +370,7 @@ h1 {
 }
 
   
-#CV_button span {
+#button span{
     background-color: var(--light-color);
     padding: 0.8rem;
     width: 10rem;
@@ -380,10 +380,11 @@ h1 {
 }
 
 
-#CV_button:hover span {
+
+#button:hover span {
     background: var(--cv-color-click);
 }
-#CV_button:after {
+#button:after {
     content: "";
     position: fixed;
     bottom: 3%;
@@ -395,7 +396,7 @@ h1 {
     transition: all 0.3s;
     box-shadow: 0 3px 8px 15px #8b6565;
   }
-#CV_button:active:after {
+#button:active:after {
     box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
     position: fixed;
     bottom: 3%;
@@ -419,8 +420,8 @@ h1 {
 
 .projects section, .drawings {
     display: flex;
+    padding-bottom: 1rem;
     flex-direction: column;
-    align-items: center;
 }
 
 .projects div {
@@ -445,8 +446,12 @@ h1 {
     overflow-x: hidden;
     max-height: 20rem;
     border-radius: 0.1rem;
-    margin: 0rem 0.5rem 1rem 1rem;
+    margin: 0rem 0.5rem 0rem 1rem;
     transition: transform 800ms;
+}
+
+.events .img {
+    margin-bottom: 1rem;
 }
 
 .img:hover, .raycaster:hover{
@@ -460,8 +465,31 @@ h1 {
     justify-content: center;
     
 }
+.sourceCode {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 
+}
+#sourceCodeButton {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    background-color: var(--border-section-color);
+    position: relative;
+    margin-right: 0;
+    transition: 300ms;
+}
+#sourceCodeButton:hover {
+    background-color: #232630;
+    cursor: pointer;
 
+}
+.sourceCode a {
+    font-family:'Merriweather-bold';
+    font-size: 16px;
+    color: var(--bg-section-color);
+}
 
 
 /*------------ CONTACT -------------*/
