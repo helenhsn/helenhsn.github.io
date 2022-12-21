@@ -147,73 +147,6 @@ h1 {
     text-transform: uppercase;
 }
 
-/* ----------- INDEX ------------------- */
-
-.aboutme {
-    margin-top: 0;
-    padding-top: 1rem;
-    border-top: 0.1rem ridge var(--border-section-color) ;
-    border-bottom: 0.1rem ridge var(--border-section-color);
-}
-
-.aboutme-content h1 {
-    text-align: center;
-}
-
-.aboutme-content ul {
-    list-style-type: none;
-    text-align: justify;
-    padding: 0 1rem;
-}
-
-.aboutme-content li {
-    margin: 2rem 0rem 0 0;
-}
-#first {
-    margin-top: 0;
-}
-#last {
-    margin-bottom: 0;
-}
-
-.aboutme-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.aboutme-img img {
-    border-radius:  50%;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts h1 {
-    text-align: center;
-}
-
-.contact-list {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 1%;
-    padding: 0;
-}
-.contact-content {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    white-space: nowrap;
-}
-
-.contact-list img {
-    top:0%;
-    min-width: 2rem;
-}
-
 /* ----------------- EDUCATION, EXPERIENCE, PROJECTS ------------- */
 .events section, .projects section {
     display: block;
@@ -302,119 +235,14 @@ h1 {
     font-family: 'Merriweather-Italic';
 }
 
-/*-------------- CV TRANSITION -------------- */
-.CV {
-    position: fixed;
-    bottom: 3%;
-    right: 2%;
+.sourceCode {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-}
+    align-items: flex-end;
+    justify-content: flex-end;
 
-#CV_menu {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    margin-bottom: 0.2rem;
-    z-index: -1;
-}
-
-#CV_menu div {
-    margin: 0.2rem;
-    padding: 0.8rem;
-    border-radius: 8px;
-    background-color: var(--light-color);
-    transition: 0.3s;
-}
-
-#CV_menu div a {
-    color: #eceff4;
-    font-family:'Merriweather-Bold';
-    font-size: 16px;
-    text-align: center;
-}
-#CV_menu div:hover {
-  background-color: var(--cv-color-click);
-  transition-duration: 0.3s;
-}
-
-#button img {
-    margin-right: 0;
-}
-
-#button {
-    align-items: center;
-    text-transform: uppercase;
-    text-align: center;
-    width: 5rem;
-    height:3rem;
-    border: 0;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #eceff4;
-    display: flex;
-    font-family: 'Merriweather';
-    font-size: 20px;
-    justify-content: center;
-    padding: 0;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-  
-#button span{
-    background-color: var(--light-color);
-    padding: 0.8rem;
-    width: 10rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: 300ms;
 }
 
 
-
-#button:hover span {
-    background: var(--cv-color-click);
-}
-#button:after {
-    content: "";
-    position: fixed;
-    bottom: 3%;
-    right: 2%;
-    border-radius: 8px;
-    width: 5rem;
-    height: 3rem;
-    opacity: 0;
-    transition: all 0.3s;
-    box-shadow: 0 3px 8px 15px #8b6565;
-  }
-#button:active:after {
-    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
-    position: fixed;
-    bottom: 3%;
-    right: 2%;
-    border-radius: 7px;
-    width: 5rem;
-    height: 3.1rem;
-    opacity: 0;
-    opacity: 1;
-    transition: 0s;
-}
-
-
-#CV_menu {
-    transition:1s;
-}
-
-    
 
 /* ------------ PROJECTS ---------------- */
 
@@ -459,62 +287,19 @@ h1 {
     cursor: zoom-in;
 }
 
-
 .example {
     display:flex;
     justify-content: center;
     
 }
-.sourceCode {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
 
-}
-#sourceCodeButton {
-    padding: 0.5rem;
-    margin-top: 1rem;
-    border-radius: 8px;
-    background-color: var(--border-section-color);
-    position: relative;
-    margin-right: 0;
-    transition: 300ms;
-}
-#sourceCodeButton:hover {
-    background-color: #232630;
-    cursor: pointer;
-
-}
-.sourceCode a {
-    font-family:'Merriweather-bold';
-    font-size: 16px;
-    color: var(--bg-section-color);
-}
-
-
-/*------------ CONTACT -------------*/
-.information, .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* ----------- OTHER TYPES OF SCREENS ------------- */
 
 @media screen and (max-width:1600px) {
-    .aboutme, .projects section {
+    .aboutme {
         display:block;
     }
-    .projects section {
-        padding: 0.5rem 1rem;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    .contents {
-        padding: 10%;
-    }
-    
 }
 
 

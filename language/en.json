@@ -111,7 +111,7 @@
     "project-timeline3" : "Since June 2022",
     "project-description3-1" : "Small website built from scratch to present my CV and my projects.",
     "project-description3-2" : "Symbolizes my first step into the web programming world. I learned the very basics of HTML, CSS and a little bit of Javascript (essentially for the menu, the translations between French and English).",
-    "project-description3-3" : "This project is in constant amelioration as I'm learning by myself when I find time. I hope you enjoy it!",
+    "project-description3-3" : "I know that the code isn't really clean but I didn't have much time to spend on it. Still, I hope you enjoy it!",
 
     "project4":"Raycaster (using the SDL2 library)",
     "project-timeline4":" August 2022 - September 2022",
@@ -123,8 +123,8 @@
 
     "project5":"SHADERS",
     "project-timeline5":"End of October 2022 - Now",
-    "project-description5-1":"Here is one of my first shaders, created after one to two weeks of studying shader (scattered between school and my part-time job).",
-    "project-description5-2":"This was realized by using simple raymarching techniques and fBm (fractional Brownian motions) for everything that concerns waves and for the dirt on the hill. I added ome textures and displacement to the dirt to give it a stony aspect.",
-    "project-description5-3":"The framerate of this shader is actually really low (runs at 10fps on my 15.6 laptop with a RTX 3050 as a gpu) but this could be due to the high number of octaves for the fBm or the high maximum distance for the raymarching function.",
+    "project-description5-1":"Here is one of my first shaders, created after one to two weeks of learning about shaders (scattered between school and my part-time job).",
+    "project-description5-2":"This was realized by using simple raymarching techniques and fBm (fractional Brownian motions) for everything that concerns waves and for the dirt on the hill. I added some textures and displacement to the dirt to give it a stony aspect.",
+    "project-description5-3":"The framerate of this shader is actually really low (runs at 10fps on my 15.6 laptop with an RTX 3050 as a gpu) but this could be due to the high number of octaves for the fBm or the high maximum distance for the raymarching function.",
     "project-description5-4":"Don't hesitate to check my other shaders on Shadertoy! My id is : helenhsn."
 }

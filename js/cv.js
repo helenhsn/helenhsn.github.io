@@ -1,6 +1,6 @@
 
 var CV_menu = document.getElementById("CV_menu");
-var CV_button = document.getElementById("CV");
+var CV_button = document.getElementById("button");
 var FR = document.getElementById("FR");
 var EN = document.getElementById("EN");
 
