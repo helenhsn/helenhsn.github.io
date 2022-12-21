@@ -119,7 +119,10 @@
     "project-description4-4":"Le nombre de rayons projetés peut monter jusqu'à 3000 lorsqu'on utilise que des segments et jusqu'à 250-300 lorsqu'on ajoute des courbes de Bézier.",
     "project-description4-5":"Ce projet m'a permis d'appliquer directement mon savoir en modélisation géométrique. Il m'a permis également de revoir certains aspects de la programmation (programmation évènementielle, optimisation, etc.).",
 
-    "project5":"Mon premier shader",
+    "project5":"SHADERS",
     "project-timeline5":"Fin octobre 2022 - Maintenant",
-    "project-description5-1":"Description en cours..."
+    "project-description5-1":"Voici un de mes premiers shaders, réalisé après une à deux semaines totales d'apprentissage (parsemées entre mes cours et mon job étudiant).",
+    "project-description5-2": "Ce shader a été réalisé en utilisant du raymarching et des fBm (fractional Brownian motions) pour l'aspect 'fluide' des vagues ainsi que la forme de la terre sur le volcan. L'ajout de textures et d'une displacement map sur la terre permet de lui donner un aspect rocailleux.",
+    "project-description5-3": "À noter que le framerate est assez mauvais mais car le nombre d'octaves pour le calcul des fBm est assez élevé ainsi que la distance maximale dans la fonction de raymarching.",
+    "project-description5-4":"N'hésitez pas à checker mes autres shaders sur Shadertoy ! Mon identifiant est : helenhsn."
 }

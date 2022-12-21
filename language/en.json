@@ -121,7 +121,10 @@
     "project-description4-4":"The number of rays displayed in the screen can be set up to 3000 using only edges, and up to 250 using Bézier curves.",
     "project-description4-5":"This project allowed me to apply directly my mathematical knowledge (regarding geometry modeling) to a concrete project. It also enabled me to work again on evenemential programming, optimization and other aspects of programming.",
 
-    "project5":"My first shader",
+    "project5":"SHADERS",
     "project-timeline5":"End of October 2022 - Now",
-    "project-description5-1":"Description incoming..."
+    "project-description5-1":"Here is one of my first shaders, created after one to two weeks of studying shader (scattered between school and my part-time job).",
+    "project-description5-2":"This was realized by using simple raymarching techniques and fBm (fractional Brownian motions) for everything that concerns waves and for the dirt on the hill. I added ome textures and displacement to the dirt to give it a stony aspect.",
+    "project-description5-3":"The framerate of this shader is actually really low (runs at 10fps on my 15.6 laptop with a RTX 3050 as a gpu) but this could be due to the high number of octaves for the fBm or the high maximum distance for the raymarching function.",
+    "project-description5-4":"Don't hesitate to check my other shaders on Shadertoy! My id is : helenhsn."
 }
