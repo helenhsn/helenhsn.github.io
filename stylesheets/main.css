@@ -328,7 +328,7 @@ h1 {
         left: 0;
         right: 0;
         padding-left: 2%;
-        background-color: var(--basic-color);
+        background-color: var(--navbar-color);
         z-index: 1;
         box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 24px;
     }
@@ -359,7 +359,6 @@ h1 {
     }
 
     .contact-list {
-        background-color: var(--bg-section-color);
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
