@@ -5,7 +5,7 @@
     "aboutme" : "A propos de moi",
     "aboutme-ph1" : "Je suis étudiante en deuxième année d'école d'ingénieurs à l'ENSIMAG (École Nationale Supérieure d'Informatique et de Mathématiques Appliquées de Grenoble). Mes cours sont principalement liés à la modélisation 3D, la simulation ainsi que le rendu d'objets en temps réel.",
     "aboutme-ph2" : "Lorsque je ne suis pas en cours, j'aime travailler sur des projets personnels qui challengent mon intellect. Surtout lorsqu'il s'agit de projets impliquant une partie artistique ou mathématique je deviens davantage curieuse, j'ai toujours envie d'en apprendre plus, même dans des domaines qui me sont complètement inconnus.",
-    "aboutme-ph3" : "Dernièrement je me suis penchée sur la programmation web en créant ce site et en l'améliorant au fur et à mesure, puis j'ai entrepris la création d'un raycaster en C. À l'heure actuelle, j'apprends le GLSL par moi-même afin de pouvoir créer mes propres shaders. J'apprends également le Rust et à utiliser OpenGL car j'ai pour objectif de créer un jeu multi-joueurs en 3D à partir de rien (y compris le moteur de jeu) avec deux amis à partir de février 2023, dans le cadre d'un projet de cours proposé par nous. Ma connaissance du GLSL combinée avec OpenGL me permettra de créer des shaders que je pourrai incorporer dans le jeu.",
+    "aboutme-ph3" : "J'apprends actuellement à créer mes propres shaders ainsi que le Rust et la programmation OpenGL car j'ai pour objectif de créer un jeu multi-joueurs en 3D à partir de rien (y compris le moteur de jeu) avec des amis à partir de février 2023.",
     "aboutme-ph4" : "Enfin, lorsque je ne programme pas, vous me trouverez probablement sur un mur d'escalade avec mes amis (il y a de vraiment bon spots de grimpe autour de Grenoble !). J'ai également beaucoup d'appétence pour le dessin et la musique ainsi que les jeux vidéos (je joue principalement à Terraria, j'adore ce jeu !). N'hésitez pas à visiter la section Éducation si cela vous intéresse !",
     "contact" : "Envie d'en apprendre plus ? N'hésitez pas à me contacter !",
 
@@ -124,5 +124,5 @@
     "project-description5-1":"Voici un de mes premiers shaders, réalisé après une à deux semaines totales d'apprentissage (parsemées entre mes cours et mon job étudiant).",
     "project-description5-2": "Ce shader a été réalisé en utilisant du raymarching et des fBm (fractional Brownian motions) pour l'aspect 'fluide' des vagues ainsi que la forme de la terre sur le volcan. L'ajout de textures et d'une displacement map sur la terre permet de lui donner un aspect rocailleux.",
     "project-description5-3": "À noter que le framerate est assez mauvais mais car le nombre d'octaves pour le calcul des fBm est assez élevé ainsi que la distance maximale dans la fonction de raymarching.",
-    "project-description5-4":"N'hésitez pas à checker mes autres shaders sur Shadertoy ! Mon identifiant est : helenhsn."
+    "project-description5-4":"N'hésitez pas à checker mes autres shaders sur Shadertoy !"
 }
