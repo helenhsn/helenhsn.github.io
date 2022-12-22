@@ -318,7 +318,7 @@ h1 {
     }
     .navbar {
         max-width: 100%;
-        border-bottom: 0.1rem #eceff4 solid;
+        /*border-bottom: 0.1rem #eceff4 solid;*/
     }
     nav ul {
         max-width: 100%;
