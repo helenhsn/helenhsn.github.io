@@ -123,6 +123,6 @@
     "project-timeline5":"Fin octobre 2022 - Maintenant",
     "project-description5-1":"Voici un de mes premiers shaders, réalisé après une à deux semaines totales d'apprentissage (parsemées entre mes cours et mon job étudiant).",
     "project-description5-2": "Ce shader a été réalisé en utilisant du raymarching et des fBm (fractional Brownian motions) pour l'aspect 'fluide' des vagues ainsi que la forme de la terre sur le volcan. L'ajout de textures et d'une displacement map sur la terre permet de lui donner un aspect rocailleux.",
-    "project-description5-3": "À noter que le framerate est assez mauvais mais car le nombre d'octaves pour le calcul des fBm est assez élevé ainsi que la distance maximale dans la fonction de raymarching.",
+    "project-description5-3": "À noter que le framerate est assez mauvais mais ceci est sûrement dû au nombre d'appels élevé à la fonction fBm ainsi qu'à la distance maximale dans la fonction de raymarching qui est également élevée.",
     "project-description5-4":"N'hésitez pas à checker mes autres shaders sur Shadertoy !"
 }

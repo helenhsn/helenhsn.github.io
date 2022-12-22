@@ -125,6 +125,6 @@
     "project-timeline5":"Since November 2022",
     "project-description5-1":"Here is one of my first shaders, created after one to two weeks of learning about shaders (scattered between school and my part-time job).",
     "project-description5-2":"This was realized by using simple raymarching techniques and fBm (fractional Brownian motions) for everything that concerns waves and for the dirt on the hill. I added some textures and displacement to the dirt to give it a stony aspect.",
-    "project-description5-3":"The framerate of this shader is actually really low (runs at 10fps on my 15.6 laptop with an RTX 3050 as a gpu) but this could be due to the high number of octaves for the fBm or the high maximum distance for the raymarching function.",
+    "project-description5-3":"The framerate of this shader is actually really low (runs at 16-20fps on my 15.6 laptop with an RTX 3050 as a gpu) but this is probably due to the high number of calls to the fBm function or the high maximum distance for the raymarching function.",
     "project-description5-4":"Don't hesitate to check my other shaders on Shadertoy!"
 }
