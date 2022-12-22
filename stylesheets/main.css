@@ -13,14 +13,15 @@
     src: url('/fonts/MerriweatherSans-LightItalic.ttf');
 }
 :root {
-    --body-color:#ffffff;
-    --basic-color: #232630;
+    --body-color:#28293D;
+    --basic-color: #ffffff;
+    --navbar-color: #1C1C27;
     --light-color: #f3a48c;
-    --title-section-color:#232630;
+    --title-section-color:#ebebeb;
     --timeline-color:#f3a48c;
     --border-section-color:#f3a48c;
-    --bg-section-color: #f7f5f4;
-    --cv-color-click:#232630;
+    --bg-section-color: #212135;
+    --cv-color-click:#1C1C27;
 }
 
 body {
@@ -54,7 +55,7 @@ a {
 }
 
 .navbar {
-    background-color: var(--basic-color);
+    background-color: var(--navbar-color);
     box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 24px;
     width: 100%;
     position: fixed;
@@ -157,7 +158,11 @@ h1 {
 .events section, .projects section, .contact-list {
     background-color:var(--bg-section-color);
     border-radius: 5px;
-    box-shadow: 2px 3px 1px 1px #ecdfdf;
+    transition:300ms;
+}
+
+.events section:hover, .projects section:hover, .contact-list:hover {
+    box-shadow: 0.1px 1px 6px 0.1px #ecdfdf;
 }
 
 
@@ -183,9 +188,6 @@ h1 {
     margin: 1rem 0rem 1rem 0rem;
 }
 
-.events, .projects {
-    border-top: 0.1rem ridge var(--border-section-color);
-}
 .events div {
     display: flex;
     align-items: flex-start;

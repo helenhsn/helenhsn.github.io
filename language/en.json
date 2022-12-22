@@ -4,7 +4,7 @@
     "aboutme" : "About me",
     "aboutme-ph1" : "I'm a second year student scolarized at ENSIMAG, an Engineering school based in Grenoble, France. My courses are mainly related to 3D modelisation, simulation and vision graphics.",
     "aboutme-ph2" : "When I'm not in school, I enjoy working on projects that challenge my intellect. Especially when it comes to art, computer sciences or mathematics, I'm very curious and eager to learn new things, even new fields that are completely unfamiliar to me.",
-    "aboutme-ph3" : "Lately I've worked a little bit on web development with the building of this website and I've also managed to create a raycaster in C. As of now, I'm currently learning GLSL on my own so that I can create my own shaders. I'm also learning Rust and OpenGL as I'm planning to create a 3D multiplayer game totally from scratch (including the game engine) with two friends starting in February 2023 (school project chosen by us). My experience in GLSL combined with OpenGL will allow me to create and incorporate my own shaders into the game.",
+    "aboutme-ph3" : "I'm currently learning GLSL on my own so that I can create my own shaders. I'm also learnin Rust and OpenGL in the meantime as I'm planning to create a 3D multiplayer game totally from scratch (including the game engine) with two friends starting in February 2023.",
     "aboutme-ph4": "When I'm not programming, you'll probably find me climbing on walls or rocks with my friends (there are pretty good climbing spots here in Grenoble!). I also have a deep interest in drawing and music as well as video games (I mostly play Terraria, I love this game!). Don't hesitate to check the Education section if you're interested!",
     "contact" : "Want to get in touch? Don't hesitate to contact me!",
 
@@ -122,9 +122,9 @@
     "project-description4-5":"This project allowed me to apply directly my mathematical knowledge (regarding geometry modeling) to a concrete project. It also enabled me to work again on evenemential programming, optimization and other aspects of programming.",
 
     "project5":"SHADERS",
-    "project-timeline5":"End of October 2022 - Now",
+    "project-timeline5":"Since November 2022",
     "project-description5-1":"Here is one of my first shaders, created after one to two weeks of learning about shaders (scattered between school and my part-time job).",
     "project-description5-2":"This was realized by using simple raymarching techniques and fBm (fractional Brownian motions) for everything that concerns waves and for the dirt on the hill. I added some textures and displacement to the dirt to give it a stony aspect.",
     "project-description5-3":"The framerate of this shader is actually really low (runs at 10fps on my 15.6 laptop with an RTX 3050 as a gpu) but this could be due to the high number of octaves for the fBm or the high maximum distance for the raymarching function.",
-    "project-description5-4":"Don't hesitate to check my other shaders on Shadertoy! My id is : helenhsn."
+    "project-description5-4":"Don't hesitate to check my other shaders on Shadertoy!"
 }

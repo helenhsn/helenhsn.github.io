@@ -42,7 +42,7 @@
 }
 
 #CV_menu div a, .sourceCode a {
-    color: var(--bg-section-color);
+    color: var(--basic-color);
     font-family:'Merriweather-Bold';
     font-size: 16px;
     text-align: center;
