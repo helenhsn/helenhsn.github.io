@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Hélène Hassan </title>
-        <link href="stylesheets/main.css" rel="stylesheet"/>
-        <link href="stylesheets/contact.css" rel="stylesheet"/>
-        <link href="stylesheets/buttons.css" rel="stylesheet"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body onload="init_lang('lang-tag')">
-        <div class="container">
-            <div class="navbar">
-                <div class="name"> Hélène Hassan </div>
-                <nav>
-                    <ul id="menu">
-                        <li><a href="education.html"> Education </a></li>
-                        <li><a href="experience.html" lang-tag="experience"> Experience </a></li>
-                        <li><a href="projects.html" lang-tag="projects"> Projects </a></li>
-                        
-                    </ul>
-                </nav>
-                <a href="javascript:void(0);"><img src="images/french_flag.png" class="language-logo" id="frTranslator"  onclick="change_lang('fr', 'lang-tag')"></a>
-                <a href="javascript:void(0);"><img src="images/british_flag.png" class="language-logo" id="enTranslator" onclick="change_lang('en', 'lang-tag')"></a>
-                <a href="javascript:void(0);"><img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()"></a>
-            </div>
-            <div class="contents">
-                <section class="aboutme">
-                    <div class="aboutme-img"> <img src="images/profilepic.jpg"width="250px" height="250px"> </div>
-                    <div class="aboutme-content"> 
-                        <h1 lang-tag="aboutme"> </h1>
-                        <section>
-                            <ul>
-                                <li id="first" lang-tag="aboutme-ph1"> </li>
-                                <li lang-tag="aboutme-ph2"> </li>
-                                <li lang-tag="aboutme-ph3"> </li>
-                                <li id="last" lang-tag="aboutme-ph4"> </li>
-                            </ul>
 
-                        </section>
-                    </div>
-                </section>
-                <section class="contacts">
-                    <h1 lang-tag="contact"> </h1>
-                    <div class="contact-list">
-                        <div class="contact-content">
-                            <div class="logo"> <img src="./images/phonecall.png" width="32px"> </div>
-                            <div class="information"> +33 6 50 78 21 97 </div>
-                        </div>
-                        <div class="contact-content"> 
-                            <div class="logo"> <img src="./images/email.png" width="32px"> </div>
-                            <div class="information"> helenehhassan@gmail.com </div>
-                        </div>
-                        <div class="contact-content">
-                            <div class="logo"> <a href="https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-hassan-2934171a8/?originalSubdomain=fr"> <img src="images/linkedin.png" width="32px"> </a> </div>
-                            <div class="information"> click! </div>
-                        </div>
-                        <div class="contact-content">
-                            <div class="logo"> <a href="https://github.com/helenhsn"> <img src="images/github.png" width="32px"> </a> </div>
-                            <div class="information"> click! </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+<head>
+    <title> Hélène Hassan </title>
+    <link href="stylesheets/main.css" rel="stylesheet" />
+    <link href="stylesheets/contact.css" rel="stylesheet" />
+    <link href="stylesheets/buttons.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="name"> Hélène Hassan </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="education.html"> Education </a></li>
+                    <li><a href="experience.html"> Experience </a></li>
+                    <li><a href="projects.html"> Projects </a></li>
+
+                </ul>
+            </nav>
+            <a href="javascript:void(0);"><img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()"></a>
         </div>
-        <div class="CV">
-            <div id="button" onclick="toggleCV()"><img src="images/download.png" width="16px"> CV </div>
-            <div id="CV_menu">
-                <div id="FR"><a href="CV_Helene_Hassan_FR.pdf"> FR </a></div>
-                <div id="EN"><a href="CV_Helene_Hassan_EN.pdf"> EN </a></div>
-            </div>
+        <div class="contents">
+            <section class="aboutme">
+                <div class="aboutme-img"> <img src="images/profilepic.jpg" width="250px" height="250px"> </div>
+                <div class="aboutme-content">
+                    <h1> About me </h1>
+                    <section>
+                        <ul>
+                            <li id="first"> Hi and welcome to my page! </li>
+                            <li> I am an engineering student that holds a keen interest for anything that comes near to
+                                computer graphics, high performance computing and computer vision. This website is
+                                updated regularly and I am currently (on academic year 2023/2024) on my last year of
+                                studies at ENSIMAG, an engineering school based in Grenoble, France </li>
+                            <li> By the time I discovered computer graphics in late 2022 I have managed to tackle
+                                various projects that each time challenge my intellect as well as satisfy my curiosity.
+                                Don't hesitate to check the Projects section if you are interested! </li>
+                            <li id="last"> When I'm not programming, you'll probably find me climbing on walls or rocks
+                                with my friends (there are pretty good climbing spots here in Grenoble!). I also have a
+                                deep appetency for video/board games and music as well as drawing for which you can find
+                                some examples I have made in the last few years at the end of Education section. </li>
+                        </ul>
+
+                    </section>
+                </div>
+            </section>
+            <section class="contacts">
+                <h1> Want to get in touch? Don't hesitate to contact me! </h1>
+                <div class="contact-list">
+                    <div class="contact-content">
+                        <div class="logo"> <img src="./images/phonecall.png" width="32px"> </div>
+                        <div class="information"> +33 6 50 78 21 97 </div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="logo"> <img src="./images/email.png" width="32px"> </div>
+                        <div class="information"> helenehhassan@gmail.com </div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="logo"> <a
+                                href="https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-hassan-2934171a8/?originalSubdomain=fr">
+                                <img src="images/linkedin.png" width="32px"> </a> </div>
+                        <div class="information"> click! </div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="logo"> <a href="https://github.com/helenhsn"> <img src="images/github.png"
+                                    width="32px"> </a> </div>
+                        <div class="information"> click! </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <script src="js/cv.js"></script>
-        <script src="js/menu.js"> </script>
-        <script src="js/translate.js"></script>
-    </body>
+    </div>
+    <div class="CV">
+        <div id="button" onclick="toggleCV()"><img src="images/download.png" width="16px"> CV </div>
+        <div id="CV_menu">
+            <div id="FR"><a href="CV_Helene_Hassan_FR.pdf"> FR </a></div>
+            <div id="EN"><a href="CV_Helene_Hassan_EN.pdf"> EN </a></div>
+        </div>
+    </div>
+    <script src="js/cv.js"></script>
+    <script src="js/menu.js"> </script>
+    <script src="js/translate.js"></script>
+</body>
+
 </html>

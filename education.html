@@ -1,119 +1,146 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Hélène Hassan </title>
-        <link href="stylesheets/main.css" rel="stylesheet"/>
-        <link href="stylesheets/buttons.css" rel="stylesheet"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body onload="init_lang('lang-tag')">
-        <div class="container">
-            <div class="navbar">
-                <div class="name"> <a href="index.html"> Hélène Hassan </a></div>
-                <nav>
-                    <ul id="menu">
-                        <li> Education </li>
-                        <li><a href="experience.html" lang-tag="experience"> Experience </a></li>
-                        <li><a href="projects.html" lang-tag="projects"> Projects </a></li>
-                    </ul>
-                </nav>
-                <a href="javascript:void(0);"><img src="images/french_flag.png" class="language-logo" id="frTranslator"  onclick="change_lang('fr', 'lang-tag')"></a>
-                <a href="javascript:void(0);"><img src="images/british_flag.png" class="language-logo" id="enTranslator" onclick="change_lang('en', 'lang-tag')"></a>
-                <a href="javascript:void(0);"><img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()"></a>
-            </div>
-            <div class="contents">
-                <div class="events">
-                    <h1 lang-tag="schooling"> </h1>
-                    <section>
-                        <p class="title" lang-tag="diploma1"> </p>
-                        <p class="timeline" lang-tag="timeline1"> </p>
-                        <div><img width="20" height="20" src="images/location-pin.png"><p class="location" lang-tag="location1"> </p></div>
-                        <p class="description"> 
-                            <ul>
-                                <li lang-tag="description1-1"> </li>
-                                <li lang-tag="description1-2"> </li>
-                            </ul>
-                         </p> 
-                    </section>
-                    <section> 
-                        <p class="title" lang-tag="diploma2"> </p>
-                        <p class="timeline" lang-tag="timeline2"> </p>
-                        <div><img width="20" height="20" src="images/location-pin.png"><p class="location", lang-tag="location2"> Grenoble, France </p></div>
-                        <p class="description"> 
-                            <ul>
-                                <li lang-tag="ranking" style="font-weight:bold;"></li>
-                                <li lang-tag="description2"> </li>
-                            </ul>
-                         </p> 
-                    </section>
-                    <section>
-                        <p class="title" lang-tag="diploma3"> </p>
-                        <p class="timeline" lang-tag="timeline3"> </p>
-                        <div><img width="20" height="20" src="images/location-pin.png"><p class="location" lang-tag ="location3"> </p></div>
-                        <p class="description">
-                            <ul>
-                                <li lang-tag="description3-1"> </li>
-                                <li lang-tag="description3-2"> </li>
-                            </ul> </p> 
-                    </section>
-                </div>
-                <div class="events">
-                    <h1 lang-tag="other-education">  </h1>
-                    <section>
-                        <p class="title" lang-tag="title4">  </p>
-                        <p class="timeline" lang-tag="timeline4">  </p>
-                        <p class="description"> 
-                            <ul>
-                                <li lang-tag="description4-1"></li>
-                                <li lang-tag="description4-2"></li>
-                            </ul>
-                        </p>
-                    </section>
-                    <section>
-                        <p class="title" lang-tag="diploma5"> </p>
-                        <p class="timeline" lang-tag="timeline5"> </p>
-                        <div><img width="20" height="20" src="images/location-pin.png"><p class="location" lang-tag="location5"> </p></div>
-                        <p class="description"> 
-                            <ul>
-                                <li lang-tag="description5-1">  </li>
-                                <li lang-tag="description5-2">  </li>
-                            </ul>
-                        </p>
-                    </section>
-                    <section class="drawings">
-                        <p class="title" lang-tag="title6"> </p>
-                        <p class="timeline" lang-tag="timeline6"> </p>
-                        <p class="description"> 
-                            <ul>
-                                <li lang-tag="description6-1">  </li>
-                                <li lang-tag="description6-2"> </li>
-                                <li lang-tag="description6-3">  </li>
-                            </ul>
-                        </p>
-                        <div class="example">
-                            <img data-enlargeable class="img" src="images/drawing1.jpg">
-                            <img data-enlargeable class="img" src="images/drawing2.jpg">
-                            <img data-enlargeable class="img" src="images/drawing3.jpg">
-                            <img data-enlargeable class="img" src="images/drawing4.jpg">
-                            <img data-enlargeable class="img" src="images/drawing5.jpg">
-                            <img data-enlargeable class="img" src="images/drawing6.jpg">
 
-                        </div>
-                    </section>
-                </div>
+<head>
+    <title> Hélène Hassan </title>
+    <link href="stylesheets/main.css" rel="stylesheet" />
+    <link href="stylesheets/buttons.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="name"> <a href="index.html"> Hélène Hassan </a></div>
+            <nav>
+                <ul id="menu">
+                    <li> Education </li>
+                    <li><a href="experience.html"> Experience </a></li>
+                    <li><a href="projects.html"> Projects </a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);"><img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()"></a>
+        </div>
+        <div class="contents">
+            <div class="events">
+                <h1> Education </h1>
+                <section>
+                    <p class="title"> Engineering degree in computer sciences </p>
+                    <p class="timeline"> Since September 2021 </p>
+                    <div><img width="20" height="20" src="images/location-pin.png">
+                        <p class="location"> Graduate School of Engineering in Applied mathematics and Computer Science,
+                            Grenoble, France </p>
+                    </div>
+                    <p class="description">
+                    <ul>
+                        <li> Three-years engineering school in computer sciences and applied mathematics based in
+                            Grenoble. </li>
+                        <li> Specialty : Image processing, computer graphics, high performance computing and computer
+                            vision.</li>
+                    </ul>
+                    </p>
+                </section>
+                <section>
+                    <p class="title"> Pre-engineering preparation in maths, physics, computer science for the entrance
+                        to French “Grandes Ecoles" </p>
+                    <p class="timeline"> September 2019 - June 2021 </p>
+                    <div><img width="20" height="20" src="images/location-pin.png">
+                        <p class="location"> Grenoble, France </p>
+                    </div>
+                    <p class="description">
+                    <ul>
+                        <li style="font-weight:bold;"> Ranking : 1st place over ~420 students </li>
+                        <li> Preparatory classes : two-year undergraduate intensive courses mainly related to
+                            mathematics, physics and chemistry. </li>
+                    </ul>
+                    </p>
+                </section>
+                <section>
+                    <p class="title"> French High School Diploma (Baccalauréat) awarded with highest honours (19,18/20)
+                    </p>
+                    <p class="timeline"> September 2016 - June 2019 </p>
+                    <div><img width="20" height="20" src="images/location-pin.png">
+                        <p class="location"> High School in Grenoble, France </p>
+                    </div>
+                    <p class="description">
+                    <ul>
+                        <li> Courses mainly related to sciences (mathematics, physics,
+                            chemistry and biology). </li>
+                        <li> Second-year project on how to improve the flight of paper planes.
+                        </li>
+                    </ul>
+                    </p>
+                </section>
+            </div>
+            <div class="events">
+                <h1 lan> Hobbies </h1>
+                <section>
+                    <p class="title"> Self-teaching of the guitar </p>
+                    <p class="timeline"> 2018 </p>
+                    <p class="description">
+                    <ul>
+                        <li> Learned to play some riffs/solos by watching youtube videos but
+                            unfortunately I lost in consistency in my learning journey due to preparatory classes. </li>
+                        <li> The best solo I ended up playing correctly was the one from
+                            Nothing Else Matters of Metallica. I hope one day I will have time or motivation to pick up
+                            the guitar again! </li>
+                    </ul>
+                    </p>
+                </section>
+                <section>
+                    <p class="title"> Certificate in music studies (instrument : clarinet) </p>
+                    <p class="timeline"> 2007-2017</p>
+                    <div><img width="20" height="20" src="images/location-pin.png">
+                        <p class="location"> Meylan's Academy of music </p>
+                    </div>
+                    <p class="description">
+                    <ul>
+                        <li> Practices in clarinet, courses in music theory. </li>
+                        <li> Around 2015 I joined an orchestra called Bo.Per.Cui which gave me many opportunities to
+                            perform on stage (in France and Germany). It was a really fun experience as I got to meet
+                            new wonderful people and to discover a different culture. </li>
+                    </ul>
+                    </p>
+                </section>
+                <section class="drawings">
+                    <p class="title"> Drawing </p>
+                    <p class="timeline"> Since I could hold a pencil! </p>
+                    <p class="description">
+                    <ul>
+                        <li>Here are some of the drawings I've made in the last years. I only use pencils with different
+                            graphite according to the level of precision that I need (shadow, facial features...). </li>
+                        <li> I've learned to draw by myself when I was little mostly by repoducing pictures that I had
+                            taken or by trying to draw objects in my room. As long as I remember, I've always liked the
+                            idea of repoducing reality in its tiniest details. </li>
+                        <li> As I grew up, I started inventing characters and draw them (some of the faces below are
+                            probably unconsciously a mix of the people I see in my everyday life). </li>
+                    </ul>
+                    </p>
+                    <div class="example">
+                        <img data-enlargeable class="img" src="images/drawing1.jpg">
+                        <img data-enlargeable class="img" src="images/drawing2.jpg">
+                        <img data-enlargeable class="img" src="images/drawing3.jpg">
+                        <img data-enlargeable class="img" src="images/drawing4.jpg">
+                        <img data-enlargeable class="img" src="images/drawing5.jpg">
+                        <img data-enlargeable class="img" src="images/drawing6.jpg">
+
+                    </div>
+                </section>
             </div>
         </div>
-        <div class="CV">
-            <div id="button" onclick="toggleCV()"><img src="images/download.png" width="16px"> CV </div>
-            <div id="CV_menu">
-                <div id="FR"><a href="CV_Helene_Hassan_FR.pdf"> FR </a></div>
-                <div id="EN"><a href="CV_Helene_Hassan_EN.pdf"> EN </a></div>
-            </div>
+    </div>
+    <div class="CV">
+        <div id="button" onclick="toggleCV()"><img src="images/download.png" width="16px"> CV </div>
+        <div id="CV_menu">
+            <div id="FR"><a href="CV_Helene_Hassan_FR.pdf"> FR </a></div>
+            <div id="EN"><a href="CV_Helene_Hassan_EN.pdf"> EN </a></div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="js/zoom.js"></script>
-        <script src="js/menu.js"> </script>
-        <script src="js/translate.js"></script>
-        <script src="js/cv.js"></script>
-    </body>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/zoom.js"></script>
+    <script src="js/menu.js"> </script>
+    <script src="js/translate.js"></script>
+    <script src="js/cv.js"></script>
+</body>
+
 </html>
