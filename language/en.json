@@ -105,6 +105,25 @@
     "project-description2-2" : "Uses the concept of widgets (buttons, frames, toplevels) and geometry managers to place elements on the screen. The library handles the addition of new types of widgets or geometry managers by the user.",
     "project-description2-3" : "This project enabled me to manipulate many aspects of programmation such as event programming or polymorphism in C structures (used for object-oriented programming). It really helped me enhance my level in C as a huge part of the project consisted in debugging, finding memory errors and leaks and optimizing the code to gain fluidity when moving the top levels.",
 
+    "project6" : "Robot Simulation",
+    "project-timeline6" : "October 2022 (3 weeks, in team of 3 students)",
+    "project-description6-1" : "Library coded entirely in C, similar to tkinter in python. Can be used to build simple games or applications.",
+    "project-description6-2" : "Uses the concept of widgets (buttons, frames, toplevels) and geometry managers to place elements on the screen. The library handles the addition of new types of widgets or geometry managers by the user.",
+    "project-description6-3" : "This project enabled me to manipulate many aspects of programmation such as event programming or polymorphism in C structures (used for object-oriented programming). It really helped me enhance my level in C as a huge part of the project consisted in debugging, finding memory errors and leaks and optimizing the code to gain fluidity when moving the top levels.",
+
+    "project8" : "Modification of a 3D mesh using Bézier surfaces",
+    "project-timeline8" : "November-December 2022 (2 months, in team of 6 students)",
+    "project-description8-1" : "Library coded entirely in C, similar to tkinter in python. Can be used to build simple games or applications.",
+    "project-description8-2" : "Uses the concept of widgets (buttons, frames, toplevels) and geometry managers to place elements on the screen. The library handles the addition of new types of widgets or geometry managers by the user.",
+    "project-description8-3" : "This project enabled me to manipulate many aspects of programmation such as event programming or polymorphism in C structures (used for object-oriented programming). It really helped me enhance my level in C as a huge part of the project consisted in debugging, finding memory errors and leaks and optimizing the code to gain fluidity when moving the top levels.",
+
+    "project9":"Computer graphics project : volcano scene",
+    "project-timeline9":"Semester project (but done in 2~3 weeks)",
+    "project-description9-1":"Here is one of my first shaders, created after one to two weeks of learning about shaders (scattered between school and my part-time job).",
+    "project-description9-2":"This was realized by using simple raymarching techniques and fBm (fractional Brownian motions) for everything that concerns waves and for the dirt on the hill. I added some textures and displacement to the dirt to give it a stony aspect.",
+    "project-description9-3":"The framerate of this shader is actually really low (runs at 16-20fps on my 15.6 laptop with an RTX 3050 as a gpu) but this is probably due to the high number of calls to the fBm function or the high maximum distance for the raymarching function.",
+    "project-description9-4":"Don't hesitate to check my other shaders on Shadertoy!",
+
 
     "personal-projects" : "Personal projects",
     "project3" : "This website!",
@@ -121,10 +140,18 @@
     "project-description4-4":"The number of rays displayed in the screen can be set up to 3000 using only edges, and up to 250 using Bézier curves.",
     "project-description4-5":"This project allowed me to apply directly my mathematical knowledge (regarding geometry modeling) to a concrete project. It also enabled me to work again on evenemential programming, optimization and other aspects of programming.",
 
-    "project5":"SHADERS",
+    "project5":"Shaders",
     "project-timeline5":"Since November 2022",
     "project-description5-1":"Here is one of my first shaders, created after one to two weeks of learning about shaders (scattered between school and my part-time job).",
     "project-description5-2":"This was realized by using simple raymarching techniques and fBm (fractional Brownian motions) for everything that concerns waves and for the dirt on the hill. I added some textures and displacement to the dirt to give it a stony aspect.",
     "project-description5-3":"The framerate of this shader is actually really low (runs at 16-20fps on my 15.6 laptop with an RTX 3050 as a gpu) but this is probably due to the high number of calls to the fBm function or the high maximum distance for the raymarching function.",
-    "project-description5-4":"Don't hesitate to check my other shaders on Shadertoy!"
+    "project-description5-4":"Don't hesitate to check my other shaders on Shadertoy!",
+
+    "project7":"BlackSeas: 3D multiplayer game completely from scratch",
+    "project-timeline7":"Semester project",
+    "project-description7-1":"",
+    "project-description7-2":"This was realized by using simple raymarching techniques and fBm (fractional Brownian motions) for everything that concerns waves and for the dirt on the hill. I added some textures and displacement to the dirt to give it a stony aspect.",
+    "project-description7-3":"The framerate of this shader is actually really low (runs at 16-20fps on my 15.6 laptop with an RTX 3050 as a gpu) but this is probably due to the high number of calls to the fBm function or the high maximum distance for the raymarching function.",
+    "project-description7-4":"Don't hesitate to check my other shaders on Shadertoy!"
+
 }
