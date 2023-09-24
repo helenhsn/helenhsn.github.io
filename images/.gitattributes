@@ -1,0 +1,4 @@
+poo.webm filter=lfs diff=lfs merge=lfs -text
+black-seas.webm filter=lfs diff=lfs merge=lfs -text
+volcano.mp4 filter=lfs diff=lfs merge=lfs -text
+minesweeper.gif filter=lfs diff=lfs merge=lfs -text
