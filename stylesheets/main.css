@@ -1,5 +1,5 @@
 @font-face {
-    font-family:'Merriweather';
+    font-family: 'Merriweather';
     src: url('/fonts/MerriweatherSans-Medium.ttf');
 }
 
@@ -12,26 +12,27 @@
     font-family: 'Merriweather-Italic';
     src: url('/fonts/MerriweatherSans-LightItalic.ttf');
 }
+
 :root {
-    --body-color:#28293D;
+    --body-color: #28293D;
     --basic-color: #ffffff;
     --navbar-color: #1C1C27;
     --light-color: #f3a48c;
-    --title-section-color:#ebebeb;
-    --timeline-color:#f3a48c;
-    --border-section-color:#f3a48c;
+    --title-section-color: #ebebeb;
+    --timeline-color: #f3a48c;
+    --border-section-color: #f3a48c;
     --bg-section-color: #212135;
-    --cv-color-click:#1C1C27;
+    --cv-color-click: #1C1C27;
 }
 
 body {
     margin: 0;
-    width:100%;
+    width: 100%;
     min-height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
     overflow-y: auto;
-    color:var(--basic-color);
+    color: var(--basic-color);
     background-color: var(--body-color);
 }
 
@@ -50,6 +51,7 @@ header {
     background-position: center;
     text-align: center;
 }
+
 a {
     text-decoration: none;
 }
@@ -67,7 +69,7 @@ a {
     font-family: 'Merriweather';
     font-size: 1.4rem;
     height: 4.5rem;
-    color:var(--light-color);
+    color: var(--light-color);
 }
 
 .navbar a {
@@ -76,11 +78,12 @@ a {
     color: #e5e9f0;
 }
 
-nav li a::after, .name a::after {
+nav li a::after,
+.name a::after {
     content: '';
     width: 100%;
     position: absolute;
-    top:2.85rem;
+    top: 2.85rem;
     bottom: 0;
     left: 0;
     height: 0.2em;
@@ -91,7 +94,8 @@ nav li a::after, .name a::after {
 
 
 
-nav li a:hover::after, .name a:hover::after {
+nav li a:hover::after,
+.name a:hover::after {
     top: 2.85rem;
     transform: scaleX(1);
     transform-origin: center;
@@ -99,7 +103,7 @@ nav li a:hover::after, .name a:hover::after {
 }
 
 .menu-logo {
-    display:none;
+    display: none;
 }
 
 .language-logo {
@@ -116,12 +120,12 @@ nav li a:hover::after, .name a:hover::after {
 }
 
 nav {
-    flex:1;
+    flex: 1;
     text-align: right;
 }
 
-nav ul li{
-    display:inline-block;
+nav ul li {
+    display: inline-block;
     margin: 0.4em 0;
     margin-right: 4%;
 }
@@ -129,6 +133,7 @@ nav ul li{
 .contents div {
     padding: 3% 0;
 }
+
 section {
     margin: 5% 0%;
     display: flex;
@@ -149,19 +154,24 @@ h1 {
 }
 
 /* ----------------- EDUCATION, EXPERIENCE, PROJECTS ------------- */
-.events section, .projects section {
+.events section,
+.projects section {
     display: block;
     padding: 0 1rem;
     text-align: left;
 }
 
-.events section, .projects section, .contact-list {
-    background-color:var(--bg-section-color);
+.events section,
+.projects section,
+.contact-list {
+    background-color: var(--bg-section-color);
     border-radius: 5px;
-    transition:300ms;
+    transition: 300ms;
 }
 
-.events section:hover, .projects section:hover, .contact-list:hover {
+.events section:hover,
+.projects section:hover,
+.contact-list:hover {
     box-shadow: 0.1px 1px 6px 0.1px #ecdfdf;
 }
 
@@ -176,14 +186,16 @@ h1 {
     margin: 1rem 0rem;
 }
 
-.events ul, .projects ul {
+.events ul,
+.projects ul {
     list-style-type: none;
     padding: 0 0 0.5rem 0;
     margin: 0;
 }
 
 
-.events li, .projects li {
+.events li,
+.projects li {
     text-align: justify;
     margin: 1rem 0rem 1rem 0rem;
 }
@@ -195,25 +207,29 @@ h1 {
     padding: 0.5rem 0;
 }
 
-.events div p, .events div img {
+.events div p,
+.events div img {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .events div p {
     margin-left: 0.5rem;
 }
 
-.drawings li, .drawings p {
+.drawings li,
+.drawings p {
     margin-bottom: 0;
 }
 
 .title {
     padding-top: 1rem;
     text-transform: uppercase;
-    color:var(--title-section-color);
+    color: var(--title-section-color);
     font-family: 'Merriweather-Bold';
     font-size: larger;
 }
+
 .timeline-prog {
     display: flex;
     flex-direction: column;
@@ -225,7 +241,7 @@ h1 {
 
 .timeline-prog p {
     padding: 0;
-    margin: 0.2rem 0 ;
+    margin: 0.2rem 0;
 }
 
 .timeline {
@@ -248,15 +264,16 @@ h1 {
 
 /* ------------ PROJECTS ---------------- */
 
-.projects section, .drawings {
+.projects section,
+.drawings {
     display: flex;
     padding-bottom: 1rem;
     flex-direction: column;
 }
 
 .projects div {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .projects ul {
@@ -269,8 +286,9 @@ h1 {
 }
 
 .projects .timeline {
-    color:var(--timeline-color);
+    color: var(--timeline-color);
 }
+
 .img {
     max-width: 15rem;
     overflow-x: hidden;
@@ -280,20 +298,28 @@ h1 {
     transition: transform 800ms;
 }
 
+.concepts {
+    padding-top: 0.1rem;
+    font-family: 'Merriweather-Bold';
+
+}
+
 .events .img {
     margin-bottom: 1rem;
 }
 
-.img:hover, .raycaster:hover{
+.img:hover,
+.raycaster:hover {
     transform: scale(1.02);
     cursor: zoom-in;
 }
 
 .example {
-    display:flex;
+    display: flex;
     justify-content: center;
-    
+
 }
+
 .contact-list {
     flex-direction: column;
 }
@@ -302,7 +328,7 @@ h1 {
 
 @media screen and (max-width:1600px) {
     .aboutme {
-        display:block;
+        display: block;
     }
 }
 
@@ -310,15 +336,18 @@ h1 {
 @media screen and (max-width:840px) {
     .menu-logo {
         width: 20px;
-        display:block;
+        display: block;
         margin-right: 10px;
     }
+
     .contents {
         padding: 3%;
     }
+
     .navbar {
         max-width: 100%;
     }
+
     nav ul {
         max-width: 100%;
         display: flex;
@@ -330,14 +359,15 @@ h1 {
         right: 0;
         padding-left: 2%;
         background-color: var(--navbar-color);
-        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);    
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
     }
 
     nav ul li {
         padding: 0.4em 0;
     }
 
-    nav li a, .name a {
+    nav li a,
+    .name a {
         background: linear-gradient(to right, #b12316, var(--light-color) 50%, #e5e9f0 50%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -347,14 +377,18 @@ h1 {
         transition: background-position 300ms ease-in;
 
     }
-    nav li a::after, .name a::after,
-    nav li a:hover::after, .name a:hover::after {
+
+    nav li a::after,
+    .name a::after,
+    nav li a:hover::after,
+    .name a:hover::after {
         height: 0;
         visibility: none;
     }
-    
-    
-    nav li a:hover, .name a:hover{
+
+
+    nav li a:hover,
+    .name a:hover {
         background-position: 0 100%;
     }
 
@@ -365,7 +399,9 @@ h1 {
     .events section {
         padding: 0rem 1rem;
     }
-    .events section:hover, .projects section:hover {
+
+    .events section:hover,
+    .projects section:hover {
         transform: translateX(0) translateY(0);
     }
 
@@ -373,6 +409,7 @@ h1 {
         flex-wrap: wrap;
         padding: 1rem;
     }
+
     .drawings .example img {
         overflow-x: hidden;
         height: 10rem;
