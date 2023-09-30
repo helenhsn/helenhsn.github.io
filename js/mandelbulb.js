@@ -1,74 +1,121 @@
+console.clear();
+
+var current_time = 0.0;
+
+const vsSource = `
+  attribute vec2 position; 
+
+  varying lowp vec2 v_position;
+
+  void main(void){ 
+  gl_Position=vec4(position, 0.0, 1.0); 
+  v_position = position;
+  }
+  `;
+
+const fsSource = `
+  varying lowp vec2 v_position; 
+  void main(void){
+  gl_FragColor=vec4(0.9, 0.0 ,0.9 ,1.0);
+  }
+  `;
+
 main();
 
-function drawScene(gl, programInfo, buffers) {
 
-  // Tell WebGL to use our program when drawing
-  gl.useProgram(programInfo.program);
+/*-------------- BUFFER RELATED FUNCTIONS -------------- */
+function initVBO(gl, data, programId, nameAttrib, numFloats, stride, offset) {
+  console.log("init vbo");
 
-  // Set the shader uniforms
-  gl.uniformMatrix4fv(
-    programInfo.uniformLocations.projectionMatrix,
-    false,
-    projectionMatrix
-  );
-  gl.uniformMatrix4fv(
-    programInfo.uniformLocations.modelViewMatrix,
-    false,
-    modelViewMatrix
-  );
+  const id = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, id);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(data), gl.STATIC_DRAW);
 
-  {
-    const offset = 0;
-    const vertexCount = 4;
-    gl.drawArrays(gl.TRIANGLE_STRIP, offset, vertexCount);
+  heho();
+  var loc = gl.getAttribLocation(programId, nameAttrib);
+  console.log(loc);
+  gl.vertexAttribPointer(loc, numFloats, gl.FLOAT, gl.FALSE, stride, offset);
+  gl.enableVertexAttribArray(loc);
+}
+
+function heho() {
+  console.log("TEST");
+}
+
+/*-------------- SHADER PROGRAMS FUNCTIONS -------------- */
+
+function compileShader(gl, type, source) {
+  const shader = gl.createShader(type);
+
+
+  gl.shaderSource(shader, source);
+  gl.compileShader(shader);
+
+  console.log(source);
+
+  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+    console.log(`An error occurred compiling the shaders: ${gl.getShaderInfoLog(shader)}`
+    );
+    gl.deleteShader(shader);
+    return null;
   }
+
+  return shader;
+}
+
+function initShaderProgram(gl) {
+
+  const vertexShader = compileShader(gl, gl.VERTEX_SHADER, vsSource);
+  const fragmentShader = compileShader(gl, gl.FRAGMENT_SHADER, fsSource);
+
+  const shaderProgram = gl.createProgram();
+  gl.attachShader(shaderProgram, vertexShader);
+  gl.attachShader(shaderProgram, fragmentShader);
+  gl.linkProgram(shaderProgram);
+
+  if (!gl.getProgramParameter(shaderProgram, gl.LINK_STATUS)) {
+    console.log(
+      `Unable to initialize the shader program: ${gl.getProgramInfoLog(
+        shaderProgram
+      )}`
+    );
+    return null;
+  }
+
+  return shaderProgram;
 }
 
 
-
-//
-// start here
-//
 function main() {
-  const canvas = document.querySelector("#glcanvas");
-  // Initialize the GL context
+  console.log("main");
+
+  const canvas = document.querySelector("#mandelbulb");
+
+  // gl context
   const gl = canvas.getContext("webgl");
 
-  // Only continue if WebGL is available and working
-  if (gl === null) {
+  if (!gl) {
     alert(
       "Unable to initialize WebGL. Your browser or machine may not support it."
     );
     return;
   }
 
-  // Init camera args
-  const fov = (45 * Math.PI) / 180; // in radians
-  const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
-  const near = 0.1;
-  const far = 100.0;
-  const projection = mat4.create();
+  // init shader program
+  const programId = initShaderProgram(gl);
+  // init particle buffers
+  const vertices = [-0.9, -0.9, 0.9, -0.9, 0.9, 0.9, -0.9, -0.9, 0.9, 0.9, -0.9, 0.9];
+  initVBO(gl, vertices, programId, "position", 2, 0, 0);
 
-  mat4.perspective(projection, fov, aspect, near, far);
+  gl.useProgram(programId);
 
-  const modelViewMatrix = mat4.create();
-
-  mat4.translate(
-    modelViewMatrix, // destination matrix
-    modelViewMatrix, // matrix to translate
-    [-0.0, 0.0, -6.0]
-  );
-
-  setPositionAttribute(gl, buffers, programInfo);
-
-
-  gl.clearColor(0.063, 0.063, 0.094, 1.0);
-  gl.clearDepth(1.0);
-  gl.enable(gl.DEPTH_TEST);
+  console.log(gl.canvas.clientHeight);
+  gl.clearColor(0.06, 0.16, 0.09, 1.0);
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+  gl.enable(gl.DEPTH_TEST);
+  gl.enable(gl.CULL_FACE);
+  gl.cullFace(gl.BACK);
 
-  // Set clear color to black, fully opaque
-  gl.clearColor(0.0, 0.0, 0.0, 1.0);
-  // Clear the color buffer with specified clear color
-  gl.clear(gl.COLOR_BUFFER_BIT);
+  // draw call
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
 }
