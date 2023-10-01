@@ -14,9 +14,9 @@
 }
 
 :root {
-    --body-color: #28293D;
+    --body-color: #12121a;
     --basic-color: #ffffff;
-    --navbar-color: #1C1C27;
+    --navbar-color: #191922;
     --light-color: #f3a48c;
     --title-section-color: #ebebeb;
     --timeline-color: #f3a48c;
@@ -35,7 +35,14 @@ body {
     color: var(--basic-color);
     background-color: var(--body-color);
 }
-
+canvas{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:-1;
+    width: 100%;
+    height: 100vh;
+  }
 .container {
     height: 100vh;
     text-align: center;
