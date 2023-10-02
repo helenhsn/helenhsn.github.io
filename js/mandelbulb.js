@@ -246,22 +246,29 @@ function initShaderProgram(gl) {
 function render() {
   const canvas = document.querySelector('#mandelbulb');
 
-  var res_w = canvas.offsetWidth;
-  var res_h = canvas.offsetHeight;
+  var factor = 1.0;
   if ("matchMedia" in window)
   {
     if (window.matchMedia("(max-width:800px").matches) 
     {
-      res_w /= 1.4;
+      factor = 1.4;
     }
     if (window.matchMedia("(max-width:1600px").matches) 
     {
-      res_w /= 1.8;
+      factor = 1.8;
     }
   }
-
+  var res_w = canvas.offsetWidth/factor;
+  var res_h = canvas.offsetHeight/factor;
+  console.log("debut");
+  console.log(canvas.clientWidth);
+  console.log(canvas.clientHeight);
   canvas.setAttribute("width", res_w.toString());
   canvas.setAttribute("height", res_h.toString());
+
+  console.log(canvas.width);
+  console.log(canvas.height);
+
   var gl = canvas.getContext('webgl');
   if (!gl) {
     alert(

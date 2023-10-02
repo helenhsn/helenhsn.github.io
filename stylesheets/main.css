@@ -337,6 +337,13 @@ h1 {
     .aboutme {
         display: block;
     }
+    canvas {
+        position:fixed;
+        top: 33%;
+        height: 75vh;
+
+        
+    }
 }
 
 
