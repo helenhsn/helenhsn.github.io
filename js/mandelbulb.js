@@ -251,13 +251,15 @@ function render() {
   {
     if (window.matchMedia("(max-width:800px").matches) 
     {
-      factor = 1.4;
+      factor = 1.8;
     }
     if (window.matchMedia("(max-width:1600px").matches) 
     {
-      factor = 1.8;
+      factor = 1.4;
     }
   }
+
+  // adapting resolution
   var res_w = canvas.offsetWidth/factor;
   var res_h = canvas.offsetHeight/factor;
   console.log("debut");
