@@ -3,11 +3,6 @@ $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
     var src = $(this).attr('src');
     var modal;
     var bgSize = '';
-    var newMaxWidth = this.width;
-    var newMaxHeight = this.height;
-    console.log(newMaxWidth);
-    console.log(newMaxHeight);
-    
     function removeModal() {
         modal.remove();
         $('.contents').off('keyup.modal-close');

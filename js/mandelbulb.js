@@ -8,14 +8,16 @@ const vsSource = `
 
   varying lowp vec2 v_position;
 
-  void main(void){ 
-  gl_Position=vec4(position, 0.0, 1.0); 
-  v_position = position;
+  void main(void)
+  {
+    gl_Position = vec4(position, 0.0, 1.0);
+    v_position = position;
   }
+
   `;
 
 const fsSource = `
-  precision mediump float;
+  precision lowp float;
   varying lowp vec2 v_position; 
 
   uniform float u_time;
@@ -156,26 +158,26 @@ const fsSource = `
 
   void main()
   {
-      vec2 uv = v_position;
-      uv.x *= u_canva.x/u_canva.y;
-      
-      vec3 ro = vec3(0.0, 2.5, 3.0);
-      ro.xz = 1.5* vec2(cos(u_time*0.5), sin(u_time*3.0*0.5));
-      ro.yz =2.0* vec2(cos(-u_time*0.1), sin(u_time*3.0*0.1));
-      vec3 look_at = vec3(0.0, 0.0, 0.0); //look at
-      
-      float zoom = 0.9;
-      vec3 rd = initCamera(uv, ro, look_at, zoom);
-      
-      int id_object = 0;
-      float sdf = rayMarch(ro, rd, id_object);
+    vec2 uv = v_position;
+    uv.x *= u_canva.x/u_canva.y;
+    
+    vec3 ro = vec3(0.0, 2.5, 3.0);
+    ro.xz = 1.5* vec2(cos(u_time*0.5), sin(u_time*3.0*0.5));
+    ro.yz =2.0* vec2(cos(-u_time*0.1), sin(u_time*3.0*0.1));
+    vec3 look_at = vec3(0.0, 0.0, 0.0); //look at
+    
+    float zoom = 0.9;
+    vec3 rd = initCamera(uv, ro, look_at, zoom);
+    
+    int id_object = 0;
+    float sdf = rayMarch(ro, rd, id_object);
 
-      vec3 intersection = ro + sdf * rd;
-      
-      
-      vec3 color = getColor(ro, intersection, sdf, id_object);
+    vec3 intersection = ro + sdf * rd;
+    
+    
+    vec3 color = getColor(ro, intersection, sdf, id_object);
 
-      gl_FragColor = vec4(pow(color, vec3(1.0/2.2)),1.0);
+    gl_FragColor = vec4(pow(color, vec3(1.0/2.2)),1.0);
   }
 
 `;
@@ -244,8 +246,22 @@ function initShaderProgram(gl) {
 function render() {
   const canvas = document.querySelector('#mandelbulb');
 
-  canvas.setAttribute("width", canvas.offsetWidth.toString());
-  canvas.setAttribute("height", canvas.offsetHeight.toString());
+  var res_w = canvas.offsetWidth;
+  var res_h = canvas.offsetHeight;
+  if ("matchMedia" in window)
+  {
+    if (window.matchMedia("(max-width:800px").matches) 
+    {
+      res_w /= 1.4;
+    }
+    if (window.matchMedia("(max-width:1600px").matches) 
+    {
+      res_w /= 1.8;
+    }
+  }
+
+  canvas.setAttribute("width", res_w.toString());
+  canvas.setAttribute("height", res_h.toString());
   var gl = canvas.getContext('webgl');
   if (!gl) {
     alert(
@@ -254,6 +270,10 @@ function render() {
     return;
   }
 
+
+  const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+  const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+  console.log(renderer);
   // init shader program
   const programId = initShaderProgram(gl);
   // init particle buffers
