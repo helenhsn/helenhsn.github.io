@@ -15,7 +15,7 @@
 
 :root {
     --body-color: #12121a;
-    --basic-color: #ffffff;
+    --basic-color: rgb(255, 255, 255);
     --navbar-color: #191922;
     --light-color: #f3a48c;
     --title-section-color: #ebebeb;
@@ -170,16 +170,19 @@ h1 {
 
 .events section,
 .projects section,
-.contact-list {
-    background-color: var(--bg-section-color);
+.contact-list, .aboutme-content {
+    background-color: rgba(33, 33, 53, 0.3);
+    color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     transition: 300ms;
+
 }
 
 .events section:hover,
 .projects section:hover,
-.contact-list:hover {
+.contact-list:hover, .aboutme-content:hover {
     box-shadow: 0.1px 1px 6px 0.1px #ecdfdf;
+    color: rgba(255, 255, 255, 1.0);
 }
 
 

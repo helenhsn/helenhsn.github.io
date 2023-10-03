@@ -1,7 +1,6 @@
 .aboutme {
     margin-top: 0;
     padding-top: 1rem;
-    border-bottom: 0.1rem ridge var(--border-section-color);
 }
 
 .aboutme-content h1 {
