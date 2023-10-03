@@ -159,8 +159,8 @@ const fsSource = `
   void main()
   {
     vec2 uv = v_position;
-    float div = min(u_canva.x, u_canva.y)/max(u_canva.x, u_canva.y);
-    uv.x *= u_canva.x/u_canva.y;
+    float ratio = u_canva.x/u_canva.y;
+    uv.y /= ratio;
     vec3 ro = vec3(0.0, 2.5, 3.0);
     ro.xz = 1.5* vec2(cos(u_time*0.5), sin(u_time*3.0*0.5));
     ro.yz =2.0* vec2(cos(-u_time*0.1), sin(u_time*3.0*0.1));
@@ -243,34 +243,42 @@ function initShaderProgram(gl) {
 }
 
 
+
 function render() {
   const canvas = document.querySelector('#mandelbulb');
 
-  var factor = 1.0;
-  if ("matchMedia" in window)
-  {
-    if (window.matchMedia("(max-width:1600px").matches) 
-    {
-      factor = 1.4;
-    }
-    if (window.matchMedia("(max-width:800px").matches) 
-    {
-      factor = 1.8;
-    }
+  // Lookup the size the browser is displaying the canvas in CSS pixels.
+  const displayWidth  = canvas.clientWidth;
+  const displayHeight = canvas.clientHeight;
+
+  // Check if the canvas is not the same size.
+  const needResize = canvas.width  !== displayWidth ||
+                     canvas.height !== displayHeight;
+
+  if (needResize) {
+    // Make the canvas the same size
+    canvas.width  = displayWidth;
+    canvas.height = displayHeight;
   }
 
   // adapting resolution
-  var res_w = canvas.offsetWidth/factor;
-  var res_h = canvas.offsetHeight/factor;
-  console.log("debut");
-  console.log(canvas.clientWidth);
-  console.log(canvas.clientHeight);
-  canvas.setAttribute("width", res_w.toString());
-  canvas.setAttribute("height", res_h.toString());
-
-  console.log(canvas.width);
-  console.log(canvas.height);
-
+  var factor = 1.0;
+  console.log("test");
+  if ("matchMedia" in window)
+  {
+    if (window.matchMedia("(max-width:800px").matches) 
+    {
+      console.log("ici");
+      factor = 2.3;
+    }
+    else if (window.matchMedia("(max-width:1600px").matches) 
+    {
+      factor = 1.4;
+    }
+  }
+  console.log(factor);
+  canvas.width /= factor;
+  canvas.height /= factor;
   var gl = canvas.getContext('webgl');
   if (!gl) {
     alert(
@@ -278,11 +286,7 @@ function render() {
     );
     return;
   }
-
-
-  const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
-  const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
-  console.log(renderer);
+  gl.viewport(0.0, 0.0, gl.canvas.width, gl.canvas.height);
   // init shader program
   const programId = initShaderProgram(gl);
   // init particle buffers
@@ -307,7 +311,7 @@ function render() {
   if (canvaLoc != -1.0) 
   {
 
-    gl.uniform2fv(canvaLoc, [canvas.width, canvas.height]);
+    gl.uniform2fv(canvaLoc, [gl.canvas.width, gl.canvas.height]);
   }
 
   gl.clearColor(0.071, 0.071, 0.102, 1.0);
@@ -321,4 +325,10 @@ function render() {
   window.requestAnimationFrame(render);
 }
 window.requestAnimationFrame(render);
+
+function onWindowResize() 
+{
+  render();
+}
+window.addEventListener("resize", onWindowResize);
 
