@@ -160,7 +160,15 @@ const fsSource = `
   {
     vec2 uv = v_position;
     float div = u_canva.x/u_canva.y;
-    uv.x *= div;
+    if (div > 0.0)  
+    {
+      uv.x *= div;
+      //uv.y *= 1./div;
+    }
+    else {
+      uv.x *= 1./div;
+      //uv.y *= div;
+    }
     vec3 ro = vec3(0.0, 2.5, 3.0);
     ro.xz = 1.5* vec2(cos(u_time*0.5), sin(u_time*3.0*0.5));
     ro.yz =2.0* vec2(cos(-u_time*0.1), sin(u_time*3.0*0.1));
