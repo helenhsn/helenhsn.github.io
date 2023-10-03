@@ -159,8 +159,8 @@ const fsSource = `
   void main()
   {
     vec2 uv = v_position;
-    uv.x *= u_canva.x/u_canva.y;
-    
+    float div = u_canva.x/u_canva.y;
+    uv.x *= div;
     vec3 ro = vec3(0.0, 2.5, 3.0);
     ro.xz = 1.5* vec2(cos(u_time*0.5), sin(u_time*3.0*0.5));
     ro.yz =2.0* vec2(cos(-u_time*0.1), sin(u_time*3.0*0.1));
@@ -247,17 +247,17 @@ function render() {
   const canvas = document.querySelector('#mandelbulb');
 
   var factor = 1.0;
-  if ("matchMedia" in window)
-  {
-    if (window.matchMedia("(max-width:800px").matches) 
-    {
-      factor = 1.8;
-    }
-    if (window.matchMedia("(max-width:1600px").matches) 
-    {
-      factor = 1.4;
-    }
-  }
+  // if ("matchMedia" in window)
+  // {
+  //   if (window.matchMedia("(max-width:800px").matches) 
+  //   {
+  //     factor = 1.8;
+  //   }
+  //   if (window.matchMedia("(max-width:1600px").matches) 
+  //   {
+  //     factor = 1.4;
+  //   }
+  // }
 
   // adapting resolution
   var res_w = canvas.offsetWidth/factor;
