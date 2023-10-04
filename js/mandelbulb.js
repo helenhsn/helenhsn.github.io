@@ -265,7 +265,6 @@ function render() {
 
   // adapting resolution
   var resizeFactor = 2.0;
-  console.log("test");
   if ("matchMedia" in window)
   {
     if (window.matchMedia("(max-width:800px").matches) 
@@ -285,7 +284,6 @@ function render() {
     }
 
   }
-  console.log(resizeFactor);
   var gl = canvas.getContext('webgl');
   if (!gl) {
     alert(
@@ -337,34 +335,21 @@ function render() {
   gl.drawArrays(gl.TRIANGLES, 0, 6);
 }
 
-if ("matchMedia" in window)
-{
-  if (window.matchMedia("(max-width:800px").matches) 
-  {
-    console.log("ici");
-    render();
-    resizeFactor = 1.;
-  }
-  else
-  {
-    window.requestAnimationFrame(render);
-  }
-
-}
+window.requestAnimationFrame(render);
 
 function onScroll(event)
 {
-  console.log("heho");
+  console.log("SCROLL");
   event.preventDefault(); 
 
   var distanceY = window.scrollY;
   if (distanceY > 0) {
+    console.log("oui");
     render();
     last_scroll_time += 0.1;
   }
 }
-render();
 window.addEventListener("resize", render);
 window.addEventListener("scroll", onScroll);
-window.addEventListener("scroll", onScroll);
+window.addEventListener("touchmove", onScroll);
 
