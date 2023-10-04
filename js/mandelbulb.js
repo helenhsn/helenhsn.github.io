@@ -57,13 +57,13 @@ const fsSource = `
       
       float n = 2.0;
       float n_minus = n-1.0;
-      float size_bulb = 256.0;
+      float size_bulb = 64.0;
       vec4 z = vec4(p, 0.0);
       float lz_2 = dot(z,z); // length squared of vector z
       float r = sqrt(lz_2);
       float dz = 1.0; // derivative
 
-      for (int i = 0; i<10; i++) 
+      for (int i = 0; i<7; i++) 
       {
           
           dz = n * dz * pow(r, n_minus); //dz_k+1 = n * dz_k * length(z)**(n-1) + 1
@@ -87,7 +87,7 @@ const fsSource = `
   float rayMarch(in vec3 ro, in vec3 rd, inout int id_object)
   {
       float d = 0.0;
-      for (int i = 0; i<500; i++) 
+      for (int i = 0; i<300; i++) 
       {
           if (d > 800.0) break;
           vec3 p = ro + rd*d;
@@ -257,12 +257,12 @@ function render() {
 
   if (needResize) {
     // Make the canvas the same size
-    canvas.width  = displayWidth;
-    canvas.height = displayHeight;
+    canvas.width  = displayWidth/1.5;
+    canvas.height = displayHeight/1.5;
   }
 
   // adapting resolution
-  var resizeFactor = 4.0;
+  var resizeFactor = 2.0;
   console.log("test");
   if ("matchMedia" in window)
   {
