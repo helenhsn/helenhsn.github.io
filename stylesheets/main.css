@@ -37,6 +37,7 @@ body {
 }
 canvas{
     position:fixed;
+    touch-action: auto!important;
     z-index:-1;
     left:0;
     top:0;
