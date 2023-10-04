@@ -161,6 +161,8 @@ const fsSource = `
   {
     vec2 uv = v_position*resizeFactor;
     float ratio = u_canva.x/u_canva.y;
+    if (ratio > 1.0) uv.x *=ratio;
+    else uv.y /= ratio;
     vec3 ro = vec3(0.0, 2.5, 3.0);
     ro.xz = 1.5* vec2(cos(u_time*0.5), sin(u_time*3.0*0.5));
     ro.yz =2.0* vec2(cos(-u_time*0.1), sin(u_time*3.0*0.1));
@@ -268,13 +270,18 @@ function render() {
   {
     if (window.matchMedia("(max-width:800px").matches) 
     {
-      console.log("ici");
-      resizeFactor = 3.25;
+      resizeFactor = 1.;
+
     }
     else if (window.matchMedia("(max-width:1600px").matches) 
     {
       resizeFactor = 1.5;
+      window.requestAnimationFrame(render);
     }
+    else {
+      window.requestAnimationFrame(render);
+    }
+
   }
   console.log(resizeFactor)
   var gl = canvas.getContext('webgl');
@@ -327,13 +334,22 @@ function render() {
 
   // draw call
   gl.drawArrays(gl.TRIANGLES, 0, 6);
-  window.requestAnimationFrame(render);
 }
-window.requestAnimationFrame(render);
 
-function onWindowResize() 
+if ("matchMedia" in window)
 {
-  render();
+  if (window.matchMedia("(max-width:800px").matches) 
+  {
+    console.log("ici");
+    resizeFactor = 1.;
+  }
+  else
+  {
+    window.requestAnimationFrame(render);
+  }
+
 }
-window.addEventListener("resize", onWindowResize);
+
+window.addEventListener("resize", render);
+window.addEventListener("scroll", render);
 
