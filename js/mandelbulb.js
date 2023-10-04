@@ -21,6 +21,7 @@ const fsSource = `
   varying lowp vec2 v_position; 
 
   uniform float u_time;
+  uniform float resizeFactor;
   uniform vec2 u_canva;
 
   // UTILS
@@ -158,9 +159,8 @@ const fsSource = `
 
   void main()
   {
-    vec2 uv = v_position;
+    vec2 uv = v_position*resizeFactor;
     float ratio = u_canva.x/u_canva.y;
-    uv.y /= ratio;
     vec3 ro = vec3(0.0, 2.5, 3.0);
     ro.xz = 1.5* vec2(cos(u_time*0.5), sin(u_time*3.0*0.5));
     ro.yz =2.0* vec2(cos(-u_time*0.1), sin(u_time*3.0*0.1));
@@ -262,23 +262,21 @@ function render() {
   }
 
   // adapting resolution
-  var factor = 1.0;
+  var resizeFactor = 4.0;
   console.log("test");
   if ("matchMedia" in window)
   {
     if (window.matchMedia("(max-width:800px").matches) 
     {
       console.log("ici");
-      factor = 2.3;
+      resizeFactor = 3.25;
     }
     else if (window.matchMedia("(max-width:1600px").matches) 
     {
-      factor = 1.4;
+      resizeFactor = 1.5;
     }
   }
-  console.log(factor);
-  canvas.width /= factor;
-  canvas.height /= factor;
+  console.log(resizeFactor)
   var gl = canvas.getContext('webgl');
   if (!gl) {
     alert(
@@ -298,14 +296,21 @@ function render() {
   // // uniforms
 
   // time
-  var elapsed_time = (Date.now() - start_time) / 1000.0;
+  var elapsedTime = (Date.now() - start_time) / 1000.0;
   const timeLoc = gl.getUniformLocation(programId, "u_time");
   if (timeLoc != -1.0) 
   {
 
-    gl.uniform1f(timeLoc, elapsed_time);
+    gl.uniform1f(timeLoc, elapsedTime);
   }
 
+  // resize factor 
+  const resizeLoc = gl.getUniformLocation(programId, "resizeFactor");
+  if (timeLoc != -1.0) 
+  {
+
+    gl.uniform1f(resizeLoc, resizeFactor);
+  }
   // canva size
   const canvaLoc = gl.getUniformLocation(programId, "u_canva");
   if (canvaLoc != -1.0) 
