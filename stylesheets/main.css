@@ -169,24 +169,6 @@ h1 {
     text-align: left;
 }
 
-.events section,
-.projects section,
-.contact-list, .aboutme-content section {
-    background-color: rgba(33, 33, 53, 0.3);
-    color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    transition: 300ms;
-
-}
-
-.events section:hover,
-.projects section:hover,
-.contact-list:hover, .aboutme-content section:hover {
-    box-shadow: 0.1px 1px 6px 0.1px #ecdfdf;
-    color: rgba(255, 255, 255, 1.0);
-    background-color: rgba(33, 33, 53, 0.9);
-}
-
 
 .perso-projects-title {
     display: flex;
@@ -334,6 +316,29 @@ h1 {
 
 .contact-list {
     flex-direction: column;
+}
+.events section,
+.projects section,
+.contact-list, .aboutme-content section {
+    background-color: rgb(33, 33, 53);
+    color: rgb(255, 255, 255, 0.95);
+    opacity: 0.65;
+    border-radius: 5px;
+    transition: 300ms;
+
+}
+
+.aboutme-content section, .contact-list {
+    opacity: 0.2;
+}
+
+.events section:hover,
+.projects section:hover,
+.contact-list:hover, .aboutme-content section:hover {
+    box-shadow: 0.1px 1px 6px 0.1px #ecdfdf;
+    background-color: rgba(33, 33, 53, 0.9);
+    color: rgba(255, 255, 255, 1.0);
+    opacity: 1.0;
 }
 
 /* ----------- OTHER TYPES OF SCREENS ------------- */
