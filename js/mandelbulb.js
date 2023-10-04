@@ -2,6 +2,7 @@ console.clear();
 
 // setting time uniform
 var start_time = Date.now();
+var last_scroll_time = 0.0;
 
 const vsSource = `
   attribute vec2 position; 
@@ -184,7 +185,6 @@ const fsSource = `
 
 `;
 
-render();
 
 
 /*-------------- BUFFER RELATED FUNCTIONS -------------- */
@@ -271,19 +271,21 @@ function render() {
     if (window.matchMedia("(max-width:800px").matches) 
     {
       resizeFactor = 1.;
-
+      var elapsedTime = last_scroll_time;
     }
     else if (window.matchMedia("(max-width:1600px").matches) 
     {
       resizeFactor = 1.5;
+      var elapsedTime = (Date.now() - start_time) / 1000.0;
       window.requestAnimationFrame(render);
     }
     else {
+      var elapsedTime = (Date.now() - start_time) / 1000.0;
       window.requestAnimationFrame(render);
     }
 
   }
-  console.log(resizeFactor)
+  console.log(resizeFactor);
   var gl = canvas.getContext('webgl');
   if (!gl) {
     alert(
@@ -303,7 +305,6 @@ function render() {
   // // uniforms
 
   // time
-  var elapsedTime = (Date.now() - start_time) / 1000.0;
   const timeLoc = gl.getUniformLocation(programId, "u_time");
   if (timeLoc != -1.0) 
   {
@@ -341,6 +342,7 @@ if ("matchMedia" in window)
   if (window.matchMedia("(max-width:800px").matches) 
   {
     console.log("ici");
+    render();
     resizeFactor = 1.;
   }
   else
@@ -350,6 +352,19 @@ if ("matchMedia" in window)
 
 }
 
+function onScroll(event)
+{
+  console.log("heho");
+  event.preventDefault(); 
+
+  var distanceY = window.scrollY;
+  if (distanceY > 0) {
+    render();
+    last_scroll_time += 0.1;
+  }
+}
+render();
 window.addEventListener("resize", render);
-window.addEventListener("scroll", render);
+window.addEventListener("scroll", onScroll);
+window.addEventListener("scroll", onScroll);
 
