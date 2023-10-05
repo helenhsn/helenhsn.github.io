@@ -52,19 +52,17 @@ const fsSource = `
       p.xz*=rotate(cos(u_time*0.5)*0.8);
       p.yx *= rotate(sin(u_time*0.9)*0.2);
       
-      //vec4 c = normalize(vec4(.19, -.01, 0.9* sin(u_time*.9), 0.5));
-      //vec4 c = vec4(-0.605,0.339,-0.0889,-0.22);
       vec4 c = vec4(clamp(-2.0*smoothstep(1.0, 0.0, u_time*0.06), -3.0, -0.6), 0.3*cos(u_time*0.5), 0.6*sin(u_time*0.4), 0.01);
       
       float n = 2.0;
       float n_minus = n-1.0;
-      float size_bulb = 64.0;
+      float size_bulb = 4.0;
       vec4 z = vec4(p, 0.0);
       float lz_2 = dot(z,z); // length squared of vector z
       float r = sqrt(lz_2);
       float dz = 1.0; // derivative
 
-      for (int i = 0; i<7; i++) 
+      for (int i = 0; i<6; i++) 
       {
           
           dz = n * dz * pow(r, n_minus); //dz_k+1 = n * dz_k * length(z)**(n-1) + 1
@@ -82,25 +80,63 @@ const fsSource = `
   float map(vec3 p) 
   {
       
+      //return min(distToJuliaSet(p), length(p)- 2.0);
       return distToJuliaSet(p);
   }
 
-  float rayMarch(in vec3 ro, in vec3 rd, inout int id_object)
+  vec3 intersectBoundingSphere(vec3 p, vec3 rd)
+  {
+    //f(t) = t² + 2.0 * d.CP * t - r*r + PC*PC
+
+    // Delta f
+    float d_CP = dot(p, rd);
+    float r_sq = 4.0;
+    float D = 4.0*(d_CP*d_CP + r_sq -dot(p,p));
+    if (D < 0.0) return vec3(D, 0.0, 0.0);
+    
+    float mb_over2 = -d_CP;
+    float sqrt_D_over2 = sqrt(D)/2.0;
+    float d1 = mb_over2 + sqrt_D_over2;
+    float d2 = mb_over2 - sqrt_D_over2;
+
+    // p is inside the sphere = we don't care about it
+    if (d1*d2 < 0.0) return vec3(D, 0.0, 0.0); 
+
+    // the sphere is behind p = we don't care about it
+    if (d1 < 0.0) return  vec3(D, 0.0, 0.0);
+
+    // the sphere stands in front of p = specular required!
+
+    // one intersection point
+    if (abs(D) < 1.0e-5) return vec3(D, mb_over2, mb_over2);
+
+    // two intersection points
+    return vec3(D, d2, d1);
+
+  }
+
+  float rayMarch(in vec3 ro, in vec3 rd, inout int id_object, inout float last_dist_obj)
   {
       float d = 0.0;
-      for (int i = 0; i<300; i++) 
+      int last_i = 0;
+      float last_dist = 10.0;
+      for (int i = 0; i<50; i++) 
       {
-          if (d > 800.0) break;
-          vec3 p = ro + rd*d;
+          last_i = i;
+          if (d > 150.0) break;
+
+          vec3 p = ro + rd*d;          
           float dist = map(p);
           d += dist;
 
-          if (dist < 0.01) 
+          if (dist < 0.03) 
           {
-            id_object = 1;
+            last_dist = dist;
             break;
           }
       }
+      id_object = last_i;
+      last_dist_obj = last_dist;
       return d;
   }
 
@@ -110,7 +146,7 @@ const fsSource = `
       vec3 rgt = normalize(cross(fwd, vec3(0.0, 1.0, 0.0)));
       vec3 local_up = cross(rgt, fwd);
       
-      return zoom*fwd + uv.x*rgt + uv.y * local_up;
+      return normalize(zoom*fwd + uv.x*rgt + uv.y * local_up);
   }
 
 
@@ -125,36 +161,25 @@ const fsSource = `
       return normalize(n);
   }
 
-  vec3 getColor(vec3 eye, vec3 p, float sdf, int id_object) 
+
+
+  vec3 getColor(vec3 eye, vec3 p, float sdf, int id_object, vec3 rayTest, float last_dist_obj) 
   {
-      vec3 l = normalize(vec3(0.0,-5.0, 3.0) - p);
-      vec3 l_2 = normalize(vec3(0.3,5.,-5.5)- p);
-      vec3 n = getNormal(p);
-      vec3 v = normalize(eye - p);
-      float intensity = clamp(dot(n, l), 0.0, 1.0);
-      float intensity_2 = clamp(dot(n, l_2), 0.0, 1.0);
-      
-      
-      vec3 color = vec3(0.071, 0.071, 0.102);
-      if (id_object == 0) return pow(color, vec3(2.2));
-      
-      vec3 h = normalize(l + v);
-      vec3 h_2 = normalize(l_2 + v);
+    
+    if (id_object < 0) return pow(vec3(0.051, 0.051, 0.082), vec3(2.2));
 
-      //blinn phong spec
-      float spec = max(pow(dot(n, h), 32.0), 0.0);
-      float spec_2 = max(pow(dot(n, h_2), 64.0), 0.0);
+    if (last_dist_obj > 0.03) return vec3(0.0);
+    
+    vec3 color = pow(vec3(0.73, 0.13, 0.1), vec3(2.2)) * float(id_object);
 
-      color = pow(color, vec3(2.2)) * intensity;
-      color +=pow(vec3(0.953, 0.643, 0.549), vec3(2.2)) * intensity_2;
-      color += spec;
-      color += spec_2;
-      
-      float dist = rayMarch(p+n*0.01*2.0, l, id_object);
-      if (dist < length(l - p)) 
-          intensity *=.6;
+    vec3 v = normalize(eye - p);
+    vec3 l = normalize(vec3(10.0, 50.0, 1.0) - p);
+    vec3 h = normalize(l + v);
+    vec3 n = getNormal(p);
+    float spec = max(pow(dot(n, h), 32.0), 0.0);
 
-      return color;
+
+    return color*length(eye-v*rayTest.y)*1.2+spec;
   }
 
 
@@ -164,21 +189,26 @@ const fsSource = `
     float ratio = u_canva.x/u_canva.y;
     if (ratio > 1.0) uv.x *=ratio;
     else uv.y /= ratio;
-    vec3 ro = vec3(0.0, 2.5, 3.0);
-    ro.xz = 1.5* vec2(cos(u_time*0.5), sin(u_time*3.0*0.5));
-    ro.yz =2.0* vec2(cos(-u_time*0.1), sin(u_time*3.0*0.1));
+    vec3 ro = vec3(0.0, 0.0, 3.0);
+    ro.xz = 1.5*vec2(sin(u_time*0.5), cos(u_time*0.5));
+    ro.yz =2.5* vec2(cos(u_time*0.1), sin(u_time*3.0*0.1));
     vec3 look_at = vec3(0.0, 0.0, 0.0); //look at
     
     float zoom = 0.9;
     vec3 rd = initCamera(uv, ro, look_at, zoom);
     
-    int id_object = 0;
-    float sdf = rayMarch(ro, rd, id_object);
+    vec3 rayTest = intersectBoundingSphere(ro, rd);
+
+    int id_object = -1;
+    float sdf = 0.0;
+    float last_dist_obj = 10.0;
+    if (rayTest.x > -1e-5) sdf = rayMarch(ro, rd, id_object, last_dist_obj);
+
 
     vec3 intersection = ro + sdf * rd;
     
     
-    vec3 color = getColor(ro, intersection, sdf, id_object);
+    vec3 color = getColor(ro, intersection, sdf, id_object, rayTest, last_dist_obj);
 
     gl_FragColor = vec4(pow(color, vec3(1.0/2.2)),1.0);
   }
@@ -267,7 +297,7 @@ function render() {
   var resizeFactor = 2.0;
   if ("matchMedia" in window)
   {
-    if (window.matchMedia("(max-width:800px").matches) 
+    if (isMobile) 
     {
       resizeFactor = 1.;
       var elapsedTime = last_scroll_time;
@@ -352,4 +382,9 @@ function onScroll(event)
 window.addEventListener("resize", render);
 window.addEventListener("scroll", onScroll);
 window.addEventListener("touchmove", onScroll);
+
+let isMobile = true;
+window.addEventListener("load", () => {
+    isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+});
 
