@@ -1,5 +1,8 @@
 console.clear();
 
+// animation mode
+let isScrollAnimation = false;
+
 // setting time uniform
 var start_time = Date.now();
 var last_scroll_time = 0.0;
@@ -48,8 +51,8 @@ const fsSource = `
   float distToJuliaSet(vec3 p) 
   {
       // transformations (rot, scale...)
-      p.xz*=rotate(cos(u_time*0.5)*0.8);
-      p.yx *= rotate(sin(u_time*0.9)*0.2);
+      //p.xz*=rotate(cos(u_time*0.5)*2.1);
+      //p.yx *= rotate(sin(u_time*0.2)*0.7);
       
       vec4 c = vec4(clamp(-2.0*smoothstep(1.0, 0.0, u_time*0.06), -3.0, -0.6), 0.3*cos(u_time*0.5), 0.6*sin(u_time*0.4), 0.01);
       
@@ -79,7 +82,6 @@ const fsSource = `
   float map(vec3 p) 
   {
       
-      //return min(distToJuliaSet(p), length(p)- 2.0);
       return distToJuliaSet(p);
   }
 
@@ -89,7 +91,7 @@ const fsSource = `
 
     // Delta f
     float d_CP = dot(p, rd);
-    float r_sq = 4.0;
+    float r_sq = 2.3;
     float D = 4.0*(d_CP*d_CP + r_sq -dot(p,p));
     if (D < 0.0) return vec3(D, 0.0, 0.0);
     
@@ -163,11 +165,8 @@ const fsSource = `
 
 
   vec3 getColor(vec3 eye, vec3 p, float sdf, int id_object, vec3 rayTest, float last_dist_obj) 
-  {
-    
+  { 
     if (id_object < 0) return pow(vec3(0.051, 0.051, 0.082), vec3(2.2));
-
-    if (last_dist_obj > 0.03) return vec3(0.0);
     
     vec3 color = pow(vec3(0.73, 0.13, 0.1), vec3(2.2)) * float(id_object);
 
@@ -177,8 +176,7 @@ const fsSource = `
     vec3 n = getNormal(p);
     float spec = max(pow(dot(n, h), 32.0), 0.0);
 
-
-    return color*length(eye-v*rayTest.y)*1.2+spec;
+    return color*length(eye-v*rayTest.y)*1.2+vec3(spec);
   }
 
 
@@ -188,12 +186,16 @@ const fsSource = `
     float ratio = u_canva.x/u_canva.y;
     if (ratio > 1.0) uv.x *=ratio;
     else uv.y /= ratio;
-    vec3 ro = vec3(0.0, 0.0, 3.0);
-    ro.xz = 1.5*vec2(sin(u_time*0.5), cos(u_time*0.5));
-    ro.yz =2.5* vec2(cos(u_time*0.1), sin(u_time*3.0*0.1));
+
+    vec3 ro = vec3(0.0, 0.0, 1.0);
+    float factor = 1.5*smoothstep(0.0,10.0,10.*sin(0.1*u_time))+ 1.0;
+    ro.xz = 3.5*vec2(cos(u_time*0.2), sin(u_time*0.1));
+    //ro.y *= abs(cos(u_time*0.2))*4.0;
+    ro.xz /=factor;
+    //ro.xz *= 1.1*sin(u_time*0.2);
     vec3 look_at = vec3(0.0, 0.0, 0.0); //look at
     
-    float zoom = 0.9;
+    float zoom = 1.6;
     vec3 rd = initCamera(uv, ro, look_at, zoom);
     
     vec3 rayTest = intersectBoundingSphere(ro, rd);
@@ -209,7 +211,7 @@ const fsSource = `
     
     vec3 color = getColor(ro, intersection, sdf, id_object, rayTest, last_dist_obj);
 
-    gl_FragColor = vec4(pow(color, vec3(1.0/2.2)),1.0);
+    gl_FragColor = vec4(pow(color, vec3(1.0/2.2)), 1.0);
   }
 
 `;
@@ -294,21 +296,19 @@ function render() {
 
   // adapting resolution
   var resizeFactor = 2.0;
+  var elapsedTime = (Date.now() - start_time) / 1000.0;
   if ("matchMedia" in window)
   {
-    if (isMobile) 
+    if (isScrollAnimation) 
     {
       resizeFactor = 1.;
-      var elapsedTime = last_scroll_time;
     }
     else if (window.matchMedia("(max-width:1600px").matches) 
     {
       resizeFactor = 1.5;
-      var elapsedTime = (Date.now() - start_time) / 1000.0;
       window.requestAnimationFrame(render);
     }
     else {
-      var elapsedTime = (Date.now() - start_time) / 1000.0;
       window.requestAnimationFrame(render);
     }
 
@@ -387,3 +387,10 @@ window.addEventListener("load", () => {
     isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 });
 
+
+function switchAnimation()
+{
+  console.log("wsitching");
+  isScrollAnimation = !isScrollAnimation;
+
+}

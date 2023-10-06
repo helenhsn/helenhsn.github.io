@@ -48,7 +48,7 @@
     text-align: center;
 }
 
-#sourceCodeButton {
+#sourceCodeButton, #animationButton {
     padding: 0.5rem;
     margin-top: 1rem;
     border-radius: 8px;
@@ -58,7 +58,12 @@
     transition: 300ms;
 }
 
-#CV_menu div:hover, #sourceCodeButton:hover, #button:hover {
+#animationButton {
+    margin-bottom: 4rem;
+}
+
+
+#CV_menu div:hover, #sourceCodeButton:hover, #button:hover, #animationButton:hover {
   background-color: var(--cv-color-click);
   cursor: pointer;
 }
