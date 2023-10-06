@@ -3,7 +3,6 @@ console.clear();
 // setting time uniform
 var start_time = Date.now();
 var last_scroll_time = 0.0;
-
 const vsSource = `
   attribute vec2 position; 
 
@@ -62,7 +61,7 @@ const fsSource = `
       float r = sqrt(lz_2);
       float dz = 1.0; // derivative
 
-      for (int i = 0; i<6; i++) 
+      for (int i = 0; i<8; i++) 
       {
           
           dz = n * dz * pow(r, n_minus); //dz_k+1 = n * dz_k * length(z)**(n-1) + 1
@@ -129,7 +128,7 @@ const fsSource = `
           float dist = map(p);
           d += dist;
 
-          if (dist < 0.03) 
+          if (dist < 0.008) 
           {
             last_dist = dist;
             break;
