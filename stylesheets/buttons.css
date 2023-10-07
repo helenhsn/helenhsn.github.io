@@ -8,31 +8,14 @@
     align-items: center;
 }
 
-#CV_menu {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    margin-bottom: 0.2rem;
-    z-index: -1;
-}
 
-#CV_menu div {
-    margin: 0.2rem;
-    padding: 0.8rem;
-    border-radius: 8px;
-    background-color: var(--light-color);
-    transition: 0.3s;
-}
 
 #button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5rem;
-    height:3rem;
+    width: 3.5rem;
+    height:2rem;
     border-radius: 8px;
     background-color: var(--light-color);
     color: #eceff4;
@@ -41,14 +24,14 @@
     font-size: 20px;
 }
 
-#CV_menu div a, .sourceCode a {
+.CV div a, .sourceCode a {
     color: var(--basic-color);
     font-family:'Merriweather-Bold';
     font-size: 16px;
     text-align: center;
 }
 
-#sourceCodeButton, #animationButton {
+#sourceCodeButton, #animationButton, #button {
     padding: 0.5rem;
     margin-top: 1rem;
     border-radius: 8px;
@@ -63,7 +46,7 @@
 }
 
 
-#CV_menu div:hover, #sourceCodeButton:hover, #button:hover, #animationButton:hover {
+#sourceCodeButton:hover, #button:hover, #animationButton:hover {
   background-color: var(--cv-color-click);
   cursor: pointer;
 }
