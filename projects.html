@@ -5,6 +5,8 @@
     <title> Hélène Hassan </title>
     <link href="stylesheets/main.css" rel="stylesheet" />
     <link href="stylesheets/buttons.css" rel="stylesheet" />
+    <link href="stylesheets/slider.css" rel="stylesheet" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -24,6 +26,30 @@
         <div class="contents">
             <div class="projects">
                 <h1> School projects </h1>
+                <section>
+                    <div>
+                        <p class="title"> Particle system </p>
+                        <div class="timeline-prog">
+                            <p class="timeline"> May 2023 </p>
+                            <p> | Team of 2 students </p>
+                            <p> | C++ </p>
+                        </div>
+                        <p class="description">
+                        <ul>
+                            <li> School project to make us learn how to program in C++. We built a particles system from scratch (including a n-dimensional vector library). </li>
+                            <li> The particles evolve in a n-dimensional univers (could be 1D, 2D or 3D) under three types of constraint (reflexion, absorption and transportation from a wall to its symmetric). Particles are also subjected to gravity and to Lennard-Jones potential which is initially really expensive as it corresponds to a double sum over the whole set of particles.</li>
+                            <li> In order to optimize the computation, we had to create a grid which helped us reduce Lennard Jones' potential computations to the ones obtained with the neighbors of each particle. We also made other optimizations regarding data structures as well.</li>
+                            <li> The positions of the particles in the set were written in a file that can be opened in Paraview.</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div style="display:flex; justify-content:center;"> <div><img data-enlargeable class="img" src="images/particles.gif"></div></div>
+
+                    <div class="sourceCode">
+                        <div id="sourceCodeButton"> <a href="https://github.com/BricePrs/ProjetCpp/"> Source code </a>
+                        </div>
+                    </div>
+                </section>
                 <section>
                     <div>
                         <p class="title"> Software development project: building a compiler for a subset of Java </p>
@@ -95,9 +121,7 @@
                         </ul>
                         </p>
                     </div>
-                    <div class="example">
-                        <img data-enlargeable class="img" src="images/robot.gif">
-                    </div>
+                        <div style="display:flex; justify-content:center;"> <div><img data-enlargeable class="img" src="images/robot.gif"></div></div>
                 </section>
                 <section>
                     <div>
@@ -123,10 +147,12 @@
                                 the code to gain fluidity when moving the top levels. </li>
                         </ul>
                         </p>
-                        <div class="example">
-                            <img data-enlargeable class="img" src="images/mineswp.gif">
-                            <img data-enlargeable class="img" src="images/widgets.gif">
-                        </div>
+                        <div class="slider">
+                            <div class="example">
+                                <div><img data-enlargeable class="img" src="images/mineswp.gif"></div>
+                                <div><img data-enlargeable class="img" src="images/widgets.gif"></div>
+                            </div>
+                    </div>
                     </div>
                 </section>
                 <section>
@@ -151,7 +177,7 @@
                         </ul>
                         </p>
                     </div>
-                    <div class="example"> <img data-enlargeable class="img" src="images/montecarlo.gif"></div>
+                    <div style="display:flex; justify-content:center;""> <div><img data-enlargeable class="img" src="images/montecarlo.gif"></div></div>
                 </section>
             </div>
             <div class="projects">
@@ -187,30 +213,41 @@
                                 shading,
                                 buoyancy).
                             <li>
-                            <li>You can also find a video 'demo' of our game on the button below. Note: We did not have
+                            <li>Note: We did not have
                                 a great application
                                 to record our screen so the video might start with a little bit of delay and shows some
                                 lags. The game in itself runs in real-time (more than 120 fps with an
                                 RTX 3050, for instance). </li>
                         </ul>
                         </p>
-                    </div>
-                    <div class="example">
-                        <img data-enlargeable class="img" id="raycaster" src="images/blackseas1.png">
-                        <img data-enlargeable class="img" id="raycaster" src="images/blackseas2.png">
-                        <img data-enlargeable class="img" id="raycaster" src="images/blackseas5.png">
-                        <img data-enlargeable class="img" id="raycaster" src="images/blackseas6.png">
-
-                    </div>
-                    <div class="example" style="margin-top: 2%;">
-                        <iframe width="420" height="315" src="https://youtube.com/embed/f7-1Unqfw4c?mute=1"">
-                        </iframe>
-                    </div>
-                    <div class=" sourceCode">
-                            <div id="sourceCodeButton"> <a href="https://github.com/VirgileHenry/black-seas"> Source
-                                    code
-                                    (BlackSeas) </a>
+                        <div class="video-img" style="padding-top:0.5rem; padding-bottom:0.5rem; display:flex; flex-direction:column;justify-content:center;">
+                            
+                            <div class="slider">
+                                <div class="example">
+                                    <div><img data-enlargeable class="example-1" src="images/blackseas1.png"></div>
+                                    <div><img data-enlargeable class="example-2" src="images/blackseas2.png"></div>
+                                    <div><img data-enlargeable class="example-3" src="images/blackseas5.png"></div>
+                                    <div><img data-enlargeable class="example-4" src="images/blackseas6.png"></div>
+                                    <div><img data-enlargeable class="example-5" src="images/blackseas7.png"></div>
+                                    <div><img data-enlargeable class="example-6" src="images/blackseas8.png"></div>
+                                    
+                                </div>
                             </div>
+                            <div class="video" style="margin-top: 2%; display:flex; justify-content:center;">
+                                <iframe width="420" height="315" src="https://youtube.com/embed/f7-1Unqfw4c?mute=1">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class=" sourceCode">
+                            <div id="sourceCodeButton"> <a href="https://github.com/VirgileHenry/black-seas"> Report </a>
+                            </div>
+                        </div>
+                        <div class=" sourceCode">
+                            <div id="sourceCodeButton"> <a href="https://github.com/VirgileHenry/black-seas"> Source
+                                code
+                                (BlackSeas) </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -249,7 +286,7 @@
                         </p>
 
                     </div>
-                    <div class="example">
+                    <div class="video" style="margin-top: 2%;  display:flex; justify-content:center;">
                         <iframe width="420" height="315" src="https://youtube.com/embed/TQRLHt5Ob2k?mute=1">
                         </iframe>
                     </div>
@@ -281,7 +318,7 @@
                         </p>
 
                     </div>
-                    <div class="example">
+                    <div style="padding-top:0.5rem; display:flex; justify-content:center;">
                         <img data-enlargeable class="img" id="raycaster" src="images/shader.gif">
                     </div>
                     <div class="sourceCode">
@@ -318,10 +355,12 @@
                                 programming. </li>
                         </ul>
                         </p>
-                        <div class="example">
-                            <img data-enlargeable class="img" id="raycaster" src="images/raycasting1.gif">
-                            <img data-enlargeable class="img" id="raycaster" src="images/raycasting2.gif">
-                            <img data-enlargeable class="img" id="raycaster" src="images/raycasting3.gif">
+                        <div class="slider">
+                            <div class="example">
+                                <div><img data-enlargeable class="example-1" src="images/raycasting1.gif"></div>
+                                <div><img data-enlargeable class="example-2" src="images/raycasting2.gif"></div>
+                                <div><img data-enlargeable class="example-3" src="images/raycasting3.gif"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="sourceCode">

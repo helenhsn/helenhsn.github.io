@@ -1,0 +1,53 @@
+
+.slider {
+        width: 100%;
+        position: relative;
+}
+.example {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x:scroll;
+        overflow-y:hidden;
+        scroll-snap-type: x mandatory;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        margin: 0;
+}
+.example::-webkit-scrollbar {
+        height: 10px; 
+}
+.example::-webkit-scrollbar-thumb {
+        background: #f3a48c;
+        border-radius: 8px;
+}
+.example::-webkit-scrollbar-track {
+        background: transparent;
+}
+.example div {
+        flex-shrink: 0;
+        width: 100%;
+        margin-left:0.5em;
+        margin-right:0.5rem;
+        transform-origin: center center;
+        transition: transform 0.5s;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.example img:hover {
+        cursor: zoom-in;
+}
+
+.example img {
+        object-fit: cover;
+        position: relative;
+        max-width: 100%;
+        max-height:20rem;
+        border-radius: 8px;
+}
+      
+      
