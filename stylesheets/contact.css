@@ -1,6 +1,8 @@
 .aboutme {
     margin-top: 0;
     padding-top: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .aboutme-content h1 {
@@ -11,10 +13,13 @@
     list-style-type: none;
     text-align: justify;
     padding: 0 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .aboutme-content li {
     margin: 2rem 0rem 0 0;
+    margin-bottom: 0;
 }
 #first {
     margin-top: 0;
