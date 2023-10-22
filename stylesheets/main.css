@@ -38,7 +38,6 @@ body {
 canvas{
     position:fixed;
     touch-action: auto!important;
-    z-index:-1;
     left:0;
     top:0;
     width: 100%;
@@ -327,19 +326,31 @@ h1 {
 
 }
 
-.aboutme-content section, .contact-list {
-    opacity: 0.2;
-}
-
 .events section:hover,
 .projects section:hover,
-.contact-list:hover, .aboutme-content section:hover {
+.contact-list:hover, .aboutme-content section:hover{
     box-shadow: 0.1px 1px 6px 0.1px #ecdfdf;
     background-color: rgba(33, 33, 53, 0.9);
     color: rgba(255, 255, 255, 1.0);
     opacity: 1.0;
 }
 
+.info {
+    overflow: hidden;
+    border: 1px solid red;
+    background: #ff0;
+}
+
+.contents {
+    top: 80vh;
+  position: relative;
+  transition: all 3s ease-out;
+  height: 100%;
+}
+
+.info:hover > .contents {
+    top:0;
+}
 /* ----------- OTHER TYPES OF SCREENS ------------- */
 
 

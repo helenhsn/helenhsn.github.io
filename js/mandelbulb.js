@@ -121,7 +121,7 @@ const fsSource = `
       float d = 0.0;
       int last_i = 0;
       float last_dist = 10.0;
-      for (int i = 0; i<50; i++) 
+      for (int i = 0; i<75; i++) 
       {
           last_i = i;
           if (d > 150.0) break;
@@ -130,7 +130,7 @@ const fsSource = `
           float dist = map(p);
           d += dist;
 
-          if (dist < 0.008) 
+          if (dist < 0.003) 
           {
             last_dist = dist;
             break;
@@ -163,12 +163,11 @@ const fsSource = `
   }
 
 
-
   vec3 getColor(vec3 eye, vec3 p, float sdf, int id_object, vec3 rayTest, float last_dist_obj) 
   { 
-    if (id_object < 0) return pow(vec3(0.051, 0.051, 0.082), vec3(2.2));
-    
-    vec3 color = pow(vec3(0.73, 0.13, 0.1), vec3(2.2)) * float(id_object);
+    vec3 color = vec3(0.);
+
+    if (sdf < 10.0) color = vec3(0.0001)* float(id_object);
 
     vec3 v = normalize(eye - p);
     vec3 l = normalize(vec3(10.0, 50.0, 1.0) - p);
@@ -188,11 +187,9 @@ const fsSource = `
     else uv.y /= ratio;
 
     vec3 ro = vec3(0.0, 0.0, 1.0);
-    float factor = 1.5*smoothstep(0.0,10.0,10.*sin(0.1*u_time))+ 1.0;
-    ro.xz = 3.5*vec2(cos(u_time*0.2), sin(u_time*0.1));
-    //ro.y *= abs(cos(u_time*0.2))*4.0;
+    float factor = 0.5*smoothstep(0.0,10.0,10.*sin(0.1*u_time))+ 1.0;
+    ro.xz = 2.5*vec2(cos(u_time*0.2), sin(u_time*0.1));
     ro.xz /=factor;
-    //ro.xz *= 1.1*sin(u_time*0.2);
     vec3 look_at = vec3(0.0, 0.0, 0.0); //look at
     
     float zoom = 1.6;
