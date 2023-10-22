@@ -349,7 +349,7 @@ h1 {
 }
 
 .info:hover > .contents {
-    top:0;
+    top:2rem;
 }
 /* ----------- OTHER TYPES OF SCREENS ------------- */
 
