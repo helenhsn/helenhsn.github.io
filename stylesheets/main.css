@@ -335,22 +335,27 @@ h1 {
     opacity: 1.0;
 }
 
-.info {
-    overflow: hidden;
-    border: 1px solid red;
-    background: #ff0;
+/*available only on laptops */
+@media screen and (min-width:1000px) {
+    
+    .info {
+        overflow: hidden;
+        border: 1px solid red;
+        background: #ff0;
+    }
+    
+    .contents {
+        top: 80vh;
+      position: relative;
+      transition: all 3s ease-out;
+      height: 100%;
+    }
+    
+    .info:hover > .contents {
+        top:2rem;
+    }
 }
 
-.contents {
-    top: 80vh;
-  position: relative;
-  transition: all 3s ease-out;
-  height: 100%;
-}
-
-.info:hover > .contents {
-    top:2rem;
-}
 /* ----------- OTHER TYPES OF SCREENS ------------- */
 
 

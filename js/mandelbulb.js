@@ -121,7 +121,7 @@ const fsSource = `
       float d = 0.0;
       int last_i = 0;
       float last_dist = 10.0;
-      for (int i = 0; i<75; i++) 
+      for (int i = 0; i<70; i++) 
       {
           last_i = i;
           if (d > 150.0) break;
@@ -167,15 +167,23 @@ const fsSource = `
   { 
     vec3 color = vec3(0.);
 
-    if (sdf < 10.0) color = vec3(0.0001)* float(id_object);
+    if (sdf < 10.0) color = vec3(0.0001);
 
     vec3 v = normalize(eye - p);
-    vec3 l = normalize(vec3(10.0, 50.0, 1.0) - p);
-    vec3 h = normalize(l + v);
-    vec3 n = getNormal(p);
-    float spec = max(pow(dot(n, h), 32.0), 0.0);
 
-    return color*length(eye-v*rayTest.y)*1.2+vec3(spec);
+    vec3 l = normalize(vec3(10.0, 50.0, 1.0) - p);
+    
+    vec3 l2 = normalize(vec3(-10.0, 5.0, 1.0) - p);
+
+    vec3 h = normalize(l + v);
+    vec3 h2 = normalize(l2 + v);
+
+    vec3 n = getNormal(p);
+
+    float spec = max(pow(dot(n, h), 32.0), 0.0);
+    float spec2 = max(pow(dot(n, h2), 32.0), 0.0);
+
+    return color*length(eye-v*rayTest.y)*1.2+vec3(spec) + vec3(spec2);
   }
 
 
