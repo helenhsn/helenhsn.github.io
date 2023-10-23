@@ -124,7 +124,7 @@ const fsSource = `
       for (int i = 0; i<60; i++) 
       {
           last_i = i;
-          if (d > 150.0) break;
+          if (d > 5.0) break;
 
           vec3 p = ro + rd*d;          
           float dist = map(p);
@@ -167,7 +167,6 @@ const fsSource = `
   { 
     vec3 color = pow(vec3(0.071, 0.071, 0.102), vec3(2.2));
 
-    if (sdf < 0.0) return color*1.2;
 
     vec3 v = normalize(eye - p);
 
@@ -183,7 +182,8 @@ const fsSource = `
     float spec = max(pow(dot(n, h), 32.0), 0.0);
     float spec2 = max(pow(dot(n, h2), 32.0), 0.0);
 
-    return color*length(eye-v*rayTest.y)*1.2 * float(id_object) + vec3(spec) + vec3(spec2);
+    if (sdf < 10.0) return color*1./sdf * float(id_object) + vec3(spec) + vec3(spec2);
+    else vec3(1.0, 0.0, 0.0);
   }
 
 
@@ -195,8 +195,8 @@ const fsSource = `
     else uv.y /= ratio;
 
     vec3 ro = vec3(0.0, 0.0, 1.0);
-    float factor = 0.5*smoothstep(0.0,10.0,10.*sin(0.1*u_time))+ 1.0;
-    ro.xz = 2.5*vec2(cos(u_time*0.2), sin(u_time*0.1));
+    float factor = 0.1*smoothstep(0.0,10.0,10.0*u_time)+ 1.0;
+    ro.xz = 2.*vec2(cos(u_time*0.2), sin(u_time*0.1));
     ro.xz /=factor;
     vec3 look_at = vec3(0.0, 0.0, 0.0); //look at
     
@@ -205,10 +205,9 @@ const fsSource = `
     
     vec3 rayTest = intersectBoundingSphere(ro, rd);
 
-    int id_object = -1;
-    float sdf = -1.0;
+    int id_object = 0;
     float last_dist_obj = 10.0;
-    if (rayTest.x > -1e-5) sdf = rayMarch(ro, rd, id_object, last_dist_obj);
+    float sdf = rayMarch(ro, rd, id_object, last_dist_obj);
 
 
     vec3 intersection = ro + sdf * rd;
