@@ -64,7 +64,7 @@ const fsSource = `
       float r = sqrt(lz_2);
       float dz = 1.0; // derivative
 
-      for (int i = 0; i<8; i++) 
+      for (int i = 0; i<7; i++) 
       {
           
           dz = n * dz * pow(r, n_minus); //dz_k+1 = n * dz_k * length(z)**(n-1) + 1
@@ -121,7 +121,7 @@ const fsSource = `
       float d = 0.0;
       int last_i = 0;
       float last_dist = 10.0;
-      for (int i = 0; i<70; i++) 
+      for (int i = 0; i<60; i++) 
       {
           last_i = i;
           if (d > 150.0) break;
@@ -165,9 +165,9 @@ const fsSource = `
 
   vec3 getColor(vec3 eye, vec3 p, float sdf, int id_object, vec3 rayTest, float last_dist_obj) 
   { 
-    vec3 color = vec3(0.);
+    vec3 color = pow(vec3(0.071, 0.071, 0.102), vec3(2.2));
 
-    if (sdf < 10.0) color = vec3(0.0001);
+    if (sdf < 0.0) return color*1.2;
 
     vec3 v = normalize(eye - p);
 
@@ -183,7 +183,7 @@ const fsSource = `
     float spec = max(pow(dot(n, h), 32.0), 0.0);
     float spec2 = max(pow(dot(n, h2), 32.0), 0.0);
 
-    return color*length(eye-v*rayTest.y)*1.2+vec3(spec) + vec3(spec2);
+    return color*length(eye-v*rayTest.y)*1.2 * float(id_object) + vec3(spec) + vec3(spec2);
   }
 
 
@@ -206,7 +206,7 @@ const fsSource = `
     vec3 rayTest = intersectBoundingSphere(ro, rd);
 
     int id_object = -1;
-    float sdf = 0.0;
+    float sdf = -1.0;
     float last_dist_obj = 10.0;
     if (rayTest.x > -1e-5) sdf = rayMarch(ro, rd, id_object, last_dist_obj);
 
@@ -302,21 +302,14 @@ function render() {
   // adapting resolution
   var resizeFactor = 2.0;
   var elapsedTime = (Date.now() - start_time) / 1000.0;
-  if ("matchMedia" in window)
+  if (isScrollAnimation) return;
+  if (window.matchMedia("(max-width:1600px").matches) 
   {
-    if (isScrollAnimation) 
-    {
-      resizeFactor = 1.;
-    }
-    else if (window.matchMedia("(max-width:1600px").matches) 
-    {
-      resizeFactor = 1.5;
-      window.requestAnimationFrame(render);
-    }
-    else {
-      window.requestAnimationFrame(render);
-    }
-
+    resizeFactor = 1.5;
+    window.requestAnimationFrame(render);
+  }
+  else {
+    window.requestAnimationFrame(render);
   }
   var gl = canvas.getContext('webgl');
   if (!gl) {
@@ -397,5 +390,5 @@ function switchAnimation()
 {
   console.log("wsitching");
   isScrollAnimation = !isScrollAnimation;
-
+  render();
 }

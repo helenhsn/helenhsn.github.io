@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Hélène Hassan </title>
+
+    <link href="stylesheets/main.css" rel="stylesheet" />
+    <link href="stylesheets/contact.css" rel="stylesheet" />
+    <link href="stylesheets/buttons.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="name"> <a href="index.html"> Hélène Hassan </a> </div>
+            <nav>
+                <ul id="menu">
+                    <li> About me </li>
+                    <li><a href="education.html"> Education </a></li>
+                    <li><a href="experience.html"> Experience </a></li>
+                    <li><a href="projects.html"> Projects </a></li>
+                    
+                </ul>
+            </nav>
+            <a href="javascript:void(0);"><img src="images/menulogo.png" class="menu-logo" onclick="togglemenu()"></a>
+        </div>
+        
+        <div class="contents">
+            <section class="aboutme">
+                <div class="aboutme-content">
+                    <h1> About me </h1>
+                    <section style="display: flex; justify-content:center; align-items:center; padding-bottom: 0;">
+                        <div style="margin-left:1rem;"> <img src="images/profilepic.jpg" width="200px" style="border-radius:50%;"></div>
+                        <div>
+
+                            <ul>
+                                <li id="first"> Hi and welcome to my page! </li>
+                                <li> I am an engineering student that holds a keen interest for anything that comes near to
+                                    computer graphics, high performance computing and computer vision. This website is
+                                    updated regularly and I am currently (on academic year 2023/2024) on my last year of
+                                    studies at ENSIMAG, an engineering school based in Grenoble, France. </li>
+                                <li> By the time I discovered computer graphics in late 2022 I have managed to tackle
+                                    various projects that each time challenge my intellect as well as satisfy my curiosity.
+                                    Don't hesitate to check the Projects section if you are interested! </li>
+                                <li id="last"> When I'm not programming, you'll probably find me climbing on walls or rocks
+                                    with my friends (there are pretty good climbing spots here in Grenoble!). I also have a
+                                    deep appetency for video/board games, music and drawing for which you can find
+                                    some examples I have made in the last few years at the end of Education section. </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <h1> Want to get in touch? Don't hesitate to contact me! </h1>
+                <div class="contact-list">
+                    <div class="contact-content">
+                        <div class="logo"> <img src="./images/phonecall.png" width="32px"> </div>
+                        <div class="information"> +33 6 50 78 21 97 </div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="logo"> <img src="./images/email.png" width="32px"> </div>
+                        <div class="information"> helenehhassan@gmail.com </div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="logo"> <a
+                                href="https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-hassan-2934171a8/">
+                                <img src="images/linkedin.png" width="32px"> </a> </div>
+                        <div class="information"> click! </div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="logo"> <a href="https://github.com/helenhsn"> <img src="images/github.png"
+                                    width="32px"> </a> </div>
+                        <div class="information"> click! </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="CV">
+        <a href="docs/CV_Helene_Hassan_EN.pdf">  <div id="button" onclick="toggleCV()"><img src="images/download.png" width="16px">CV </div></a>
+    </div>
+    <script src="js/menu.js"> </script>
+    <script src="js/translate.js"></script>
+
+</body>
+
+</html>

@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     width: 3.5rem;
-    height:2rem;
+    height:1rem;
     border-radius: 8px;
     background-color: var(--light-color);
     color: #eceff4;
@@ -32,7 +32,7 @@
 }
 
 #sourceCodeButton, #animationButton, #button {
-    padding: 0.5rem;
+    padding: 1.0rem;
     margin-top: 1rem;
     border-radius: 8px;
     background-color: var(--border-section-color);
@@ -42,8 +42,11 @@
 }
 
 #animationButton {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    white-space: nowrap;
+    left:auto;
+    z-index:1;
+    position:fixed;
+    bottom: 3%;
 }
 
 
