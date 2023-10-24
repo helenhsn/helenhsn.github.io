@@ -24,7 +24,7 @@
     font-size: 20px;
 }
 
-.CV div a, .sourceCode a {
+.CV div a, .sourceCode a, #animationButton a {
     color: var(--basic-color);
     font-family:'Merriweather-Bold';
     font-size: 16px;
@@ -32,8 +32,8 @@
 }
 
 #sourceCodeButton, #animationButton, #button {
-    padding: 1.0rem;
-    margin-top: 1rem;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
     border-radius: 8px;
     background-color: var(--border-section-color);
     position: relative;
@@ -47,6 +47,7 @@
     z-index:1;
     position:fixed;
     bottom: 3%;
+    height:1rem;
 }
 
 
