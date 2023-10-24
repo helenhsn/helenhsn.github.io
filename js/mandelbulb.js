@@ -9,7 +9,7 @@ var last_scroll_time = 0.0;
 const vsSource = `
   attribute vec2 position; 
 
-  varying lowp vec2 v_position;
+  varying highp vec2 v_position;
 
   void main(void)
   {
@@ -20,8 +20,8 @@ const vsSource = `
   `;
 
 const fsSource = `
-  precision lowp float;
-  varying lowp vec2 v_position; 
+  precision highp float;
+  varying highp vec2 v_position; 
 
   uniform float u_time;
   uniform float resizeFactor;
