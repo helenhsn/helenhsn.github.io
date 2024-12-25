@@ -165,7 +165,7 @@ const fsSource = `
 
   vec3 getColor(vec3 eye, vec3 p, float sdf, int id_object, vec3 rayTest, float last_dist_obj) 
   { 
-    vec3 color = pow(vec3(0.071, 0.071, 0.102), vec3(2.2));
+    vec3 color = pow(vec3(0.0), vec3(2.2));
 
 
     vec3 v = normalize(eye - p);
@@ -378,12 +378,11 @@ function onScroll(event)
 window.addEventListener("resize", render);
 window.addEventListener("scroll", onScroll);
 window.addEventListener("touchmove", onScroll);
-
+console.log("SCROLL");
 let isMobile = true;
 window.addEventListener("load", () => {
     isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 });
-
 
 function switchAnimation()
 {

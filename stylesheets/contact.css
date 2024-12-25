@@ -3,8 +3,8 @@
     padding-top: 0rem;
     padding-bottom: 0;
     margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.);
 }
-
 .aboutme-content h1 {
     text-align: center;
 }
@@ -19,12 +19,6 @@
 
 .aboutme-content li {
     margin: 2rem 0rem 0 0;
-    margin-bottom: 0;
-}
-#first {
-    margin-top: 0;
-}
-#last {
     margin-bottom: 0;
 }
 
