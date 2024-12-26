@@ -16,7 +16,7 @@
 :root {
     --body-color: #000000;
     --basic-color: rgb(255, 255, 255);
-    --navbar-color: #000000;
+    --navbar-color: rgba(0, 0, 0, 0.6);
     --light-color: #f3a48c;
     --title-section-color: #ebebeb;
     --timeline-color: #f3a48c;
@@ -63,6 +63,44 @@ header {
 a {
     text-decoration: none;
 }
+
+/* Carousel */
+.carousel-slide {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-inner .item {
+    height: 100%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: block;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    background: none;
+    border: 0;
+    -webkit-transition: opacity 0.15s ease;
+    -moz-transition: opacity 0.15s ease;
+    transition: opacity 0.15s ease;
+}
+
 
 .navbar {
     background-color: var(--navbar-color);
@@ -147,13 +185,13 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    opacity: 0.85;
 }
 
 section div {
     margin-left: 1%;
     margin-right: 1%;
 }
-
 
 h1 {
     font-family: 'Merriweather';

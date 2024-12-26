@@ -60,10 +60,10 @@ float tri(float t)
 float fbm( in vec2 x)
 {    
     float G = exp2(-0.9);
-    float f = 2.0;
+    float f = 3.0;
     float a = .6+0.2*tri(u_time);
     float t = 0.0;
-    for( int i=0; i<3; i++ )
+    for( int i=0; i<2; i++ )
     {
         t += a*noise(f*x);
         f *= 2.0;
@@ -79,19 +79,9 @@ float pattern( in vec2 p )
 
     return fbm( p + 4.0*q );
 }
-float pattern2( in vec2 p )
-{
-    vec2 q = vec2( 0.9*fbm( p + vec2(0.0,0.0) ),
-                   0.1*fbm( p + vec2(0.2,0.3) ) );
-
-    vec2 r = vec2( 0.9*fbm( p + -0.5*q + vec2(0.7,-5.2) ),
-                   .1*fbm( p + 0.2*q + vec2(0.3,2.8) ) );
-
-    return fbm( p + length(p-vec2(.5))*3.0*r );
-}
   void main()
   {
-    vec2 uv = v_position*resizeFactor;
+    vec2 uv = v_position;
     float ratio = u_canva.x/u_canva.y;
     if (ratio > 1.0) uv.x *=ratio;
     else uv.y /= ratio;
@@ -246,13 +236,7 @@ function render() {
     gl.uniform2fv(canvaLoc, [gl.canvas.width, gl.canvas.height]);
   }
 
-  gl.clearColor(0.071, 0.071, 0.102, 1.0);
-  gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-  gl.enable(gl.DEPTH_TEST);
-  gl.enable(gl.CULL_FACE);
-  gl.cullFace(gl.BACK);
 
-  // draw call
   gl.drawArrays(gl.TRIANGLES, 0, 6);
 }
 

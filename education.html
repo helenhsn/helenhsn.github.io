@@ -6,6 +6,8 @@
     <link href="stylesheets/main.css" rel="stylesheet" />
     <link href="stylesheets/buttons.css" rel="stylesheet" />
     <link href="stylesheets/slider.css" rel="stylesheet" />
+    <link href="stylesheets/carousel.css" rel="stylesheet" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -134,22 +136,58 @@
                     </p>
                    
 
+                    <div class="container-carousel">
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            
+                            <ol class="carousel-indicators">
+                                <li class="item1 active"></li>
+                                <li class="item2"></li>
+                                <li class="item3"></li>
+                                <li class="item4"></li>
+                                <li class="item5"></li>
+                                <li class="item6"></li>
+                            </ol>
 
-                    <div class="slider">
-
-                    <div class="example">
-                        <div><img data-enlargeable class="example-1" src="images/drawing1.jpg"></div>
-                        <div><img data-enlargeable class="example-2" src="images/drawing2.jpg"></div>
-                        <div><img data-enlargeable class="example-3" src="images/drawing3.jpg"></div>
-                        <div><img data-enlargeable class="example-4" src="images/drawing4.jpg"></div>
-                        <div><img data-enlargeable class="example-5" src="images/drawing5.jpg"></div>
-                        <div><img data-enlargeable class="example-6" src="images/drawing6.jpg"></div>
-
+                            <div class="carousel-inner" role="listbox">
+                                
+                                <div class="item active">
+                                    <img src="images/drawing1.jpg" width="460" height="345">
+                                </div>
+                    
+                                <div class="item">
+                                    <img src="images/drawing2.jpg" width="460" height="345">
+                                </div>
+                                
+                                <div class="item">
+                                    <img src="images/drawing3.jpg" width="460" height="345">
+                                </div>
+                                
+                                <div class="item">
+                                    <img src="images/drawing4.jpg" width="460" height="345">
+                                </div>
+                                <div class="item">
+                                    <img src="images/drawing5.jpg" width="460" height="345">
+                                </div>
+                                <div class="item">
+                                    <img src="images/drawing6.jpg" width="460" height="345">
+                                </div>
+                                
+                            </div>
+                
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                < </span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                 > </span>
+                            </a>
+                        </div>
                     </div>
-                    </div>
-
-  
-                </section>
+                        
+                        
+                    </section>
             </div>
         </div>
     </div>
@@ -159,7 +197,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/zoom.js"></script>
     <script src="js/menu.js"> </script>
+    <script src="js/carousel.js"> </script>
     <script src="js/spiral.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

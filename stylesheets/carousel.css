@@ -1,0 +1,153 @@
+/*!
+ * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.4/customize/)
+ *//*!
+ * Bootstrap v3.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+
+ .img-responsive,.carousel-inner>.item>img,.carousel-inner>.item
+{
+    display:block;
+    max-width:100%;
+    height:100%;
+    object-fit: cover;
+    
+}
+.container-carousel
+{
+    margin-right: 0;
+    display: flex;
+    height:100%;
+    justify-content: center;
+}
+.carousel{
+    position:relative;
+    width: 70%;
+    top:0;
+    left:0;
+    margin: 0;
+    padding:0;
+
+}
+.carousel-inner{
+    position:relative;width:100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+    
+    
+
+}
+.carousel-inner>.item{
+    padding: 0;
+    margin: 0;
+    position:relative;
+    display: none;
+    
+    -webkit-transition:.4s ease-in-out left;
+    -o-transition:.4s ease-in-out left;
+    transition:.4s ease-in-out left
+}
+
+
+@media all and (transform-3d),(-webkit-transform-3d){
+    .carousel-inner>.item{
+        -webkit-transition:-webkit-transform 0.4s ease-in-out;
+        -o-transition:-o-transform 0.4s ease-in-out;
+        transition:transform 0.4s ease-in-out;
+        -webkit-backface-visibility:hidden;backface-visibility:hidden;
+    }
+    .carousel-inner>.item.next,.carousel-inner>.item.active.right{
+        -webkit-transform:translate3d(200%, 0, 0);transform:translate3d(200%, 0, 0);left:0
+    }
+    .carousel-inner>.item.prev,.carousel-inner>.item.active.left{
+        -webkit-transform:translate3d(-200%, 0, 0);transform:translate3d(-200%, 0, 0);left:0
+    }
+    .carousel-inner>.item.next.left,.carousel-inner>.item.prev.right,.carousel-inner>.item.active{
+        -webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);left:0
+    }
+}
+.carousel-inner>.active{
+    display:block;
+    width: 70%;
+    height:100%;
+}
+.carousel-inner>.next,.carousel-inner>.prev{
+    position:relative;width:100%;
+    left:0;
+    padding: 0;
+    margin:0;
+}
+
+
+.carousel-control{
+    
+    position:absolute;
+    top:0;bottom:0;left:0;width:15%;
+    font-size:25px;
+    color:#fff;
+    text-align:center;
+    text-shadow:0 1px 2px rgba(0,0,0,1);
+    background-color:rgba(0,0,0,0);
+    opacity: 1;
+}
+.carousel-control.left{
+    left:-20%; right:auto;
+    top:45%;
+    background-repeat:repeat-x
+}
+.carousel-control.right{
+    right:-20%;top:45%;
+    left:auto;
+    background-repeat:repeat-x
+}
+.carousel-control:hover,.carousel-control:focus{
+    color:#fff;text-decoration:none;
+}
+
+
+.carousel-control .icon-prev,.carousel-control .icon-next{
+    font-family:serif;line-height:1
+}
+
+.carousel-indicators{
+    position:absolute;bottom:10px;left:50%;z-index:1;width:60%;padding-left:0;margin-left:-30%;text-align:center;
+}
+.carousel-indicators li{
+    display:inline-block;
+    width:10px;height:10px;margin:0px;
+    cursor:pointer;
+    background-color:#000 \9;
+    background-color:rgba(0,0,0,0);
+    border:1px solid #f3a48c;
+    border-radius:10px
+}
+.carousel-indicators .active{
+    margin:0;background-color:#fff;
+    padding:0;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    object-fit: cover;
+  }
+
+
+@media screen and (min-width:768px)
+{
+    .carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next
+    {
+        width:30px;height:30px;margin-top:0px;font-size:30px
+    }
+    .carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev
+    {
+        margin-left:0px
+    }
+}
