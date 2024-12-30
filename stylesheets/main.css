@@ -411,9 +411,6 @@ h1 {
         flex-direction: row;
     }
 
-    .events section {
-        padding: 0rem 1rem;
-    }
 
     .events section:hover,
     .projects section:hover {
