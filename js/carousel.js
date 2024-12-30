@@ -24,6 +24,18 @@ $(document).ready(function(){
     $(this).closest('.carousel').carousel(5);
   });
 
+  $(".item7").click(function(){
+    $(this).closest('.carousel').carousel(6);
+  });
+
+  $(".item8").click(function(){
+    $(this).closest('.carousel').carousel(7);
+  });
+
+  $(".item9").click(function(){
+    $(this).closest('.carousel').carousel(8);
+  });
+
   // Enable Carousel Controls for all carousels
   $(".left").click(function(){
     $(this).closest('.carousel').carousel("prev");
