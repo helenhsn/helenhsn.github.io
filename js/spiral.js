@@ -278,7 +278,6 @@ window.requestAnimationFrame(render);
 
 function onScroll(event)
 {
-  console.log("SCROLL");
   event.preventDefault(); 
 
   var distanceY = window.scrollY;
