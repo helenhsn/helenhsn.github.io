@@ -45,11 +45,7 @@
                             <li> I made a few optimizations when switching to CUDA, including using CUDA streams and shared memory but it had some drawbacks: for the latest in particular, I was limited by the size of particles I could set. </li>
                         </ul>
                         </p>
-                        <div class="slider">
-                            <div class="example">
-                                <div><img data-enlargeable class="img" src="images/flowfield.png"></div>
-                            </div>
-                        </div>
+                        <div style="display:flex; justify-content:center;""> <div><img data-enlargeable class="img" src="images/flowfield.jpg"></div></div>
                     </div>
                 </section>
                 <section>
@@ -68,14 +64,53 @@
                             <li> You can find a picture of the raytracer provided by the teacher in the last picture, so you can observe what I added to the project. </li>
                         </ul>
                         </p>
-                        <div class="slider">
-                            <div class="example">
-                                <div><img data-enlargeable class="img" src="images/imagesynthesis5.png"></div>
-                                <div><img data-enlargeable class="img" src="images/imagesynthesis2.png"></div>
-                                <div><img data-enlargeable class="img" src="images/imagesynthesis1.png"></div>
-                                <div><img data-enlargeable class="img" src="images/imagesynthesis4.png"></div>
-                                <div><img data-enlargeable class="img" src="images/imagesynthesis3.png"></div>
-                                <div><img data-enlargeable class="img" src="images/imagesynthesis6.png"></div>
+                        <div class="container-carousel">
+                            <div class="carousel" class="carousel slide" data-ride="carousel">
+                                
+                                <ol class="carousel-indicators">
+                                    <li class="item1 active"></li>
+                                    <li class="item2"></li>
+                                    <li class="item3"></li>
+                                    <li class="item4"></li>
+                                    <li class="item5"></li>
+                                    <li class="item6"></li>
+                                </ol>
+    
+                                <div class="carousel-inner" role="listbox">
+                                    
+                                    <div class="item active">
+                                        <img data-enlargeable class="img" src="images/imgsynthesis/imagesynthesis5.jpg" width="460" height="345">
+                                    </div>
+                        
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/imgsynthesis/imagesynthesis2.jpg" width="460" height="345">
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <img data-enlargeable class="img"src="images/imgsynthesis/imagesynthesis1.jpg" width="460" height="345">
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/imgsynthesis/imagesynthesis4.jpg" width="460" height="345">
+                                    </div>
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/imgsynthesis/imagesynthesis3.jpg" width="460" height="345">
+                                    </div>
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/imgsynthesis/imagesynthesis6.jpg" width="460" height="345">
+                                    </div>
+                                    
+                                </div>
+                    
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    < </span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                     > </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -100,22 +135,55 @@
                             </li>
                         </ul>
                         </p>
-                        <div class="slider">
-                            <div class="example">
-                                <div><img data-enlargeable class="img" src="images/clothsim1.gif"></div>
-                                <div><img data-enlargeable class="img" src="images/clothsim3.gif"></div>
-                                <div><img data-enlargeable class="img" src="images/clothsim2.png"></div>
-                                <div><img data-enlargeable class="img" src="images/clothsim4.png"></div>
+                        
+                        <div class="container-carousel">
+                            <div class="carousel" class="carousel slide" data-ride="carousel">
+                            
+                                <ol class="carousel-indicators">
+                                    <li class="item1 active"></li>
+                                    <li class="item2"></li>
+                                    <li class="item3"></li>
+                                    <li class="item4"></li>
+                                </ol>
+
+                                <div class="carousel-inner" role="listbox">
+                                    
+                                    <div class="item active">
+                                        <img data-enlargeable class="img" src="images/clothsim/clothsim1.gif" width="460" height="345">
+                                    </div>
+                        
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/clothsim/clothsim3.gif" width="460" height="345">
+                                    </div>
+
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/clothsim/clothsim2.jpg" width="460" height="345">
+                                    </div>
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/clothsim/clothsim4.jpg" width="460" height="345">
+                                    </div>
+                                    
+                                </div>
+                            
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    < </span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    > </span>
+                                </a>
                             </div>
                         </div>
-                        <div class=" sourceCode">
-                            <a href="docs/CR_GPGPU_HASSAN_Helene.pdf"><div id="sourceCodeButton">Report
-                            </div></a>
-                        </div>
-                        <div class=" sourceCode">
-                            <div id="sourceCodeButton"> <a href="https://github.com/helenhsn/cloth-simulation"> Source
-                                code</a>
-                            </div>
+                    </div>
+                    <div class=" sourceCode">
+                        <a href="docs/CR_GPGPU_HASSAN_Helene.pdf"><div id="sourceCodeButton">Report
+                        </div></a>
+                    </div>
+                    <div class=" sourceCode">
+                        <div id="sourceCodeButton"> <a href="https://github.com/helenhsn/cloth-simulation"> Source
+                            code</a>
                         </div>
                     </div>
                 </section>
@@ -191,15 +259,51 @@
                         </ul>
                         </p>
                     </div>
-                    <div class="slider">
-                        <div class="example">
-                            <div><img data-enlargeable class="img" src="images/geommodeling3.jpg"></div>
-                            <div><img data-enlargeable class="img" src="images/geommodeling5.jpg"></div>
-                            <div><img data-enlargeable class="img" src="images/geommodeling4.jpg"></div>
-                            <div><img data-enlargeable class="img" src="images/geommodeling2.jpg"></div>
-                            <div><img data-enlargeable class="img" src="images/geommodeling.jpg"></div>
+                    <div class="container-carousel">
+                        <div class="carousel" class="carousel slide" data-ride="carousel">
+                            
+                            <ol class="carousel-indicators">
+                                <li class="item1 active"></li>
+                                <li class="item2"></li>
+                                <li class="item3"></li>
+                                <li class="item4"></li>
+                                <li class="item5"></li>
+                            </ol>
+
+                            <div class="carousel-inner" role="listbox">
+                                
+                                <div class="item active">
+                                    <img data-enlargeable class="img" src="images/geometrymodeling/geommodeling3.jpg" width="460" height="345">
+                                </div>
+                    
+                                <div class="item">
+                                    <img data-enlargeable class="img" src="images/geometrymodeling/geommodeling5.jpg" width="460" height="345">
+                                </div>
+                                
+                                <div class="item">
+                                    <img data-enlargeable class="img" src="images/geometrymodeling/geommodeling4.jpg" width="460" height="345">
+                                </div>
+                                
+                                <div class="item">
+                                    <img data-enlargeable class="img" src="images/geometrymodeling/geommodeling2.jpg" width="460" height="345">
+                                </div>
+                                <div class="item">
+                                    <img data-enlargeable class="img" src="images/geometrymodeling/geommodeling.jpg" width="460" height="345">
+                                </div>
+                            </div>
+                
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                < </span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                 > </span>
+                            </a>
                         </div>
                     </div>
+                    
                 </section>
                 <section>
 
@@ -250,10 +354,36 @@
                                 the code to gain fluidity when moving the top levels. </li>
                         </ul>
                         </p>
-                        <div class="slider">
-                            <div class="example">
-                                <div><img data-enlargeable class="img" src="images/mineswp.gif"></div>
-                                <div><img data-enlargeable class="img" src="images/widgets.gif"></div>
+                        
+                        <div class="container-carousel">
+                            <div class="carousel" class="carousel slide" data-ride="carousel">
+                                
+                                <ol class="carousel-indicators">
+                                    <li class="item1 active"></li>
+                                    <li class="item2"></li>
+                                </ol>
+    
+                                <div class="carousel-inner" role="listbox">
+                                    
+                                    <div class="item active">
+                                        <img data-enlargeable class="img" src="images/guiC/mineswp.gif" width="460" height="345">
+                                    </div>
+                        
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/guiC/widgets.gif" width="460" height="345">
+                                    </div>
+                                    
+                                </div>
+                    
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    < </span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                     > </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -322,16 +452,66 @@
                         </ul>
                         </p>
                         <div class="video-img" style="padding-top:0.5rem; padding-bottom:0.5rem; display:flex; flex-direction:column;justify-content:center;">
-                            
-                            <div class="slider">
-                                <div class="example">
-                                    <div><img data-enlargeable class="example-1" src="images/blackseas1.png"></div>
-                                    <div><img data-enlargeable class="example-2" src="images/blackseas2.png"></div>
-                                    <div><img data-enlargeable class="example-3" src="images/blackseas5.png"></div>
-                                    <div><img data-enlargeable class="example-4" src="images/blackseas6.png"></div>
-                                    <div><img data-enlargeable class="example-5" src="images/blackseas7.png"></div>
-                                    <div><img data-enlargeable class="example-6" src="images/blackseas8.png"></div>
+                            <div class="container-carousel">
+                                <div class="carousel" class="carousel slide" data-ride="carousel">
                                     
+                                    <ol class="carousel-indicators">
+                                        <li class="item1 active"></li>
+                                        <li class="item2"></li>
+                                        <li class="item3"></li>
+                                        <li class="item4"></li>
+                                        <li class="item5"></li>
+                                        <li class="item6"></li>
+                                        <li class="item7"></li>
+                                        <li class="item8"></li>
+                                    </ol>
+        
+                                    <div class="carousel-inner" role="listbox">
+                                        
+                                        <div class="item active">
+                                            <img data-enlargeable class="img" src="images/blackseas/blackseas1.jpg" width="460" height="345">
+                                        </div>
+                            
+                                        <div class="item">
+                                            <img data-enlargeable class="img" src="images/blackseas/blackseas2.jpg" width="460" height="345">
+                                        </div>
+                                        
+                                        <div class="item">
+                                            <img data-enlargeable class="img" src="images/blackseas/blackseas3.jpg" width="460" height="345">
+                                        </div>
+
+                                        <div class="item">
+                                            <img data-enlargeable class="img" src="images/blackseas/blackseas4.jpg" width="460" height="345">
+                                        </div>
+
+                                        <div class="item">
+                                            <img data-enlargeable class="img" src="images/blackseas/blackseas5.jpg" width="460" height="345">
+                                        </div>
+
+                                        <div class="item">
+                                            <img data-enlargeable class="img" src="images/blackseas/blackseas6.jpg" width="460" height="345">
+                                        </div>
+
+                                        <div class="item">
+                                            <img data-enlargeable class="img" src="images/blackseas/blackseas7.jpg" width="460" height="345">
+                                        </div>
+
+                                        <div class="item">
+                                            <img data-enlargeable class="img" src="images/blackseas/blackseas8.jpg" width="460" height="345">
+                                        </div>
+                                        
+                                        
+                                    </div>
+                        
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        < </span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                         > </span>
+                                    </a>
                                 </div>
                             </div>
                             <div class="video" style="margin-top: 2%; display:flex; justify-content:center;">
@@ -456,11 +636,40 @@
                                 programming. </li>
                         </ul>
                         </p>
-                        <div class="slider">
-                            <div class="example">
-                                <div><img data-enlargeable class="example-1" src="images/raycasting3.gif"></div>
-                                <div><img data-enlargeable class="example-2" src="images/raycasting2.gif"></div>
-                                <div><img data-enlargeable class="example-3" src="images/raycasting1.gif"></div>
+                        <div class="container-carousel">
+                            <div class="carousel" class="carousel slide" data-ride="carousel">
+                                
+                                <ol class="carousel-indicators">
+                                    <li class="item1 active"></li>
+                                    <li class="item2"></li>
+                                    <li class="item3"></li>
+                                </ol>
+    
+                                <div class="carousel-inner" role="listbox">
+                                    
+                                    <div class="item active">
+                                        <img data-enlargeable class="img" src="images/raycastgeom/raycasting3.gif" width="460" height="345">
+                                    </div>
+                        
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/raycastgeom/raycasting2.gif" width="460" height="345">
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <img data-enlargeable class="img" src="images/raycastgeom/raycasting1.gif" width="460" height="345">
+                                    </div>
+                                    
+                                </div>
+                    
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    < </span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                     > </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -501,13 +710,14 @@
     </div>
 
     <div class="CV">
-        <a href="docs/CV_Helene_Hassan_EN.pdf">  <div id="button" onclick="toggleCV()"><img src="images/download.png" width="16px">CV </div></a>
+        <a href="docs/CV_Helene_Hassan_EN.pdf">  <div id="button" onclick="toggleCV()"><img src="images/download.jpg" width="16px">CV </div></a>
     </div>
 
     <script src="js/menu.js"> </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/spiral.js"> </script>
     <script src="js/zoom.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

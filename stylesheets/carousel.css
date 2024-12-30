@@ -38,9 +38,6 @@
     display: block;
     justify-content: center;
     overflow: hidden;
-    
-    
-
 }
 .carousel-inner>.item{
     padding: 0;
@@ -73,8 +70,8 @@
 }
 .carousel-inner>.active{
     display:block;
-    width: 70%;
-    height:100%;
+    width: 100%;
+    height:auto;
 }
 .carousel-inner>.next,.carousel-inner>.prev{
     position:relative;width:100%;
