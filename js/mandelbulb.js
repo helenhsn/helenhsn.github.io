@@ -2,6 +2,34 @@ console.clear();
 
 // animation mode
 let isScrollAnimation = false;
+let frameCounter = 0; // Frame counter
+
+let programId = null;
+let verticesBuffer = null;
+
+function initializeWebGL() {
+  const canvas = document.querySelector('#mandelbulb');
+
+  // Get the WebGL context
+  gl = canvas.getContext('webgl');
+  if (!gl) {
+    alert("Unable to initialize WebGL. Your browser or machine may not support it.");
+    return;
+  }
+
+  // Initialize shader program
+  programId = initShaderProgram(gl);
+
+  // Initialize vertex buffer
+  const vertices = [-1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0];
+  verticesBuffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, verticesBuffer);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
+
+  const positionLoc = gl.getAttribLocation(programId, "position");
+  gl.vertexAttribPointer(positionLoc, 2, gl.FLOAT, false, 0, 0);
+  gl.enableVertexAttribArray(positionLoc);
+}
 
 // setting time uniform
 var start_time = Date.now();
@@ -234,9 +262,6 @@ function initVBO(gl, data, programId, nameAttrib, numFloats, stride, offset) {
   gl.enableVertexAttribArray(loc);
 }
 
-function heho() {
-  console.log("TEST");
-}
 
 /*-------------- SHADER PROGRAMS FUNCTIONS -------------- */
 
@@ -282,90 +307,89 @@ function initShaderProgram(gl) {
 
 
 function render() {
+  if (!gl || !programId) return;
+
   const canvas = document.querySelector('#mandelbulb');
 
+  // Increment the frame counter
+  frameCounter++;
+
+  // Skip rendering every other frame
+  if (frameCounter % 2 !== 0) {
+    window.requestAnimationFrame(render);
+    return;
+  }
+
   // Lookup the size the browser is displaying the canvas in CSS pixels.
-  const displayWidth  = canvas.clientWidth;
+  const displayWidth = canvas.clientWidth;
   const displayHeight = canvas.clientHeight;
 
   // Check if the canvas is not the same size.
-  const needResize = canvas.width  !== displayWidth ||
-                     canvas.height !== displayHeight;
+  const needResize = canvas.width !== displayWidth || canvas.height !== displayHeight;
 
   if (needResize) {
     // Make the canvas the same size
-    canvas.width  = displayWidth/1.5;
-    canvas.height = displayHeight/1.5;
+    canvas.width = displayWidth / 1.5;
+    canvas.height = displayHeight / 1.5;
   }
 
-  // adapting resolution
-  var resizeFactor = 2.0;
-  var elapsedTime = (Date.now() - start_time) / 1000.0;
-  if (isScrollAnimation) return;
-  if (window.matchMedia("(max-width:1600px").matches) 
-  {
-    resizeFactor = 1.5;
-    window.requestAnimationFrame(render);
-  }
-  else {
-    window.requestAnimationFrame(render);
-  }
-  var gl = canvas.getContext('webgl');
-  if (!gl) {
-    alert(
-      "Unable to initialize WebGL. Your browser or machine may not support it."
-    );
+  // Check screen size and skip rendering if smaller than 768px
+  if (window.innerWidth <= 768) {
+    console.log("Screen size is too small. Skipping rendering.");
     return;
   }
+
+  // Adapting resolution
+  var resizeFactor = 2.0;
+  var elapsedTime = (Date.now() - start_time) / 1000.0;
+
+  if (isScrollAnimation) return;
+
+  if (window.matchMedia("(max-width:1600px").matches) {
+    resizeFactor = 1.5;
+    window.requestAnimationFrame(render);
+  } else {
+    window.requestAnimationFrame(render);
+  }
+
+  // WebGL rendering setup
   gl.viewport(0.0, 0.0, gl.canvas.width, gl.canvas.height);
-  // init shader program
-  const programId = initShaderProgram(gl);
-  // init particle buffers
-  const vertices = [-1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0];
-  initVBO(gl, vertices, programId, "position", 2, 0, 0);
+  gl.clear(gl.COLOR_BUFFER_BIT);
 
   gl.useProgram(programId);
 
-  // // uniforms
+  // Set uniforms
 
-  // time
+  // Time
   const timeLoc = gl.getUniformLocation(programId, "u_time");
-  if (timeLoc != -1.0) 
-  {
-
+  if (timeLoc != -1) {
     gl.uniform1f(timeLoc, elapsedTime);
   }
 
-  // resize factor 
+  // Resize factor
   const resizeLoc = gl.getUniformLocation(programId, "resizeFactor");
-  if (timeLoc != -1.0) 
-  {
-
+  if (resizeLoc != -1) {
     gl.uniform1f(resizeLoc, resizeFactor);
   }
-  // canva size
-  const canvaLoc = gl.getUniformLocation(programId, "u_canva");
-  if (canvaLoc != -1.0) 
-  {
 
+  // Canvas size
+  const canvaLoc = gl.getUniformLocation(programId, "u_canva");
+  if (canvaLoc != -1) {
     gl.uniform2fv(canvaLoc, [gl.canvas.width, gl.canvas.height]);
   }
 
-  gl.clearColor(0.071, 0.071, 0.102, 1.0);
-  gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-  gl.enable(gl.DEPTH_TEST);
-  gl.enable(gl.CULL_FACE);
-  gl.cullFace(gl.BACK);
-
-  // draw call
+  // Draw
+  gl.bindBuffer(gl.ARRAY_BUFFER, verticesBuffer);
   gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+   // Increment the frame counter
+   frameCounter++;
 }
 
 window.requestAnimationFrame(render);
 
 function onScroll(event)
 {
-  console.log("SCROLL");
   event.preventDefault(); 
 
   var distanceY = window.scrollY;
@@ -378,15 +402,14 @@ function onScroll(event)
 window.addEventListener("resize", render);
 window.addEventListener("scroll", onScroll);
 window.addEventListener("touchmove", onScroll);
-console.log("SCROLL");
-let isMobile = true;
 window.addEventListener("load", () => {
-    isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+  initializeWebGL(); // Called once after the page is fully loaded
+  window.requestAnimationFrame(render); // Start the render loop
 });
+
 
 function switchAnimation()
 {
-  console.log("wsitching");
   isScrollAnimation = !isScrollAnimation;
   render();
 }

@@ -147,9 +147,6 @@ function initVBO(gl, data, programId, nameAttrib, numFloats, stride, offset) {
   gl.enableVertexAttribArray(loc);
 }
 
-function heho() {
-  console.log("TEST");
-}
 
 /*-------------- SHADER PROGRAMS FUNCTIONS -------------- */
 
@@ -298,7 +295,6 @@ window.addEventListener("load", () => {
 
 function switchAnimation()
 {
-  console.log("wsitching");
   isScrollAnimation = !isScrollAnimation;
   render();
 }
