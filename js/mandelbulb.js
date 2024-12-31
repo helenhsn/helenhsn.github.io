@@ -333,11 +333,6 @@ function render() {
     canvas.height = displayHeight / 1.5;
   }
 
-  // Check screen size and skip rendering if smaller than 768px
-  if (window.innerWidth <= 768) {
-    console.log("Screen size is too small. Skipping rendering.");
-    return;
-  }
 
   // Adapting resolution
   var resizeFactor = 2.0;
